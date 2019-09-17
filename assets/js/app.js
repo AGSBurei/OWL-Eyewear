@@ -7,6 +7,7 @@
 
 // any CSS you require will output into a single css file (app.css in this case)
 require('../css/app.scss');
+require('../css/base.css');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // const $ = require('jquery');
@@ -19,4 +20,5 @@ $(document).ready(function(){
 });
 
 import 'bootstrap/dist/js/bootstrap';
-require('../images/index.png');
+require('../images/placeholder.png');
+require('../images/dummy.jpg');
