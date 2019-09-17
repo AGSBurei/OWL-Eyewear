@@ -18,5 +18,5 @@ $(document).ready(function(){
     $('[data-toggle="popover"]').popover();
 });
 
-
 import 'bootstrap/dist/js/bootstrap';
+require('../images/index.png');
