@@ -14,6 +14,10 @@ Encore
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
+    //import img
+    
+    .addEntry('placeholder', './assets/images/index.png')
+
     /*
      * ENTRY CONFIG
      *
