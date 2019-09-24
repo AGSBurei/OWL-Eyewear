@@ -69,13 +69,22 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
     <div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
       <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
-          <img src=\"...\" class=\"d-block w-100\" alt=\"...\">
+          <img src=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy.e00757a0.jpg"), "html", null, true);
+        echo "\" class=\"d-block w-100\" alt=\"dummy\">
         </div>
         <div class=\"carousel-item\">
-          <img src=\"...\" class=\"d-block w-100\" alt=\"...\">
+          <img src=\"";
+        // line 11
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy.e00757a0.jpg"), "html", null, true);
+        echo "\" class=\"d-block w-100\" alt=\"dummy2\">
         </div>
         <div class=\"carousel-item\">
-          <img src=\"...\" class=\"d-block w-100\" alt=\"...\">
+          <img src=\"";
+        // line 14
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy.e00757a0.jpg"), "html", null, true);
+        echo "\" class=\"d-block w-100\" alt=\"dummy3\">
         </div>
       </div>
       <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">
@@ -109,7 +118,7 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
 
     public function getDebugInfo()
     {
-        return array (  68 => 4,  58 => 3,  35 => 1,);
+        return array (  86 => 14,  80 => 11,  74 => 8,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -121,13 +130,13 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
     <div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
       <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
-          <img src=\"...\" class=\"d-block w-100\" alt=\"...\">
+          <img src=\"{{ asset('/build/images/dummy.e00757a0.jpg') }}\" class=\"d-block w-100\" alt=\"dummy\">
         </div>
         <div class=\"carousel-item\">
-          <img src=\"...\" class=\"d-block w-100\" alt=\"...\">
+          <img src=\"{{ asset('/build/images/dummy.e00757a0.jpg') }}\" class=\"d-block w-100\" alt=\"dummy2\">
         </div>
         <div class=\"carousel-item\">
-          <img src=\"...\" class=\"d-block w-100\" alt=\"...\">
+          <img src=\"{{ asset('/build/images/dummy.e00757a0.jpg') }}\" class=\"d-block w-100\" alt=\"dummy3\">
         </div>
       </div>
       <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">

@@ -1,0 +1,15 @@
+
+body
+{
+    position: relative;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    background-color: #343a40;
+    left: 0;
+    right: 0;
+}

@@ -16,7 +16,8 @@ Encore
 
     //import img
     
-    .addEntry('placeholder', './assets/images/index.png')
+    .addEntry('placeholder', './assets/images/placeholder.png')
+    .addEntry('dummy', './assets/images/dummy.jpg')
 
     /*
      * ENTRY CONFIG
@@ -28,6 +29,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+    .addEntry('basesStyle', './assets/css/base.css') 
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
