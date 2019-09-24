@@ -413,6 +413,6 @@ class __TwigTemplate_63be2a316af8c05fce35f480c827f4078c8aaa67706b99ef94e8ec3a08a
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/home/burei/test2/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }

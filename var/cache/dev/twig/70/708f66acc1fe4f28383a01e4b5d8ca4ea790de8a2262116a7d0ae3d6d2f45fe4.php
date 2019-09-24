@@ -1175,6 +1175,6 @@ class __TwigTemplate_67ccca5ae25496cbb461e3c4bc95cc9074fe700739a535f5aa41f036473
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
     }
 }

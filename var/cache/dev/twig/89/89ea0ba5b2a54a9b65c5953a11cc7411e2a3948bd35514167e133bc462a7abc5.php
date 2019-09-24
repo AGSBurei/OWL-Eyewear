@@ -417,6 +417,6 @@ class __TwigTemplate_4dc1d0795732273db85dcf67e8ef2ed851f23ce237f29beff8afadd56be
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
     }
 }

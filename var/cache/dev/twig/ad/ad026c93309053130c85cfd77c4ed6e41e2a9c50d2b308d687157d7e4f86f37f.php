@@ -909,6 +909,6 @@ class __TwigTemplate_4128ca88bb7ddfb238099980197b46b5193eda2c496b4005c200006335a
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

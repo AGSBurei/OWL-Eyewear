@@ -227,6 +227,6 @@ class __TwigTemplate_5ae85bb114136d6332d3a969ad8f0eef24ca2b36c72c66deac76ac70fef
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "/home/burei/test2/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+", "@Twig/layout.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }
