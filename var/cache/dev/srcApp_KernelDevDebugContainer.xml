@@ -2920,10 +2920,11 @@
         <argument key="dbname">db_owl_eyewear</argument>
         <argument key="host">127.0.0.1</argument>
         <argument key="port">3306</argument>
-        <argument key="user">%env(DATABASE_USER)%</argument>
-        <argument key="password">%env(DATABASE_PWD)%</argument>
         <argument key="driver">pdo_mysql</argument>
         <argument key="charset">utf8mb4</argument>
+        <argument key="url">%env(resolve:DATABASE_URL)%</argument>
+        <argument key="user">root</argument>
+        <argument key="password">null</argument>
         <argument key="driverOptions" type="collection"/>
         <argument key="serverVersion">5.7</argument>
         <argument key="defaultTableOptions" type="collection">
