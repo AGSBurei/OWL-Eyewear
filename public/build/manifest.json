@@ -4,11 +4,13 @@
   "build/basesStyle.css": "/build/basesStyle.css",
   "build/basesStyle.js": "/build/basesStyle.js",
   "build/dummy.js": "/build/dummy.js",
+  "build/favicon.js": "/build/favicon.js",
   "build/logopage.js": "/build/logopage.js",
   "build/placeholder.js": "/build/placeholder.js",
   "build/runtime.js": "/build/runtime.js",
   "build/vendors~app.js": "/build/vendors~app.js",
-  "build/images/OWL_logo.png": "/build/images/OWL_logo.54da80f9.png",
+  "build/images/OWL_logo.png": "/build/images/OWL_logo.5da53e41.png",
   "build/images/dummy.jpg": "/build/images/dummy.e00757a0.jpg",
+  "build/images/favicon.ico": "/build/images/favicon.5ee79b31.ico",
   "build/images/placeholder.png": "/build/images/placeholder.5631caaa.png"
 }

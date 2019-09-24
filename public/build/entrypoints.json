@@ -18,6 +18,12 @@
         "/build/logopage.js"
       ]
     },
+    "favicon": {
+      "js": [
+        "/build/runtime.js",
+        "/build/favicon.js"
+      ]
+    },
     "app": {
       "js": [
         "/build/runtime.js",

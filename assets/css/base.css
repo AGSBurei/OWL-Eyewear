@@ -13,7 +13,18 @@ footer
     left: 0;
     right: 0;
 }
-.navbar
+.navbar-custom
 {
+    color: inherit;
     margin: 1%;
+    background-color: #f7a400;
+    text-decoration: none;
+    color: #1d1d1b;
+    
+
+
+}
+.logo
+{
+    height: 100px;
 }
