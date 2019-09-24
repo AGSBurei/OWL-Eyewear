@@ -22,3 +22,4 @@ $(document).ready(function(){
 import 'bootstrap/dist/js/bootstrap';
 require('../images/placeholder.png');
 require('../images/dummy.jpg');
+require('../images/OWL_logo.png');

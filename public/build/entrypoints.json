@@ -12,6 +12,12 @@
         "/build/dummy.js"
       ]
     },
+    "logopage": {
+      "js": [
+        "/build/runtime.js",
+        "/build/logopage.js"
+      ]
+    },
     "app": {
       "js": [
         "/build/runtime.js",
