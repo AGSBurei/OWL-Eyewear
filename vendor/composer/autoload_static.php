@@ -33,6 +33,7 @@ class ComposerStaticInit8af71b208e8aa110a7f817b18dfb2396
         ),
         'T' => 
         array (
+            'Twig\\Extensions\\' => 16,
             'Twig\\' => 5,
         ),
         'S' => 
@@ -108,6 +109,7 @@ class ComposerStaticInit8af71b208e8aa110a7f817b18dfb2396
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
+            'Pagerfanta\\' => 11,
             'PackageVersions\\' => 16,
         ),
         'M' => 
@@ -122,6 +124,7 @@ class ComposerStaticInit8af71b208e8aa110a7f817b18dfb2396
         array (
             'Egulias\\EmailValidator\\' => 23,
             'EasyCorp\\EasyLog\\' => 17,
+            'EasyCorp\\Bundle\\EasyAdminBundle\\' => 32,
         ),
         'D' => 
         array (
@@ -164,6 +167,10 @@ class ComposerStaticInit8af71b208e8aa110a7f817b18dfb2396
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Twig\\Extensions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/extensions/src',
         ),
         'Twig\\' => 
         array (
@@ -441,6 +448,10 @@ class ComposerStaticInit8af71b208e8aa110a7f817b18dfb2396
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'Pagerfanta\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pagerfanta/pagerfanta/src/Pagerfanta',
+        ),
         'PackageVersions\\' => 
         array (
             0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
@@ -460,6 +471,10 @@ class ComposerStaticInit8af71b208e8aa110a7f817b18dfb2396
         'EasyCorp\\EasyLog\\' => 
         array (
             0 => __DIR__ . '/..' . '/easycorp/easy-log-handler/src',
+        ),
+        'EasyCorp\\Bundle\\EasyAdminBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easycorp/easyadmin-bundle/src',
         ),
         'Doctrine\\ORM\\' => 
         array (
@@ -529,6 +544,10 @@ class ComposerStaticInit8af71b208e8aa110a7f817b18dfb2396
     public static $prefixesPsr0 = array (
         'T' => 
         array (
+            'Twig_Extensions_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/extensions/lib',
+            ),
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
