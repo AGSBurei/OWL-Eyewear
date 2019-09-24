@@ -19,6 +19,7 @@ Encore
     .addEntry('placeholder', './assets/images/placeholder.png')
     .addEntry('dummy', './assets/images/dummy.jpg')
     .addEntry('logopage', './assets/images/OWL_logo.png')
+    .addEntry('favicon', './assets/images/favicon.ico')
 
     /*
      * ENTRY CONFIG
