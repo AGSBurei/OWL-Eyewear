@@ -101,6 +101,10 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         $this->displayBlock('javascripts', $context, $blocks);
         // line 45
         echo "    </body>
+    
+    <footer>
+        I'm a footer
+    </footer>
 </html>
 ";
         
@@ -141,6 +145,8 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("app");
+        echo " ";
+        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("basesStyle");
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -193,7 +199,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     public function getDebugInfo()
     {
-        return array (  171 => 44,  153 => 42,  134 => 8,  115 => 6,  103 => 45,  101 => 44,  98 => 43,  96 => 42,  61 => 9,  59 => 8,  54 => 6,  47 => 1,);
+        return array (  177 => 44,  159 => 42,  138 => 8,  119 => 6,  103 => 45,  101 => 44,  98 => 43,  96 => 42,  61 => 9,  59 => 8,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -205,7 +211,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         <meta name=\"viewport\" content=\"width-device-width, initial-scale=1, shrink-to-fit=no\">
         <title>{% block title %}OWL EyeWear{% endblock %}</title>
 
-        {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
+        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
     </head>
     <body>
     <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">
@@ -243,6 +249,10 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         </div>
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
     </body>
+    
+    <footer>
+        I'm a footer
+    </footer>
 </html>
 ", "base.html.twig", "/home/burei/test2/templates/base.html.twig");
     }
