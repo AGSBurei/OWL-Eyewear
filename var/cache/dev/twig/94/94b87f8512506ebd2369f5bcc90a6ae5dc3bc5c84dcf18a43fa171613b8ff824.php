@@ -479,6 +479,6 @@ class __TwigTemplate_b0eccee96ef520ab45af30bee103b3659a51a42720ac89d0718edea5143
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
     }
 }

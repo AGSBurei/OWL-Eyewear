@@ -204,6 +204,6 @@ class __TwigTemplate_e50e9300b47b40176764d9d31cd9a3a0599740d65544f55cfd92d8f0859
         })|raw }}
     </div>
 {% endif %}
-", "@Twig/Exception/trace.html.twig", "/home/burei/test2/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
     }
 }

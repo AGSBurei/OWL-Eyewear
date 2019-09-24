@@ -1828,6 +1828,6 @@ class __TwigTemplate_3b858ec138bcc6a395e5bca0f170b7ebd49b8abba77142004732ae96b20
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/burei/test2/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

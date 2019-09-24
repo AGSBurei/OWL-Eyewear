@@ -490,6 +490,6 @@ class __TwigTemplate_bb2b29cd6207901a9a6af46bc7d0bbe16c38b6c14bba6a44f97fb218f64
         {% endif %}
     </div>
 </div>
-", "@Twig/Exception/exception.html.twig", "/home/burei/test2/vendor/symfony/twig-bundle/Resources/views/Exception/exception.html.twig");
+", "@Twig/Exception/exception.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/twig-bundle/Resources/views/Exception/exception.html.twig");
     }
 }

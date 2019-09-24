@@ -222,6 +222,6 @@ class __TwigTemplate_ac3364c53830e8eecb5838ee9ba4bfa3a33855e32b042f21660dffcb0d3
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }

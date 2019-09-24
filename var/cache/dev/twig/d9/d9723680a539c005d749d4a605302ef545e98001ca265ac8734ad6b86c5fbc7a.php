@@ -189,6 +189,6 @@ class __TwigTemplate_11d359c71f19fa553ee1754065e44ac2a94de58544a701191b32e3f2a80
         </div>
     </div>
 </div>
-", "@Twig/Exception/traces.html.twig", "/home/burei/test2/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
+", "@Twig/Exception/traces.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
     }
 }

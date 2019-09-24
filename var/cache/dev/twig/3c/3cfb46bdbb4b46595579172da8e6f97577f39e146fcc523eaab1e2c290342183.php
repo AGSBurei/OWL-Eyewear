@@ -482,6 +482,6 @@ class __TwigTemplate_b14e4f8ec9924fcd19fde4008533de7d1af28fe76d6bad4e5e5f61dc9e9
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

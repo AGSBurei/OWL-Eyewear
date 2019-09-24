@@ -227,6 +227,6 @@ class __TwigTemplate_5bbb7370babd5dfdce86777e8d6f0a9a2770f76db8709e90bf5a69e5102
         </div>
     </form>
 </div>
-", "@WebProfiler/Profiler/search.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/search.html.twig");
+", "@WebProfiler/Profiler/search.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/search.html.twig");
     }
 }
