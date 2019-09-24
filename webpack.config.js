@@ -18,6 +18,7 @@ Encore
     
     .addEntry('placeholder', './assets/images/placeholder.png')
     .addEntry('dummy', './assets/images/dummy.jpg')
+    .addEntry('logopage', './assets/images/OWL_logo.png')
 
     /*
      * ENTRY CONFIG
