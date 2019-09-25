@@ -1,0 +1,29 @@
+body, html{
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+  }
+.bg-image
+{   
+    /*image*/
+    background-image: url("../images/background.jpg");
+    /*filtre*/
+    filter: blur(4px);
+    /*formatage*/
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.container
+{
+    max-width: 1550px;
+    position: relative;
+}
+.txt-presentation
+{
+    color: #ffffff;
+    position: relative;
+}

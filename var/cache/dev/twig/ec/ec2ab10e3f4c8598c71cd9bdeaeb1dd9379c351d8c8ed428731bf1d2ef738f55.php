@@ -66,24 +66,29 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
 
         // line 4
         echo "  <body>
+  <div class=\"bg-image\"></div>
+  <div class=\" txt-presentation\">
+    <h1>Owl Eyewear | Improve Your Night Vision</h1>
+    <p>Owl eyewear are equipped with advanced lenses that improve your night vision and allow you to drive serenely and easily.</p>
+  </div>
     <div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
       <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
           <img src=\"";
-        // line 8
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy.e00757a0.jpg"), "html", null, true);
+        // line 13
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy2.ba38f527.png"), "html", null, true);
         echo "\" class=\"d-block w-100\" alt=\"dummy\">
         </div>
         <div class=\"carousel-item\">
           <img src=\"";
-        // line 11
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy.e00757a0.jpg"), "html", null, true);
+        // line 16
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy2.ba38f527.png"), "html", null, true);
         echo "\" class=\"d-block w-100\" alt=\"dummy2\">
         </div>
         <div class=\"carousel-item\">
           <img src=\"";
-        // line 14
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy.e00757a0.jpg"), "html", null, true);
+        // line 19
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy2.ba38f527.png"), "html", null, true);
         echo "\" class=\"d-block w-100\" alt=\"dummy3\">
         </div>
       </div>
@@ -95,7 +100,7 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
         <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
         <span class=\"sr-only\">Next</span>
       </a>
-    </div>   
+    </div> 
     <P> This is a page </p>
 ";
         
@@ -118,7 +123,7 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
 
     public function getDebugInfo()
     {
-        return array (  86 => 14,  80 => 11,  74 => 8,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  91 => 19,  85 => 16,  79 => 13,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -127,16 +132,21 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
 
 {% block body %}
   <body>
+  <div class=\"bg-image\"></div>
+  <div class=\" txt-presentation\">
+    <h1>Owl Eyewear | Improve Your Night Vision</h1>
+    <p>Owl eyewear are equipped with advanced lenses that improve your night vision and allow you to drive serenely and easily.</p>
+  </div>
     <div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
       <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
-          <img src=\"{{ asset('/build/images/dummy.e00757a0.jpg') }}\" class=\"d-block w-100\" alt=\"dummy\">
+          <img src=\"{{ asset('/build/images/dummy2.ba38f527.png') }}\" class=\"d-block w-100\" alt=\"dummy\">
         </div>
         <div class=\"carousel-item\">
-          <img src=\"{{ asset('/build/images/dummy.e00757a0.jpg') }}\" class=\"d-block w-100\" alt=\"dummy2\">
+          <img src=\"{{ asset('/build/images/dummy2.ba38f527.png') }}\" class=\"d-block w-100\" alt=\"dummy2\">
         </div>
         <div class=\"carousel-item\">
-          <img src=\"{{ asset('/build/images/dummy.e00757a0.jpg') }}\" class=\"d-block w-100\" alt=\"dummy3\">
+          <img src=\"{{ asset('/build/images/dummy2.ba38f527.png') }}\" class=\"d-block w-100\" alt=\"dummy3\">
         </div>
       </div>
       <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">
@@ -147,9 +157,9 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
         <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
         <span class=\"sr-only\">Next</span>
       </a>
-    </div>   
+    </div> 
     <P> This is a page </p>
 {% endblock %}
-", "main/home.html.twig", "/home/burei/test2/templates/main/home.html.twig");
+", "main/home.html.twig", "/home/burei/Documents/OWL-Eyewear/templates/main/home.html.twig");
     }
 }

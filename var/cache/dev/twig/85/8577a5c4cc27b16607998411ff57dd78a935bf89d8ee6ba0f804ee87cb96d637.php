@@ -153,6 +153,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("app");
         echo " ";
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("basesStyle");
+        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("homeStyle");
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -210,7 +211,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     public function getDebugInfo()
     {
-        return array (  183 => 44,  165 => 42,  144 => 8,  125 => 6,  109 => 45,  107 => 44,  104 => 43,  102 => 42,  70 => 13,  64 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
+        return array (  184 => 44,  166 => 42,  144 => 8,  125 => 6,  109 => 45,  107 => 44,  104 => 43,  102 => 42,  70 => 13,  64 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -222,7 +223,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         <meta name=\"viewport\" content=\"width-device-width, initial-scale=1, shrink-to-fit=no\">
         <title>{% block title %}OWL EyeWear{% endblock %}</title>
         <link rel=\"shortcut icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
-        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
+        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{{ encore_entry_link_tags('homeStyle') }}{% endblock %}
     </head>
     <body>
 
