@@ -318,6 +318,6 @@ class __TwigTemplate_95f136d67c6ea5d6a8d83bc04935728baedea4e41c6445a0a04215ae2bb
 .timeline-graph .{{ classnames['controller.argument_value_resolver']|raw }} .timeline-period {
     fill: var(--color-controller-argument-value-resolver);
 }
-", "@WebProfiler/Collector/time.css.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
+", "@WebProfiler/Collector/time.css.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
     }
 }

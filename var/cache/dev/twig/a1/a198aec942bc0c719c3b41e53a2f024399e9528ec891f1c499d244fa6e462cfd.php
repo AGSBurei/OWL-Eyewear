@@ -174,6 +174,6 @@ class __TwigTemplate_6bb7a1e19c049e0c73d518b879e6dce15bed2f47c5db89ea67f1e307a25
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

@@ -24,3 +24,4 @@ require('../images/placeholder.png');
 require('../images/dummy.jpg');
 require('../images/OWL_logo.png');
 require('../images/favicon.ico');
+require('../images/background.jpg');

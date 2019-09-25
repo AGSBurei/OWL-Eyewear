@@ -122,6 +122,6 @@ class __TwigTemplate_8374a256b28480759d0d067a8c06885521d1516b0d33818d94cc032a9f3
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/table.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/table.html.twig");
+", "@WebProfiler/Profiler/table.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/table.html.twig");
     }
 }

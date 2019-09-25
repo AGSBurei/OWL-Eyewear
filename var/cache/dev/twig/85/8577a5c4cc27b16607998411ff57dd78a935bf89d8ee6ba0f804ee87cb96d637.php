@@ -53,19 +53,25 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         // line 6
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-
+        <link rel=\"shortcut icon\" href=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/favicon.5ee79b31.ico"), "html", null, true);
+        echo "\"/>
         ";
         // line 8
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 9
         echo "    </head>
     <body>
-    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">
-  <a class=\"navbar-brand\" href=\"#\">OWL EyeWear</a>
+
+    <nav class=\"navbar navbar-expand-lg navbar-custom\">
+    <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/OWL_logo.5da53e41.png"), "html", null, true);
+        echo "\"></a></a>
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
   </button>
-
             <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
                 <ul class=\"navbar-nav mr-auto\">
                 <li class=\"nav-item active\">
@@ -197,9 +203,14 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  177 => 44,  159 => 42,  138 => 8,  119 => 6,  103 => 45,  101 => 44,  98 => 43,  96 => 42,  61 => 9,  59 => 8,  54 => 6,  47 => 1,);
+        return array (  183 => 44,  165 => 42,  144 => 8,  125 => 6,  109 => 45,  107 => 44,  104 => 43,  102 => 42,  70 => 13,  64 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -210,16 +221,16 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         <meta charset=\"UTF-8\">
         <meta name=\"viewport\" content=\"width-device-width, initial-scale=1, shrink-to-fit=no\">
         <title>{% block title %}OWL EyeWear{% endblock %}</title>
-
+        <link rel=\"shortcut icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
         {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
     </head>
     <body>
-    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">
-  <a class=\"navbar-brand\" href=\"#\">OWL EyeWear</a>
+
+    <nav class=\"navbar navbar-expand-lg navbar-custom\">
+    <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"{{ asset('/build/images/OWL_logo.5da53e41.png') }}\"></a></a>
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
   </button>
-
             <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
                 <ul class=\"navbar-nav mr-auto\">
                 <li class=\"nav-item active\">
@@ -254,6 +265,6 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         I'm a footer
     </footer>
 </html>
-", "base.html.twig", "/home/burei/test2/templates/base.html.twig");
+", "base.html.twig", "/home/burei/Documents/OWL-Eyewear/templates/base.html.twig");
     }
 }

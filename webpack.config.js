@@ -20,6 +20,7 @@ Encore
     .addEntry('dummy', './assets/images/dummy.jpg')
     .addEntry('logopage', './assets/images/OWL_logo.png')
     .addEntry('favicon', './assets/images/favicon.ico')
+    .addEntry('background', './assets/images/background.jpg')
 
     /*
      * ENTRY CONFIG
