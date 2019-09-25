@@ -24,6 +24,12 @@
         "/build/favicon.js"
       ]
     },
+    "background": {
+      "js": [
+        "/build/runtime.js",
+        "/build/background.js"
+      ]
+    },
     "app": {
       "js": [
         "/build/runtime.js",

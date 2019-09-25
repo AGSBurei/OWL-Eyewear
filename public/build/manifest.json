@@ -1,6 +1,7 @@
 {
   "build/app.css": "/build/app.css",
   "build/app.js": "/build/app.js",
+  "build/background.js": "/build/background.js",
   "build/basesStyle.css": "/build/basesStyle.css",
   "build/basesStyle.js": "/build/basesStyle.js",
   "build/dummy.js": "/build/dummy.js",
@@ -10,6 +11,7 @@
   "build/runtime.js": "/build/runtime.js",
   "build/vendors~app.js": "/build/vendors~app.js",
   "build/images/OWL_logo.png": "/build/images/OWL_logo.5da53e41.png",
+  "build/images/background.jpg": "/build/images/background.184df30a.jpg",
   "build/images/dummy.jpg": "/build/images/dummy.e00757a0.jpg",
   "build/images/favicon.ico": "/build/images/favicon.5ee79b31.ico",
   "build/images/placeholder.png": "/build/images/placeholder.5631caaa.png"
