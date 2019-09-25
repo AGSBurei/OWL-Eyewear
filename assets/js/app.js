@@ -8,6 +8,7 @@
 // any CSS you require will output into a single css file (app.css in this case)
 require('../css/app.scss');
 require('../css/base.css');
+require('../css/homeStyle.css');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // const $ = require('jquery');
@@ -25,3 +26,4 @@ require('../images/dummy.jpg');
 require('../images/OWL_logo.png');
 require('../images/favicon.ico');
 require('../images/background.jpg');
+require('../images/dummy2.png');

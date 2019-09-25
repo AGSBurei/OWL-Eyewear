@@ -21,6 +21,7 @@ Encore
     .addEntry('logopage', './assets/images/OWL_logo.png')
     .addEntry('favicon', './assets/images/favicon.ico')
     .addEntry('background', './assets/images/background.jpg')
+    .addEntry('dummy2', './assets/images/dummy2.png')
 
     /*
      * ENTRY CONFIG
@@ -32,7 +33,8 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    .addEntry('basesStyle', './assets/css/base.css') 
+    .addEntry('basesStyle', './assets/css/base.css')
+    .addEntry('homeStyle', './assets/css/homeStyle.css')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

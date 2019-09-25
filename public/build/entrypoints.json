@@ -30,6 +30,12 @@
         "/build/background.js"
       ]
     },
+    "dummy2": {
+      "js": [
+        "/build/runtime.js",
+        "/build/dummy2.js"
+      ]
+    },
     "app": {
       "js": [
         "/build/runtime.js",
@@ -47,6 +53,15 @@
       ],
       "css": [
         "/build/basesStyle.css"
+      ]
+    },
+    "homeStyle": {
+      "js": [
+        "/build/runtime.js",
+        "/build/homeStyle.js"
+      ],
+      "css": [
+        "/build/homeStyle.css"
       ]
     }
   }
