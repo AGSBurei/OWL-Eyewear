@@ -5,18 +5,19 @@
         <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
                 <link rel="icon" type="image/x-icon" href="{{ asset('/build/images/favicon.5ee79b31.ico') }}"/>
         <link rel="icon" type="image/x-icon" href="{{ asset('/build/images/favicon.5ee79b31.ico') }}"/>
-
         <title>{% block title %}OWL EyeWear{% endblock %}</title>
-        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{{ encore_entry_link_tags('homeStyle') }}{% endblock %}
+        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
     </head>
     <body>
+    <div class ="band">
 
+    </div>
     <nav class="navbar navbar-expand-lg navbar-custom">
     <a class="navbar-brand" href="#"><a href="/"><img class="logo"src="{{ asset('/build/images/OWL_logo.5da53e41.png') }}"></a></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-            <div class="collapse navbar-collapse" id="navbarColor02">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
@@ -33,6 +34,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href"#">Mention legal</a>
                 </li>
+                <hr>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" placeholder="Search" type="text">

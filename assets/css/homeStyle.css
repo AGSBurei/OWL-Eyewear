@@ -5,26 +5,55 @@ body, html{
 * {
     box-sizing: border-box;
   }
-.bg-image
+.bg-image:before
 {   
-    /*image*/
-    background-image: url("../images/background.jpg");
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  
+  display: block;
+    /*image + filtre */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),url("../images/background.jpg");
     /*filtre*/
-    filter: blur(4px);
+
+    filter: blur(2px);
     /*formatage*/
+    top: 0;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
+    
 }
-
+/*.bg-image:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+*/
 .container
 {
     max-width: 1550px;
-    position: relative;
 }
 .txt-presentation
 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     color: #ffffff;
     position: relative;
 }
