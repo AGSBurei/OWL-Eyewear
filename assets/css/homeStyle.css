@@ -21,10 +21,10 @@ body, html{
       ),url("../images/background.jpg");
     /*filtre*/
 
-    filter: blur(2px);
+    /*filter: blur(2px);*/
     /*formatage*/
     top: 0;
-    height: 100%;
+    height: 85%;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -56,4 +56,5 @@ body, html{
     margin-right: 20px;
     color: #ffffff;
     position: relative;
+    top:180px;
 }

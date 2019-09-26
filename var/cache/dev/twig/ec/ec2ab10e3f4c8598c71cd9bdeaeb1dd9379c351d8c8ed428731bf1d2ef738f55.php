@@ -93,29 +93,58 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
   <div class=\"bg-image\"> 
   <div class=\" txt-presentation\">
     <h1>Owl Eyewear | Improve Your Night Vision</h1>
-    <p>Owl eyewear are equipped with advanced lenses that improve your night vision and allow you to drive serenely and easily.</p>
+    <p>Owl eyewear are equipped with advanced lenses that improve your night vision and allow you to drive serenely and easily.<br>
     <br>
-    <p>At night, road traffic accounts for only 10% of daily traffic but generates 40% of serious or fatal accidents. <br>
-    Several causes: fatigue, lower brightness, blurred vision and the dazzle of car headlights. </p>
+    At night, road traffic accounts for only 10% of daily traffic but generates 40% of serious or fatal accidents. <br>
+    Several causes: fatigue, lower brightness, blurred vision and the dazzle of car headlights. </At>
   </div>
-  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <!--</div>
     <div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
       <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
           <img src=\"";
-        // line 19
+        // line 48
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy2.ba38f527.png"), "html", null, true);
         echo "\" class=\"d-block w-100\" alt=\"dummy\">
         </div>
         <div class=\"carousel-item\">
           <img src=\"";
-        // line 22
+        // line 51
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy2.ba38f527.png"), "html", null, true);
         echo "\" class=\"d-block w-100\" alt=\"dummy2\">
         </div>
         <div class=\"carousel-item\">
           <img src=\"";
-        // line 25
+        // line 54
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/dummy2.ba38f527.png"), "html", null, true);
         echo "\" class=\"d-block w-100\" alt=\"dummy3\">
         </div>
@@ -129,6 +158,7 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
         <span class=\"sr-only\">Next</span>
       </a>
     </div>
+    -->
     <P> This is a page </p>
    
 ";
@@ -152,7 +182,7 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
 
     public function getDebugInfo()
     {
-        return array (  119 => 25,  113 => 22,  107 => 19,  92 => 6,  82 => 5,  69 => 3,  59 => 2,  36 => 1,);
+        return array (  148 => 54,  142 => 51,  136 => 48,  92 => 6,  82 => 5,  69 => 3,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -166,12 +196,41 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
   <div class=\"bg-image\"> 
   <div class=\" txt-presentation\">
     <h1>Owl Eyewear | Improve Your Night Vision</h1>
-    <p>Owl eyewear are equipped with advanced lenses that improve your night vision and allow you to drive serenely and easily.</p>
+    <p>Owl eyewear are equipped with advanced lenses that improve your night vision and allow you to drive serenely and easily.<br>
     <br>
-    <p>At night, road traffic accounts for only 10% of daily traffic but generates 40% of serious or fatal accidents. <br>
-    Several causes: fatigue, lower brightness, blurred vision and the dazzle of car headlights. </p>
+    At night, road traffic accounts for only 10% of daily traffic but generates 40% of serious or fatal accidents. <br>
+    Several causes: fatigue, lower brightness, blurred vision and the dazzle of car headlights. </At>
   </div>
-  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <!--</div>
     <div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
       <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
@@ -193,6 +252,7 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
         <span class=\"sr-only\">Next</span>
       </a>
     </div>
+    -->
     <P> This is a page </p>
    
 {% endblock %}
