@@ -57,27 +57,28 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/favicon.5ee79b31.ico"), "html", null, true);
         echo "\"/>
-
         <title>";
-        // line 9
+        // line 8
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         ";
-        // line 10
+        // line 9
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 11
+        // line 10
         echo "    </head>
     <body>
+    <div class =\"band\">
 
+    </div>
     <nav class=\"navbar navbar-expand-lg navbar-custom\">
     <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"";
-        // line 15
+        // line 16
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/OWL_logo.5da53e41.png"), "html", null, true);
         echo "\"></a></a>
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
   </button>
-            <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
+            <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
                 <ul class=\"navbar-nav mr-auto\">
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"/\">Accueil <span class=\"sr-only\">(current)</span></a>
@@ -94,6 +95,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href\"#\">Mention legal</a>
                 </li>
+                <hr>
                 </ul>
                 <form class=\"form-inline my-2 my-lg-0\">
                 <input class=\"form-control mr-sm-2\" placeholder=\"Search\" type=\"text\">
@@ -103,14 +105,14 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         </nav>
         <div class=\"container\">
         ";
-        // line 44
+        // line 46
         $this->displayBlock('body', $context, $blocks);
-        // line 45
+        // line 47
         echo "        </div>
         ";
-        // line 46
+        // line 48
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 47
+        // line 49
         echo "    </body>
     
     <footer>
@@ -126,7 +128,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     }
 
-    // line 9
+    // line 8
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -145,7 +147,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     }
 
-    // line 10
+    // line 9
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -158,7 +160,6 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("app");
         echo " ";
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("basesStyle");
-        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("homeStyle");
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -167,7 +168,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     }
 
-    // line 44
+    // line 46
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -185,7 +186,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     }
 
-    // line 46
+    // line 48
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -216,7 +217,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     public function getDebugInfo()
     {
-        return array (  189 => 46,  171 => 44,  149 => 10,  130 => 9,  114 => 47,  112 => 46,  109 => 45,  107 => 44,  75 => 15,  69 => 11,  67 => 10,  63 => 9,  58 => 7,  54 => 6,  47 => 1,);
+        return array (  190 => 48,  172 => 46,  151 => 9,  132 => 8,  116 => 49,  114 => 48,  111 => 47,  109 => 46,  76 => 16,  68 => 10,  66 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -228,18 +229,19 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
         <meta name=\"viewport\" content=\"width-device-width, initial-scale=1, shrink-to-fit=no\">
                 <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
-
         <title>{% block title %}OWL EyeWear{% endblock %}</title>
-        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{{ encore_entry_link_tags('homeStyle') }}{% endblock %}
+        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
     </head>
     <body>
+    <div class =\"band\">
 
+    </div>
     <nav class=\"navbar navbar-expand-lg navbar-custom\">
     <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"{{ asset('/build/images/OWL_logo.5da53e41.png') }}\"></a></a>
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
   </button>
-            <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
+            <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
                 <ul class=\"navbar-nav mr-auto\">
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"/\">Accueil <span class=\"sr-only\">(current)</span></a>
@@ -256,6 +258,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href\"#\">Mention legal</a>
                 </li>
+                <hr>
                 </ul>
                 <form class=\"form-inline my-2 my-lg-0\">
                 <input class=\"form-control mr-sm-2\" placeholder=\"Search\" type=\"text\">
