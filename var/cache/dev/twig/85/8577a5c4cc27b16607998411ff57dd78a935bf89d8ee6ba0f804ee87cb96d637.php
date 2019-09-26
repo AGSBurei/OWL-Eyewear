@@ -79,7 +79,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
     <span class=\"navbar-toggler-icon\"></span>
   </button>
             <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
-                <ul class=\"navbar-nav mr-auto\">
+                <ul class=\"navbar-nav ml-auto\">
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"/\">Accueil <span class=\"sr-only\">(current)</span></a>
                 </li>
@@ -97,22 +97,18 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
                 </li>
                 <hr>
                 </ul>
-                <form class=\"form-inline my-2 my-lg-0\">
-                <input class=\"form-control mr-sm-2\" placeholder=\"Search\" type=\"text\">
-                <button class=\"btn btn-secondary my-2 my-sm-0\" type=\"submit\">Search</button>
-                </form>
             </div>
         </nav>
         <div class=\"container\">
         ";
-        // line 46
+        // line 42
         $this->displayBlock('body', $context, $blocks);
-        // line 47
+        // line 43
         echo "        </div>
         ";
-        // line 48
+        // line 44
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 49
+        // line 45
         echo "    </body>
     
     <footer>
@@ -168,7 +164,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     }
 
-    // line 46
+    // line 42
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -186,7 +182,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     }
 
-    // line 48
+    // line 44
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -217,7 +213,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     public function getDebugInfo()
     {
-        return array (  190 => 48,  172 => 46,  151 => 9,  132 => 8,  116 => 49,  114 => 48,  111 => 47,  109 => 46,  76 => 16,  68 => 10,  66 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
+        return array (  186 => 44,  168 => 42,  147 => 9,  128 => 8,  112 => 45,  110 => 44,  107 => 43,  105 => 42,  76 => 16,  68 => 10,  66 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -242,7 +238,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
     <span class=\"navbar-toggler-icon\"></span>
   </button>
             <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
-                <ul class=\"navbar-nav mr-auto\">
+                <ul class=\"navbar-nav ml-auto\">
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"/\">Accueil <span class=\"sr-only\">(current)</span></a>
                 </li>
@@ -260,10 +256,6 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
                 </li>
                 <hr>
                 </ul>
-                <form class=\"form-inline my-2 my-lg-0\">
-                <input class=\"form-control mr-sm-2\" placeholder=\"Search\" type=\"text\">
-                <button class=\"btn btn-secondary my-2 my-sm-0\" type=\"submit\">Search</button>
-                </form>
             </div>
         </nav>
         <div class=\"container\">

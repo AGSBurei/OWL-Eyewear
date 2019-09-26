@@ -20,11 +20,10 @@ footer
     color: inherit;
     margin: 1%;
     
-    background-color: #f7a40033;
+    background-color: #f7a400;
     text-decoration: none;
     color: #1d1d1b;
-    border-right: 1px;
-    border-right: 1px solid #84B6D0;
+    /*border-right: 1px solid #84B6D0;*/
 
 
 }
