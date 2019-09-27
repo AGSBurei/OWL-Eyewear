@@ -58,3 +58,22 @@ body, html{
     position: relative;
     top:180px;
 }
+.coatDetail2
+{
+    text-align: right;
+}
+/**.glass
+{
+    text-align: left;
+    border-style : none ;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.coat
+{
+    text-align: right;
+    border-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: -363px;
+}**/
