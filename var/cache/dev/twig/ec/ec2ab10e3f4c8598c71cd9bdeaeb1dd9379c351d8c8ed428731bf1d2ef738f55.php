@@ -93,10 +93,10 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
     <div class=\"bg-image\"> 
       <div class=\" txt-presentation\">
         <h1>Owl Eyewear | Improve Your Night Vision</h1>
-        <p>Owl eyewear are equipped with advanced lenses that improve your night vision and allow you to drive serenely and easily.<br>
+        <p> Les lunettes Owl eyewear sont équiper avec des verres améliorer qui améliore vôtre vue de nuit et vous permet de conduire en sécurité et serainement.<br>
         <br>
-        At night, road traffic accounts for only 10% of daily traffic but generates 40% of serious or fatal accidents. <br>
-        Several causes: fatigue, lower brightness, blurred vision and the dazzle of car headlights. </At>
+        De nuit, le trafic routier ne représente que 10% du trafic moyen journalié mais génére plus de  40% d'accidents grâve. <br>
+        Ces incidents ont divers cause: fatigue, luminositer réduite, vision brouillée et les éblouissement des phares de voiture. </At>
         </div>
      </div>
   <br>
@@ -120,8 +120,8 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
   <br>
   <br>
   <div class=\"txt\">
-  <h2>Que faison nous pour vous ? ?</h2>
-  <p>Pour éviter ces inconfortables, nous avons développer des montures avec des verres amélioré qui compense votre vue réduite.<br>
+  <h2>Que faison nous pour vous ?</h2>
+  <p>Pour éviter ces situations inconfortable, nous avons développer des montures avec des verres amélioré qui compense votre vue réduite.<br>
      Nous vous aidons à retrouver retrouver une meilleurs visibilité lors de la conduite de nuite vous vous sentirez plus en sécurité ainsi que les autres. </p>
   </div>
   <br>
@@ -146,8 +146,8 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/graphique.e6e7b799.png"), "html", null, true);
         echo "\" alt=\"lblGlassDetailFR\">
     </div>
-
   </div>
+  <br>
   <div class=\"coat\">
     <div class=\"labelCoatType\">
       <img class =\"lblCoatTyp\" src= \"";
@@ -184,18 +184,18 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
         <div
       </div>
     </div>
-    
+    <br>
   </div>
   <div class=\"solution\">
     <img class=\"lblsolut\" src = \"";
         // line 80
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/EN.4e5518d2.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FR.484e8eb8.png"), "html", null, true);
         echo "\" alt=\"lblSolv\"><p></p>
-      <p>The Owl Eyewear can be worn in different situations. 
-        You can use them on any dark roads (in city or countryside).<br>
-        They can be worn at dusk, at night, in fog and during heavy showers.<br></p>
-      <p>When you wearing Owl Eyewear, you make night driving safer for others and for yourself. <br>
-        You will be delighted by the assets and the change they bring.</p>
+      <p>Les monture équiper des verres Owl Eyewear peuvent être utilisé dans divers situations. 
+        Elles peuvent être utilisé dans tous les types de routes sombres (en ville ou en campagne).<br>
+        elles peuvent aussi être utilisée au crépuscule, de nuit, dans le brouillard et dans les tempêtes.<br></p>
+      <p>Quand vous portez les lunettes Owl Eyewear, vous rendez la conduite de nuit plus sur pour vous et les autres usagés. <br>
+        Vous serez satisfait par les effets bégnéfique qu'elle vous apporterons.</p>
     <img class=\"gifSolv\" src=\"";
         // line 86
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FIGFINAL.396b4767.gif"), "html", null, true);
@@ -269,10 +269,10 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
     <div class=\"bg-image\"> 
       <div class=\" txt-presentation\">
         <h1>Owl Eyewear | Improve Your Night Vision</h1>
-        <p>Owl eyewear are equipped with advanced lenses that improve your night vision and allow you to drive serenely and easily.<br>
+        <p> Les lunettes Owl eyewear sont équiper avec des verres améliorer qui améliore vôtre vue de nuit et vous permet de conduire en sécurité et serainement.<br>
         <br>
-        At night, road traffic accounts for only 10% of daily traffic but generates 40% of serious or fatal accidents. <br>
-        Several causes: fatigue, lower brightness, blurred vision and the dazzle of car headlights. </At>
+        De nuit, le trafic routier ne représente que 10% du trafic moyen journalié mais génére plus de  40% d'accidents grâve. <br>
+        Ces incidents ont divers cause: fatigue, luminositer réduite, vision brouillée et les éblouissement des phares de voiture. </At>
         </div>
      </div>
   <br>
@@ -296,8 +296,8 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
   <br>
   <br>
   <div class=\"txt\">
-  <h2>Que faison nous pour vous ? ?</h2>
-  <p>Pour éviter ces inconfortables, nous avons développer des montures avec des verres amélioré qui compense votre vue réduite.<br>
+  <h2>Que faison nous pour vous ?</h2>
+  <p>Pour éviter ces situations inconfortable, nous avons développer des montures avec des verres amélioré qui compense votre vue réduite.<br>
      Nous vous aidons à retrouver retrouver une meilleurs visibilité lors de la conduite de nuite vous vous sentirez plus en sécurité ainsi que les autres. </p>
   </div>
   <br>
@@ -313,8 +313,8 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
     <div class=\"GlassDetailFR\">
       <img class=\"imgGlassDetailEN\" src= \"{{ asset (\"/build/images/graphique.e6e7b799.png\") }}\" alt=\"lblGlassDetailFR\">
     </div>
-
   </div>
+  <br>
   <div class=\"coat\">
     <div class=\"labelCoatType\">
       <img class =\"lblCoatTyp\" src= \"{{ asset (\"/build/images/Details traitements.7474e869.png\") }}\" alt=\"lblCoatTypeFR\"> 
@@ -336,15 +336,15 @@ class __TwigTemplate_ca378b7b5589f23c4c12d65d0d1eac6fdc42ec50292ac4b984c6dcc313d
         <div
       </div>
     </div>
-    
+    <br>
   </div>
   <div class=\"solution\">
-    <img class=\"lblsolut\" src = \"{{ asset (\"/build/images/EN.4e5518d2.png\") }}\" alt=\"lblSolv\"><p></p>
-      <p>The Owl Eyewear can be worn in different situations. 
-        You can use them on any dark roads (in city or countryside).<br>
-        They can be worn at dusk, at night, in fog and during heavy showers.<br></p>
-      <p>When you wearing Owl Eyewear, you make night driving safer for others and for yourself. <br>
-        You will be delighted by the assets and the change they bring.</p>
+    <img class=\"lblsolut\" src = \"{{ asset (\"/build/images/FR.484e8eb8.png\") }}\" alt=\"lblSolv\"><p></p>
+      <p>Les monture équiper des verres Owl Eyewear peuvent être utilisé dans divers situations. 
+        Elles peuvent être utilisé dans tous les types de routes sombres (en ville ou en campagne).<br>
+        elles peuvent aussi être utilisée au crépuscule, de nuit, dans le brouillard et dans les tempêtes.<br></p>
+      <p>Quand vous portez les lunettes Owl Eyewear, vous rendez la conduite de nuit plus sur pour vous et les autres usagés. <br>
+        Vous serez satisfait par les effets bégnéfique qu'elle vous apporterons.</p>
     <img class=\"gifSolv\" src=\"{{ asset (\"/build/images/FIGFINAL.396b4767.gif\") }}\" alt=\"gifSolv\">
   </div>
   <!--
