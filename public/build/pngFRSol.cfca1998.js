@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["pngFRSol"],{"xU+1":function(n,p){n.exports="/build/images/FR.484e8eb8.png"}},[["xU+1","runtime"]]]);

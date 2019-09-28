@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["lensCaracEN,"],{g3cK:function(n,p){n.exports="/build/images/EN.1d44baf5.png"}},[["g3cK","runtime"]]]);

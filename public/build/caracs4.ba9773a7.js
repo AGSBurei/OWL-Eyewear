@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["caracs4"],{lTXc:function(c,n){c.exports="/build/images/caracs4.5bf2bb2d.png"}},[["lTXc","runtime"]]]);

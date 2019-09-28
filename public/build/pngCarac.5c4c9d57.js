@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["pngCarac"],{U4L7:function(a,n){a.exports="/build/images/carac.f0aa1af4.png"}},[["U4L7","runtime"]]]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["gifFigFinal"],{IBqh:function(i,n){i.exports="/build/images/FIGFINAL.396b4767.gif"}},[["IBqh","runtime"]]]);

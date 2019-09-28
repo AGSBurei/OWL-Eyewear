@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["Opaque"],{TKrI:function(p,n){p.exports="/build/images/Opaque.61d5800f.png"}},[["TKrI","runtime"]]]);

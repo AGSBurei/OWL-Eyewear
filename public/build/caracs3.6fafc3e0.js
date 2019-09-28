@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["caracs3"],{hCNW:function(n,a){n.exports="/build/images/caracs3.7d56b221.png"}},[["hCNW","runtime"]]]);

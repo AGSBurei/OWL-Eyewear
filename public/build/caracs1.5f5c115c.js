@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["caracs1"],{KsCr:function(s,n){s.exports="/build/images/caracs1.f346e818.png"}},[["KsCr","runtime"]]]);

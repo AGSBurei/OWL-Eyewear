@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["coatTypeEN"],{nPxb:function(n,p){n.exports="/build/images/coattype.ba8b5a13.png"}},[["nPxb","runtime"]]]);
