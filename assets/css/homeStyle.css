@@ -62,6 +62,11 @@ body, html{
 {
     text-align: right;
 }
+.picBox2 p
+{
+ font-style: italic;
+ text-align: center;   
+}
 /**.glass
 {
     text-align: left;

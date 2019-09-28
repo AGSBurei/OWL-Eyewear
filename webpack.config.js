@@ -69,6 +69,7 @@ Encore
     .addEntry('pngMdl13', './assets/images/FR/13/Nos modSles.png')
     .addEntry('pngGlass13', './assets/images/FR/13/verres jaunes.png')
     .addEntry('pngPolas13', './assets/images/FR//13/verres polas.png')
+    .addEntry('Opaque' , './assets/images/FR/Opaque.png')
 
     /*
      * ENTRY CONFIG

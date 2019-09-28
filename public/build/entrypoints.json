@@ -306,6 +306,12 @@
         "/build/pngPolas13.js"
       ]
     },
+    "Opaque": {
+      "js": [
+        "/build/runtime.js",
+        "/build/Opaque.js"
+      ]
+    },
     "app": {
       "js": [
         "/build/runtime.js",
