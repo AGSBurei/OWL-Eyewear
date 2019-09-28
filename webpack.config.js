@@ -31,6 +31,7 @@ Encore
     .addEntry('gifSolv', './assets/images/EN/solving/FIGFINAL.gif')
 
     //fr img
+    .addEntry('pngGraphGLSFR' , './assets/images/FR/01b.precisTech/FRcourbe.png')
     .addEntry('caracs1' , './assets/images/FR/01a.spec/caracs1.png')
     .addEntry('caracs2' , './assets/images/FR/01a.spec/caracs2.png')
     .addEntry('caracs3' , './assets/images/FR/01a.spec/caracs3.png')

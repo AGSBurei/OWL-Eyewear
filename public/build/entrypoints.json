@@ -78,6 +78,12 @@
         "/build/gifSolv.js"
       ]
     },
+    "pngGraphGLSFR": {
+      "js": [
+        "/build/runtime.js",
+        "/build/pngGraphGLSFR.js"
+      ]
+    },
     "caracs1": {
       "js": [
         "/build/runtime.js",
