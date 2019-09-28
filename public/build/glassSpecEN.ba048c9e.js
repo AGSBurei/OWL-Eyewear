@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["glassSpecEN"],{SHEq:function(s,p){s.exports="/build/images/galssspec.892bb4f6.png"}},[["SHEq","runtime"]]]);

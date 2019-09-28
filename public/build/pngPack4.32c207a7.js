@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["pngPack4"],{"8jJr":function(n,p){n.exports="/build/images/4.72a46772.png"}},[["8jJr","runtime"]]]);

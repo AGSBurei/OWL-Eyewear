@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["background"],{eZoG:function(o,n){o.exports="/build/images/background.57228088.jpg"}},[["eZoG","runtime"]]]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["pngDetails13"],{epRG:function(e,n){e.exports="/build/images/Details traitements.7474e869.png"}},[["epRG","runtime"]]]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["caracs2"],{"Jl/s":function(s,c){s.exports="/build/images/caracs2.19245c5e.png"}},[["Jl/s","runtime"]]]);
