@@ -71,6 +71,7 @@ Encore
     .addEntry('pngPolas13', './assets/images/FR//13/verres polas.png')
     .addEntry('Opaque' , './assets/images/FR/Opaque.png')
     .addEntry('pngMancar', './assets/images/FR/bf3121dc2309cf78049447bcbda3c149_original.jpg')
+    .addEntry('pnginfoSup', './assets/images/FR/01b.precisTech/FR.png')
 
     /*
      * ENTRY CONFIG

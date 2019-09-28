@@ -24,7 +24,7 @@ body, html{
     /*filter: blur(2px);*/
     /*formatage*/
     top: 0;
-    height: 85%;
+    height: 730px;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -88,11 +88,24 @@ body, html{
       position: absolute;
       max-height: 600px;
       background-size: cover;
-      
+      background-attachment: scroll, local;      
  }
  .stats p
  {
      color: #ffffff;
+ }
+ .stats img
+ {
+     margin-top: 40px;
+ }
+ .framelst
+ {
+    margin-top: 360px;
+ }
+ .pngspec
+ {
+     margin-top: 170px;
+     margin-left: -683px;
  }
 /**.glass
 {

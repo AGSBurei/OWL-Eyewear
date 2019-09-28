@@ -318,6 +318,12 @@
         "/build/pngMancar.js"
       ]
     },
+    "pnginfoSup": {
+      "js": [
+        "/build/runtime.js",
+        "/build/pnginfoSup.js"
+      ]
+    },
     "app": {
       "js": [
         "/build/runtime.js",

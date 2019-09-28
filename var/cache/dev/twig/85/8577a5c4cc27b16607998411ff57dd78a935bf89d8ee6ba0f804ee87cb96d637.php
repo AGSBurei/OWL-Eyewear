@@ -71,44 +71,43 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     </div>
     <nav class=\"navbar navbar-expand-lg navbar-custom\">
-    <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"";
+        <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"";
         // line 16
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/OWL_logo.5da53e41.png"), "html", null, true);
         echo "\"></a></a>
-  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-    <span class=\"navbar-toggler-icon\"></span>
-  </button>
+        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+        </button>
             <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
                 <ul class=\"navbar-nav ml-auto\">
                 <li class=\"nav-item active\">
-                    <a class=\"nav-link\" href=\"/\">Accueil <span class=\"sr-only\">(current)</span></a>
+                    <a class=\"nav-link\" href=\"#SpecGlass\">Caractéristiques des verres <span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">Produit</a>
+                    <a class=\"nav-link\" href=\"#resolut\">Problêmes résolus</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">Nous contacter</a>
+                    <a class=\"nav-link\" href=\"#infoSup\">Information supplémentaires</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">A propos</a>
+                    <a class=\"nav-link\" href=\"#statsup\">Quelques Statistiques</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href\"#\">Mention legal</a>
+                    <a class=\"nav-link\" href=\"#listMonture\">Liste des montures</a>
                 </li>
-                <hr>
                 </ul>
             </div>
         </nav>
         <div class=\"container\">
         ";
-        // line 42
+        // line 41
         $this->displayBlock('body', $context, $blocks);
-        // line 43
+        // line 42
         echo "        </div>
         ";
-        // line 44
+        // line 43
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 45
+        // line 44
         echo "    </body>
     
     <footer>
@@ -164,7 +163,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     }
 
-    // line 42
+    // line 41
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -182,7 +181,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     }
 
-    // line 44
+    // line 43
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -213,7 +212,7 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     public function getDebugInfo()
     {
-        return array (  186 => 44,  168 => 42,  147 => 9,  128 => 8,  112 => 45,  110 => 44,  107 => 43,  105 => 42,  76 => 16,  68 => 10,  66 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
+        return array (  185 => 43,  167 => 41,  146 => 9,  127 => 8,  111 => 44,  109 => 43,  106 => 42,  104 => 41,  76 => 16,  68 => 10,  66 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -233,28 +232,27 @@ class __TwigTemplate_8e58ed221562e79ddf60a4ecd6ccfd672111b6a8624f7c8c932b829361a
 
     </div>
     <nav class=\"navbar navbar-expand-lg navbar-custom\">
-    <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"{{ asset('/build/images/OWL_logo.5da53e41.png') }}\"></a></a>
-  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-    <span class=\"navbar-toggler-icon\"></span>
-  </button>
+        <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"{{ asset('/build/images/OWL_logo.5da53e41.png') }}\"></a></a>
+        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+        </button>
             <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
                 <ul class=\"navbar-nav ml-auto\">
                 <li class=\"nav-item active\">
-                    <a class=\"nav-link\" href=\"/\">Accueil <span class=\"sr-only\">(current)</span></a>
+                    <a class=\"nav-link\" href=\"#SpecGlass\">Caractéristiques des verres <span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">Produit</a>
+                    <a class=\"nav-link\" href=\"#resolut\">Problêmes résolus</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">Nous contacter</a>
+                    <a class=\"nav-link\" href=\"#infoSup\">Information supplémentaires</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">A propos</a>
+                    <a class=\"nav-link\" href=\"#statsup\">Quelques Statistiques</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href\"#\">Mention legal</a>
+                    <a class=\"nav-link\" href=\"#listMonture\">Liste des montures</a>
                 </li>
-                <hr>
                 </ul>
             </div>
         </nav>
