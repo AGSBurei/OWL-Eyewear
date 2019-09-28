@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["dummy2"],{bsup:function(p,n){p.exports="/build/images/dummy2.ba38f527.png"}},[["bsup","runtime"]]]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["pngPack2"],{fMQE:function(n,p){n.exports="/build/images/2.05604ca0.png"}},[["fMQE","runtime"]]]);
