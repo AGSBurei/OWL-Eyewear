@@ -1,9 +1,9 @@
 {
   "entrypoints": {
-    "pngFRModel": {
+    "pngList": {
       "js": [
         "/build/runtime.js",
-        "/build/pngFRModel.js"
+        "/build/pngList.js"
       ]
     },
     "placeholder": {
@@ -162,16 +162,16 @@
         "/build/pngCarac.js"
       ]
     },
+    "pngFRModel": {
+      "js": [
+        "/build/runtime.js",
+        "/build/pngFRModel.js"
+      ]
+    },
     "dummy": {
       "js": [
         "/build/runtime.js",
         "/build/dummy.js"
-      ]
-    },
-    "pngList": {
-      "js": [
-        "/build/runtime.js",
-        "/build/pngList.js"
       ]
     },
     "pngCustCxTail": {
@@ -310,6 +310,12 @@
       "js": [
         "/build/runtime.js",
         "/build/Opaque.js"
+      ]
+    },
+    "pngMancar": {
+      "js": [
+        "/build/runtime.js",
+        "/build/pngMancar.js"
       ]
     },
     "app": {

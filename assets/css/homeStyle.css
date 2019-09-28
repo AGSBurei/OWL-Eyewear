@@ -67,6 +67,33 @@ body, html{
  font-style: italic;
  text-align: center;   
 }
+.stats::before
+ {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    
+    display: block;
+      /*image + filtre */
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45)
+        ),url("../images/FR/bf3121dc2309cf78049447bcbda3c149_original.jpg");
+      /*formatage*/
+      height: 85%;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      max-height: 600px;
+      background-size: cover;
+      
+ }
+ .stats p
+ {
+     color: #ffffff;
+ }
 /**.glass
 {
     text-align: left;

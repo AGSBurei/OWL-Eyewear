@@ -70,6 +70,7 @@ Encore
     .addEntry('pngGlass13', './assets/images/FR/13/verres jaunes.png')
     .addEntry('pngPolas13', './assets/images/FR//13/verres polas.png')
     .addEntry('Opaque' , './assets/images/FR/Opaque.png')
+    .addEntry('pngMancar', './assets/images/FR/bf3121dc2309cf78049447bcbda3c149_original.jpg')
 
     /*
      * ENTRY CONFIG
