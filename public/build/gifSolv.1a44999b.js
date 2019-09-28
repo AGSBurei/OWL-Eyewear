@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["gifSolv"],{FBm1:function(i,n){i.exports="/build/images/FIGFINAL.396b4767.gif"}},[["FBm1","runtime"]]]);
