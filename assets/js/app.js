@@ -36,6 +36,7 @@ require('../images/EN/lenscarac/glassDetail.png');
 require('../images/EN/solving/EN.png');
 require('../images/EN/solving/FIGFINAL.gif');
 //FR image
+require('../images/FR/01b.precisTech/FRcourbe.png');
 require('../images/FR/01a.spec/caracs1.png');
 require('../images/FR/01a.spec/caracs2.png');
 require('../images/FR/01a.spec/caracs3.png');
