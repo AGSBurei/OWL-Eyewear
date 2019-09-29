@@ -135,6 +135,6 @@ class __TwigTemplate_cb7c121e80842ae31c7dfcd1373c672e8cc1f74288ea83c3f11ab3196ac
 .exception-message-wrapper .container {
     min-height: auto;
 }
-", "@WebProfiler/Collector/exception.css.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
     }
 }

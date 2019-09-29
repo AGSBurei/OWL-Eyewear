@@ -79,6 +79,6 @@ class __TwigTemplate_6e2c688ff6a43b1e1a850fd307abb8a1d961bceb065ed2c4077e87dcf06
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "/home/burei/test2/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
+", "@Twig/Exception/error.css.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
     }
 }

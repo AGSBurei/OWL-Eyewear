@@ -63,6 +63,6 @@ class __TwigTemplate_5aedb43d7401eae01f30ec5fffdba0d03969f913087f4d51e87e4844e65
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'choice_widget_options') ?>
-", "@Framework/Form/choice_options.html.php", "/home/burei/test2/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
+", "@Framework/Form/choice_options.html.php", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
     }
 }
