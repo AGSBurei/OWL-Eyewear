@@ -71,6 +71,6 @@ class __TwigTemplate_e9ea14122e88b9df578038e7c1adf03d13cb931b0c02972f82c0b298fa7
 <?php else: ?>
 <?php echo \$view['form']->block(\$form, 'choice_widget_collapsed') ?>
 <?php endif ?>
-", "@Framework/Form/choice_widget.html.php", "/home/burei/test2/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget.html.php");
+", "@Framework/Form/choice_widget.html.php", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget.html.php");
     }
 }

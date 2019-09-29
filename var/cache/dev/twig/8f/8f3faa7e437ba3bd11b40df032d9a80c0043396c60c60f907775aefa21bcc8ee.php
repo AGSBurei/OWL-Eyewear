@@ -154,6 +154,6 @@ class __TwigTemplate_cb1eb7ab1e67d51d8d532b716eae29b44d916312001ce218e567c4c97c4
     </ul>
 </div>
 {% endblock %}
-", "main/index.html.twig", "/home/burei/test2/templates/main/index.html.twig");
+", "main/index.html.twig", "/home/burei/Documents/OWL-Eyewear/templates/main/index.html.twig");
     }
 }

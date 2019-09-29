@@ -798,6 +798,6 @@ class __TwigTemplate_f738f5c945e9a35cace89ab026639161aea1df8c72763d4fc5c662f3479
     </table>
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/messenger.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
+", "@WebProfiler/Collector/messenger.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
     }
 }

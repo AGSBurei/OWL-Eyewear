@@ -81,6 +81,6 @@ class __TwigTemplate_216a603a3a5fbf475939d28cfc5b7f3431e3a3d6c5d855f776224c43567
     public function getSourceContext()
     {
         return new Source("{% block panel '' %}
-", "@WebProfiler/Profiler/ajax_layout.html.twig", "/home/burei/test2/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
+", "@WebProfiler/Profiler/ajax_layout.html.twig", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
     }
 }

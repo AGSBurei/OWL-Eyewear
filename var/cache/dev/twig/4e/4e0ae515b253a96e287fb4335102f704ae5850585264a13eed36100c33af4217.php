@@ -77,6 +77,6 @@ class __TwigTemplate_422cdc44203793a7f39da0c8b828dc69066e638d15c3db056cfc176e176
 <?php printf('%s=\"%s\" ', \$view->escape(\$k), \$view->escape(\$v)) ?>
 <?php endif ?>
 <?php endforeach ?>
-", "@Framework/Form/choice_attributes.html.php", "/home/burei/test2/vendor/symfony/framework-bundle/Resources/views/Form/choice_attributes.html.php");
+", "@Framework/Form/choice_attributes.html.php", "/home/burei/Documents/OWL-Eyewear/vendor/symfony/framework-bundle/Resources/views/Form/choice_attributes.html.php");
     }
 }
