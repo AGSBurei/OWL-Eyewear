@@ -459,6 +459,13 @@
         <argument type="service" id=".service_locator.CDOTD6..App\Controller\MainController"/>
       </call>
     </service>
+    <service id="App\Controller\NewsletterController" class="App\Controller\NewsletterController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Controller\NewsletterController"/>
+      </call>
+    </service>
     <service id="App\Controller\SecurityController" class="App\Controller\SecurityController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -466,8 +473,15 @@
         <argument type="service" id=".service_locator.CDOTD6..App\Controller\SecurityController"/>
       </call>
     </service>
+    <service id="App\Form\NewsletterType" class="App\Form\NewsletterType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
     <service id="App\Form\RegistrationType" class="App\Form\RegistrationType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
+    </service>
+    <service id="App\Repository\NewsletterRepository" class="App\Repository\NewsletterRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
     </service>
     <service id="App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
@@ -815,6 +829,7 @@
         <argument>EasyCorp\Bundle\EasyAdminBundle\Form\Type</argument>
       </argument>
       <argument type="collection">
+        <argument>App\Form\NewsletterType</argument>
         <argument>App\Form\RegistrationType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
@@ -1096,7 +1111,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension" public="false">
-      <argument type="service" id=".service_locator.rWjgmSC"/>
+      <argument type="service" id=".service_locator.9QO7.mM"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -3125,7 +3140,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator..C_1HIE"/>
+      <argument type="service" id=".service_locator.RR9i8sq"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -5229,11 +5244,18 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\MainController" class="App\Controller\MainController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\MainController" class="App\Controller\MainController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\MainController" class="App\Controller\MainController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\NewsletterController" class="App\Controller\NewsletterController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\NewsletterController" class="App\Controller\NewsletterController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\NewsletterController" class="App\Controller\NewsletterController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\NewsletterType" class="App\Form\NewsletterType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\NewsletterType" class="App\Form\NewsletterType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\RegistrationType" class="App\Form\RegistrationType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\RegistrationType" class="App\Form\RegistrationType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\NewsletterRepository" class="App\Repository\NewsletterRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\NewsletterRepository" class="App\Repository\NewsletterRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="maker.auto_command.make_auth" class="Symfony\Bundle\MakerBundle\Command\MakerCommand" public="false">
@@ -5417,6 +5439,12 @@
         <argument key="easyadmin.filter.type.time" type="service" id="easyadmin.filter.type.time"/>
       </argument>
     </service>
+    <service id=".service_locator.FufKbwa" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="manager" type="service" id="doctrine.orm.default_entity_manager"/>
+      </argument>
+    </service>
     <service id=".service_locator.czKK4py" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5424,10 +5452,12 @@
         <argument key="manager" type="service" id="doctrine.orm.default_entity_manager"/>
       </argument>
     </service>
-    <service id=".service_locator.Tjaua1D" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.G4xyQQV" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Controller\NewsletterController::getNews" type="service" id=".service_locator.FufKbwa"/>
         <argument key="App\Controller\SecurityController::registration" type="service" id=".service_locator.czKK4py"/>
+        <argument key="App\Controller\NewsletterController:getNews" type="service" id=".service_locator.FufKbwa"/>
         <argument key="App\Controller\SecurityController:registration" type="service" id=".service_locator.czKK4py"/>
       </argument>
     </service>
@@ -5490,9 +5520,10 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.rWjgmSC" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.9QO7.mM" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Form\NewsletterType" type="service" id="App\Form\NewsletterType"/>
         <argument key="App\Form\RegistrationType" type="service" id="App\Form\RegistrationType"/>
         <argument key="EasyCorp\Bundle\EasyAdminBundle\Form\Type\EasyAdminAutocompleteType" type="service" id="easyadmin.form.type.autocomplete"/>
         <argument key="EasyCorp\Bundle\EasyAdminBundle\Form\Type\EasyAdminBatchFormType" type="service" id="easyadmin.form.type.batch"/>
@@ -5514,9 +5545,10 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
-    <service id=".service_locator..C_1HIE" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.RR9i8sq" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Repository\NewsletterRepository" type="service" id="App\Repository\NewsletterRepository"/>
         <argument key="App\Repository\UserRepository" type="service" id="App\Repository\UserRepository"/>
       </argument>
     </service>
@@ -5722,6 +5754,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.CDOTD6." method="withContext"/>
     </service>
+    <service id=".service_locator.CDOTD6..App\Controller\NewsletterController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\NewsletterController"/>
+      <argument>App\Controller\NewsletterController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
     <service id=".service_locator.CDOTD6..App\Controller\SecurityController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\SecurityController"/>
       <argument>App\Controller\SecurityController</argument>
@@ -5852,12 +5890,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.Tjaua1D"/>
+      <argument type="service" id=".service_locator.G4xyQQV"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.Tjaua1D"/>
+      <argument type="service" id=".service_locator.G4xyQQV"/>
     </service>
     <service id=".service_locator.UwRI0uT" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
@@ -6255,7 +6293,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Search\Autocomplete" alias="easyadmin.autocomplete"/>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Security\AuthorizationChecker" alias="easyadmin.security.authorization_checker"/>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Form\Filter\FilterRegistry" alias="easyadmin.filter.registry" public="true"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.Tjaua1D"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.G4xyQQV"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="validator" alias="debug.validator" public="true"/>
