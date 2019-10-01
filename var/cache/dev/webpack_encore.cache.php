@@ -10,18 +10,22 @@ return [[
 
 0 => [
     'entrypoints' => [
+<<<<<<< HEAD
         'pngCustCxTail' => [
             'js' => [
                 '/build/runtime.js',
                 '/build/pngCustCxTail.js',
             ],
         ],
+=======
+>>>>>>> 644dfc35f55b91b58ad805fac17b26c7e8c7d403
         'placeholder' => [
             'js' => [
                 '/build/runtime.js',
                 '/build/placeholder.js',
             ],
         ],
+<<<<<<< HEAD
         'logopage' => [
             'js' => [
                 '/build/runtime.js',
@@ -184,12 +188,15 @@ return [[
                 '/build/pngList.js',
             ],
         ],
+=======
+>>>>>>> 644dfc35f55b91b58ad805fac17b26c7e8c7d403
         'dummy' => [
             'js' => [
                 '/build/runtime.js',
                 '/build/dummy.js',
             ],
         ],
+<<<<<<< HEAD
         'pngFRchx' => [
             'js' => [
                 '/build/runtime.js',
@@ -340,6 +347,8 @@ return [[
                 '/build/svgLogoNav.js',
             ],
         ],
+=======
+>>>>>>> 644dfc35f55b91b58ad805fac17b26c7e8c7d403
         'app' => [
             'js' => [
                 '/build/runtime.js',
@@ -359,6 +368,7 @@ return [[
                 '/build/basesStyle.css',
             ],
         ],
+<<<<<<< HEAD
         'homeStyle' => [
             'js' => [
                 '/build/runtime.js',
@@ -368,6 +378,8 @@ return [[
                 '/build/homeStyle.css',
             ],
         ],
+=======
+>>>>>>> 644dfc35f55b91b58ad805fac17b26c7e8c7d403
     ],
 ],
 
