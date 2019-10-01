@@ -166,6 +166,10 @@
           <img class="spec" src="{{ asset('build/images/carac.f0aa1af4.png') }}" alt="spec">
             <p></p>
       </div>
+      {{form_start(form) }}
+     {{ form_row(form.email) }}
+     {{ form_row(form.save, { 'label': 's\'abonner' }) }}
+      {{ form_end(form) }}
     </div>
   
    
