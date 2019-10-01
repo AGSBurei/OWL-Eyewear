@@ -4,8 +4,44 @@
 
 return [[
 
+'_default' => 0,
 
 ], [
 
+0 => [
+    'entrypoints' => [
+        'placeholder' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/placeholder.js',
+            ],
+        ],
+        'dummy' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/dummy.js',
+            ],
+        ],
+        'app' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/vendors~app.js',
+                '/build/app.js',
+            ],
+            'css' => [
+                '/build/app.css',
+            ],
+        ],
+        'basesStyle' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/basesStyle.js',
+            ],
+            'css' => [
+                '/build/basesStyle.css',
+            ],
+        ],
+    ],
+],
 
 ]];
