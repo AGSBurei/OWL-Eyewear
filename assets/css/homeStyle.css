@@ -15,10 +15,10 @@ body, html{
   
   display: block;
     /*image + filtre */
-    /*background-image: linear-gradient(
+    background-image: linear-gradient(
         rgba(0, 0, 0, 0.45), 
         rgba(0, 0, 0, 0.45)
-      ),url("../images/background.jpg");*/
+      ),url("../images/background.jpg");
     /*filtre*/
 
     /*filter: blur(2px);*/
@@ -77,10 +77,10 @@ body, html{
     
     display: block;
       /*image + filtre */
-     /* background-image: linear-gradient(
+      background-image: linear-gradient(
           rgba(0, 0, 0, 0.45), 
           rgba(0, 0, 0, 0.45)
-        ),url("../images/FR/bf3121dc2309cf78049447bcbda3c149_original.jpg");*/
+        ),url("../images/bf3121dc2309cf78049447bcbda3c149_original.jpg");
       /*formatage*/
       height: 65%;
       background-position: center;
@@ -102,11 +102,7 @@ body, html{
  {
     margin-top: 360px;
  }
- .pngspec
- {
-     margin-top: 170px;
-     margin-left: -683px;
- }
+
 /**.glass
 {
     text-align: left;
