@@ -72,6 +72,7 @@ Encore
     .addEntry('Opaque' , './assets/images/FR/Opaque.png')
     .addEntry('pngMancar', './assets/images/FR/bf3121dc2309cf78049447bcbda3c149_original.jpg')
     .addEntry('pnginfoSup', './assets/images/FR/01b.precisTech/FR.png')
+    .addEntry('svgLogoNav', './assets/images/Fichier_4.svg')
 
     /*
      * ENTRY CONFIG

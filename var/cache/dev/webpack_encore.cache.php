@@ -10,10 +10,10 @@ return [[
 
 0 => [
     'entrypoints' => [
-        'pngList' => [
+        'pngCustCxTail' => [
             'js' => [
                 '/build/runtime.js',
-                '/build/pngList.js',
+                '/build/pngCustCxTail.js',
             ],
         ],
         'placeholder' => [
@@ -178,16 +178,16 @@ return [[
                 '/build/pngFRModel.js',
             ],
         ],
+        'pngList' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/pngList.js',
+            ],
+        ],
         'dummy' => [
             'js' => [
                 '/build/runtime.js',
                 '/build/dummy.js',
-            ],
-        ],
-        'pngCustCxTail' => [
-            'js' => [
-                '/build/runtime.js',
-                '/build/pngCustCxTail.js',
             ],
         ],
         'pngFRchx' => [
@@ -332,6 +332,12 @@ return [[
             'js' => [
                 '/build/runtime.js',
                 '/build/pnginfoSup.js',
+            ],
+        ],
+        'svgLogoNav' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/svgLogoNav.js',
             ],
         ],
         'app' => [
