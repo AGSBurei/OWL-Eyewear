@@ -62,7 +62,7 @@ body, html{
 {
     text-align: right;
 }
-.picBox2 p
+.pngSunView p
 {
  font-style: italic;
  text-align: center;   
@@ -90,8 +90,13 @@ body, html{
       background-size: cover;
       background-attachment: scroll, local;      
  }
- .stats p
+ .statisticsFR 
  {
+     text-align: center;
+ }
+  .stats
+ {
+     text-align: center;
      color: #ffffff;
  }
  .stats img
@@ -101,6 +106,10 @@ body, html{
  .framelst
  {
     margin-top: 360px;
+ }
+ .framelst
+ {
+     text-align: center;
  }
 
 /**.glass
