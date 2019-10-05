@@ -35,6 +35,10 @@ body, html{
 {
     height: 293px;
 }
+.imgPack
+{
+    height: 509px;
+}
 /*.bg-image:after
 {
     content: '';
