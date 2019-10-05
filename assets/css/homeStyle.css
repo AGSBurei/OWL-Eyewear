@@ -30,6 +30,11 @@ body, html{
     position: absolute;
     
 }
+
+.imgGlassDetailEN
+{
+    height: 293px;
+}
 /*.bg-image:after
 {
     content: '';
@@ -112,22 +117,35 @@ body, html{
      text-align: center;
  }
 
-/**.glass
+.txt, .glass, .coat, .imgframe1
 {
-    text-align: left;
-    border-style : none ;
-    overflow: hidden;
-    white-space: nowrap;
+    text-align: center;
 }
-.coat
+.img1
 {
-    text-align: right;
-    border-style: none;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top: -363px;
-}**/
-.txt, .glass, .coat
+    text-align: center;  
+}
+.img2
+{
+    text-align: center;
+}
+.img3
+{
+    text-align: center;
+}
+.img4
+{
+    text-align: center;
+}
+.img5
+{
+    text-align: center;
+}
+.img6
+{
+    text-align: center;
+}
+.img7
 {
     text-align: center;
 }
