@@ -63,4 +63,4 @@ yarn-error.log
 #/.web-server-pid
 ##
 
-#.history
+.history
