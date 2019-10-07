@@ -25,7 +25,6 @@ npm-debug.log
 yarn-error.log
 
 ###< symfony/webpack-encore-bundle ###
-<<<<<<< Updated upstream
 
 # Logs (Symfony4)
 #/var/log/*
@@ -66,7 +65,5 @@ yarn-error.log
 
 .history
 var
-=======
-/vendor
+
 /var
->>>>>>> Stashed changes
