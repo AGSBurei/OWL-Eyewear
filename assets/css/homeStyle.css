@@ -39,7 +39,8 @@ body, html{
 {
     height: 509px;
 }
-.statisticsFR, .solution, .infoAdit, .reception
+.statisticsFR, .solution, .infoAdit, .reception, .txt, .glass, .coat, .imgframe1, .img1, .img2, .img3, .img4, .img5, .img6, .img7, .fabrication, .testeur, .objectif, .roadmap, .kickstarter, .howTo, .crew, .choix, .txt
+
 {
     text-align: center;
 }
@@ -57,9 +58,16 @@ body, html{
     margin-right: 20px;
     color: #ffffff;
     position: relative;
-    top:180px;
-}
+    top:48px;
+    text-align: center;
 
+}
+.logoOwl {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 .pngSunView p
 {
  font-style: italic;
@@ -106,36 +114,7 @@ body, html{
  {
      text-align: center;
  }
-
-.txt, .glass, .coat, .imgframe1
-{
-    text-align: center;
-}
-.img1
-{
-    text-align: center;  
-}
-.img2
-{
-    text-align: center;
-}
-.img3
-{
-    text-align: center;
-}
-.img4
-{
-    text-align: center;
-}
-.img5
-{
-    text-align: center;
-}
-.img6
-{
-    text-align: center;
-}
-.img7
-{
-    text-align: center;
-}
+ .lblneedyou, .imgEquipe, .banWhoWheAre, .lblSpons, .banhtPledge, .banRoadMap, .lblOrigine, .banHowMake, .banRecep, .banChoix, .pngLblframe, .frame, .lblPolarFR, .lblWhoisConcern, .lblWhenWear2
+ {
+     margin-top: 15px;
+ }
