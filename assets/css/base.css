@@ -1,12 +1,11 @@
 
-body
+body, footer
 {
     position: relative;
 }
 
 footer
 {
-    position: relative;
     bottom: 0;
     color: #ffffff;
     background-color: #454545;
@@ -18,14 +17,9 @@ footer
 .navbar-custom
 {
     color: inherit;
-    margin: 1%;
-    
-    background-color: #707070;
+    background-color: #2F3136;
     text-decoration: none;
     color: #1d1d1b;
-    /*border-right: 1px solid #84B6D0;*/
-
-
 }
 li
 {
@@ -34,7 +28,7 @@ li
 }
 .logo
 {
-    height: 100px;
+    height: 60px;
 }
 .band
 {
@@ -45,5 +39,4 @@ li
 .nav-link
 {
     color: #ffffff;
-    font-family: 
 }
