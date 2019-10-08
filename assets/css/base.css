@@ -1,4 +1,47 @@
 
+
+
+body, footer
+{
+    position: relative;
+}
+
+footer
+{
+    bottom: 0;
+    color: #ffffff;
+    background-color: #454545;
+    left: 0;
+    right: 0;
+    margin-top: 5%;
+    height: 10%;
+}
+.navbar-custom
+{
+    color: inherit;
+    background-color: #2F3136;
+    text-decoration: none;
+    color: #1d1d1b;
+}
+li
+{
+    border-right: 1px solid #45454580;
+    color: #ffffff;
+}
+.logo
+{
+    height: 60px;
+}
+.band
+{
+    background-color: #f7a400;
+    height: 4%;
+    width: 100%;
+}
+.nav-link
+{
+    color: #ffffff;
+}
 body, footer
 {
     position: relative;
