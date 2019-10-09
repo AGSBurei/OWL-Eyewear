@@ -39,15 +39,17 @@ body, html{
 {
     height: 509px;
 }
-.statisticsFR, .solution, .infoAdit, .reception, .txt, .glass, .coat, .imgframe1, .img1, .img2, .img3, .img4, .img5, .img6, .img7, .fabrication, .testeur, .objectif, .roadmap, .kickstarter, .howTo, .crew, .choix, .txt
+/*
+.statisticsFR, .solution, .infoAdit, .reception, .txt, .glass, .coat, .fabrication, .testeur, .objectif, .roadmap, .kickstarter, .howTo, .crew, .choix, .txt, .stats,  .statisticsFR, .picbox, .framelst
 
 {
-    text-align: center;
+    margin-right: 28%;
+    margin-left: 26%;
 }
 .container
 {
     max-width: 1550px;
-}
+}*/
 .txt-presentation
 {
     position: fixed;
@@ -58,21 +60,24 @@ body, html{
     margin-right: 20px;
     color: #ffffff;
     position: relative;
-    top:48px;
+    top:213px;
     text-align: center;
 
+}
+/*.txt-presentation p
+{
+    text-align: left;
 }
 .logoOwl {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 90%;
   }
 .pngSunView p
 {
  font-style: italic;
- text-align: center;   
-}
+}*/
 .stats::before
  {
     content: "";
@@ -99,22 +104,81 @@ body, html{
  
   .stats
  {
-     text-align: center;
+   
      color: #ffffff;
  }
+ /*
  .stats img
  {
      margin-top: 40px;
- }
+     margin-left: 4px;
+ }*/
  .framelst
  {
     margin-top: 360px;
  }
- .framelst
- {
-     text-align: center;
- }
- .lblneedyou, .imgEquipe, .banWhoWheAre, .lblSpons, .banhtPledge, .banRoadMap, .lblOrigine, .banHowMake, .banRecep, .banChoix, .pngLblframe, .frame, .lblPolarFR, .lblWhoisConcern, .lblWhenWear2
+ /*
+ .lblneedyou, .imgEquipe, .banWhoWheAre, .lblSpons, .banhtPledge, .banRoadMap, .lblOrigine, .banHowMake, .banRecep, .banChoix, .pngLblframe, .frame, .lblPolarFR, .lblWhoisConcern, .lblWhenWear2, .genbenef
  {
      margin-top: 15px;
  }
+.txt
+{
+    margin-top: 356px;
+}
+*/
+.pngViewFR p
+{
+    color: gray;
+    font-style: italic;
+}
+/*
+.imgframe1
+{
+    height: 844px;
+}
+.img1, .img2 , .img3, .img4, .img5, .img6, .img7 >p 
+{
+    
+}
+.statisticsFR, .solution, .infoAdit, .reception, .txt, .glass, .coat, .fabrication, .testeur, .objectif, .roadmap, .kickstarter, .howTo, .crew, .choix, .txt, .framelst, .statisticsFR, .stats p
+{
+    text-align: left;
+}
+.picbox p
+{
+    margin-left: 36%;
+}
+*/
+.container
+{
+    text-align: center;
+}
+.container p
+{
+    text-align: left;
+    padding-left: 216px;
+}
+
+.logoOwl
+{
+    margin-top: 323px;
+}
+.statisticsFR
+{
+    margin-top: 34px;
+}
+.picbox p
+{
+    text-align: center;
+    padding-left: 0;
+    color: gray;
+    font-style: italic;
+}
+.graph p
+{
+    text-align: center;
+    padding-left: 0;
+    color: gray;
+    font-style: italic;
+}
