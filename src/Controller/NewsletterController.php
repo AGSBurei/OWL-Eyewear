@@ -20,45 +20,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class NewsletterController extends AbstractController
 {
-    /**
-     * @Route("/newsletter", name="newsletter_home", methods="POST|GET")
-     */
-    public function getNewsletter(Request $request, EntityManagerInterface $manager/*, \Swift_Mailer $mailer*/)
-    {
-        $news = new Newsletter();
 
-        $news->setDate(new \DateTime('now'));
-        $news->setIsActive(true);
-
-        $form = $this->createForm(NewsletterType::class, $news);
-
-        $form->handleRequest($request);
-
-            if($form->isSubmitted() && $form->isValid())
-            {
-                // $message = (new \Swift_Message('Newsletter'))
-                //     ->setFrom('send@exemple.com')
-                //     ->setTo($news->getEmail())
-                //     ->setBody(
-                //         $this->renderView(
-                //             'email/newsletter.html.twig',
-                //         )
-                //     )
-                // ;    
-
-                // $mailer->send($message);
-
-                $manager->persist($news);
-                $manager->flush();
-
-                // return $this->render('newsletter/home.html.twig');
-            }
-
-        return $this->render('newsletter/home.html.twig', [
-            'form' => $form->createView(),
-        ]);
-
-    }
 
     /**
      * @Route("/admin/export", name="newsletter_export", methods="GET")

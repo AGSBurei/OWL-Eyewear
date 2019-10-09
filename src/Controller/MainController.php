@@ -2,27 +2,53 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use DateTime;
+use App\Entity\Newsletter;
+use App\Form\NewsletterType;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class MainController extends AbstractController
 {
     /**
-     * @Route("/main", name="main")
+     * @Route("/", name="home", methods="POST|GET")
      */
-    public function index()
+    public function home(Request $request, EntityManagerInterface $manager/*, \Swift_Mailer $mailer*/)
     {
-        return $this->render('main/index.html.twig', [
-            'controller_name' => 'MainController',
-        ]);
-    }
+        $news = new Newsletter();
 
-    /**
-     * @Route("/", name="home")
-     */
-    public function home()
-    {
-        return $this->render('main/home.html.twig');
+        $news->setDate(new \DateTime('now'));
+        $news->setIsActive(true);
+
+        $form = $this->createForm(NewsletterType::class, $news);
+
+        $form->handleRequest($request);
+
+            if($form->isSubmitted() && $form->isValid())
+            {
+                // $message = (new \Swift_Message('Newsletter'))
+                //     ->setFrom('send@exemple.com')
+                //     ->setTo($news->getEmail())
+                //     ->setBody(
+                //         $this->renderView(
+                //             'email/newsletter.html.twig',
+                //         )
+                //     )
+                // ;    
+
+                // $mailer->send($message);
+
+                $manager->persist($news);
+                $manager->flush();
+
+                // return $this->render('newsletter/home.html.twig');
+            }
+
+        return $this->render('main/home.html.twig', [
+            'form' => $form->createView(),
+        ]);
 
     }
 }
