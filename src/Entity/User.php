@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use InvalidArgumentException;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -24,6 +25,12 @@ class User implements UserInterface
     private $id;
 
     /**
+     * @var array
+     * @ORM\Column(type="array")
+     */
+    private $roles;
+
+    /**
      * @ORM\Column(type="string", length=255)
      * @Assert\Email()
      */
@@ -44,6 +51,11 @@ class User implements UserInterface
      * @Assert\EqualTo(propertyPath="password", message="mot de passe non identique")
      */
     public $confirm_password;
+
+    public function __construct()
+    {
+        $this->roles = ['ROLE_User'];
+    }
 
     public function getId(): ?int
     {
@@ -88,16 +100,55 @@ class User implements UserInterface
 
     public function eraseCredentials()
     {
-        
+        return null;
     }
 
     public function getSalt()
-    {
-
-    }
+    { }
 
     public function getRoles()
     {
-        return ['ROLE_USER'];
+        return $this->roles;
     }
+
+    public function setRoles(array $roles)
+    {
+        if (!in_array('ROLE_USER', $roles)) {
+            $roles[] = 'ROLE_USER';
+        }
+        // foreach ($roles as $role) {
+        //     if (substr($role, 0, 5) !== 'ROLE') {
+        //         throw new InvalidArgumentException("Chaque rôle doit commencer par 'ROLE_'");
+        //     }
+        // }
+        $this->roles = $roles;
+        return $this;
+    }
+
+    /** @see \Serializable::serialize() */
+    public function serialize()
+    {
+        return serialize(array(
+            $this->id,
+            $this->username,
+            $this->password,
+            $this->isActive,
+            // voir remarques sur salt plus haut
+            // $this->salt,
+        ));
+    }
+
+    /** @see \Serializable::unserialize() */
+    public function unserialize($serialized)
+    {
+        list(
+            $this->id,
+            $this->username,
+            $this->password,
+            $this->isActive,
+            // voir remarques sur salt plus haut
+            // $this->salt
+        ) = unserialize($serialized);
+    }
+
 }

@@ -4,11 +4,13 @@ namespace App\Controller;
 
 use App\Entity\Newsletter;
 use App\Form\NewsletterType;
+use App\Repository\NewsletterRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Validator\Constraints\DateTime;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -19,14 +21,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class NewsletterController extends AbstractController
 {
     /**
-     * @Route("/home", name="newsletter_home", methods="POST|GET")
+     * @Route("/newsletter", name="newsletter_home", methods="POST|GET")
      */
-    public function getNews(Request $request, EntityManagerInterface $manager/*, \Swift_Mailer $mailer*/)
+    public function getNewsletter(Request $request, EntityManagerInterface $manager/*, \Swift_Mailer $mailer*/)
     {
         $news = new Newsletter();
 
         $news->setDate(new \DateTime('now'));
-        $news->setIsActive(false);
+        $news->setIsActive(true);
 
         $form = $this->createForm(NewsletterType::class, $news);
 
@@ -49,12 +51,52 @@ class NewsletterController extends AbstractController
                 $manager->persist($news);
                 $manager->flush();
 
-                // return $this->render('newsletter/home.html.twig'); g c po pk ça marche po ça
+                // return $this->render('newsletter/home.html.twig');
             }
 
         return $this->render('newsletter/home.html.twig', [
             'form' => $form->createView(),
         ]);
 
+    }
+
+    /**
+     * @Route("/admin/export", name="newsletter_export", methods="GET")
+     */
+    public function export(EntityManagerInterface $manager, Request $request)
+    {
+        $fileName = "email_newsletter_" . date("d_m_Y") . ".csv";
+        $response = new StreamedResponse();
+
+        $news = $manager->getRepository(Newsletter::class)->findAll();
+
+        dump($news);
+        $response->setCallback(function() use ($news){
+            $handle = fopen('php://output', 'w+');
+ 
+            fputcsv($handle, [
+                'ID',
+                utf8_decode('Email'),
+                'Date',
+                'IsActive',
+            ], ';');
+ 
+            foreach ($news as $news)
+            {
+                fputcsv($handle,array(
+                    $news->getId(),
+                    utf8_decode($news->getEmail()),
+                    $news->getDate()->format('d/m/Y'),
+                    $news->getIsActive()
+                ),';');
+            }
+            fclose($handle);
+        });
+ 
+        $response->setStatusCode(200);
+        $response->headers->set('Content-Type', 'text/csv; charset=utf-8', 'application/force-download');
+        $response->headers->set('Content-Disposition','attachment; filename='.$fileName);
+        
+        return $response;
     }
 }
