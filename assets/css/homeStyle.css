@@ -1,6 +1,7 @@
 body, html{
     height: 100%;
     margin: 0;
+    
 }
 * {
     box-sizing: border-box;
@@ -14,15 +15,12 @@ body, html{
   z-index: -1;
   
   display: block;
-    /*image + filtre */
+
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.45), 
         rgba(0, 0, 0, 0.45)
       ),url("../images/background.jpg");
-    /*filtre*/
 
-    /*filter: blur(2px);*/
-    /*formatage*/
     top: 0;
     height: 730px;
     background-position: center;
@@ -33,23 +31,13 @@ body, html{
 
 .imgGlassDetailEN
 {
-    height: 293px;
+    max-height: 293px;
 }
 .imgPack
 {
     height: 509px;
 }
-/*
-.statisticsFR, .solution, .infoAdit, .reception, .txt, .glass, .coat, .fabrication, .testeur, .objectif, .roadmap, .kickstarter, .howTo, .crew, .choix, .txt, .stats,  .statisticsFR, .picbox, .framelst
 
-{
-    margin-right: 28%;
-    margin-left: 26%;
-}
-.container
-{
-    max-width: 1550px;
-}*/
 .txt-presentation
 {
     position: fixed;
@@ -60,24 +48,11 @@ body, html{
     margin-right: 20px;
     color: #ffffff;
     position: relative;
-    top:213px;
+    margin: 123px auto;
     text-align: center;
 
 }
-/*.txt-presentation p
-{
-    text-align: left;
-}
-.logoOwl {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-.pngSunView p
-{
- font-style: italic;
-}*/
+
 .stats::before
  {
     content: "";
@@ -87,12 +62,10 @@ body, html{
     z-index: -1;
     
     display: block;
-      /*image + filtre */
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.45), 
           rgba(0, 0, 0, 0.45)
         ),url("../images/bf3121dc2309cf78049447bcbda3c149_original.jpg");
-      /*formatage*/
       height: 65%;
       background-position: center;
       background-repeat: no-repeat;
@@ -106,50 +79,19 @@ body, html{
  {
    
      color: #ffffff;
+     
  }
- /*
- .stats img
- {
-     margin-top: 40px;
-     margin-left: 4px;
- }*/
+
  .framelst
  {
     margin-top: 360px;
  }
- /*
- .lblneedyou, .imgEquipe, .banWhoWheAre, .lblSpons, .banhtPledge, .banRoadMap, .lblOrigine, .banHowMake, .banRecep, .banChoix, .pngLblframe, .frame, .lblPolarFR, .lblWhoisConcern, .lblWhenWear2, .genbenef
- {
-     margin-top: 15px;
- }
-.txt
-{
-    margin-top: 356px;
-}
-*/
+ 
 .pngViewFR p
 {
     color: gray;
     font-style: italic;
 }
-/*
-.imgframe1
-{
-    height: 844px;
-}
-.img1, .img2 , .img3, .img4, .img5, .img6, .img7 >p 
-{
-    
-}
-.statisticsFR, .solution, .infoAdit, .reception, .txt, .glass, .coat, .fabrication, .testeur, .objectif, .roadmap, .kickstarter, .howTo, .crew, .choix, .txt, .framelst, .statisticsFR, .stats p
-{
-    text-align: left;
-}
-.picbox p
-{
-    margin-left: 36%;
-}
-*/
 .container
 {
     text-align: center;
@@ -157,16 +99,14 @@ body, html{
 .container p
 {
     text-align: left;
-    padding-left: 216px;
+    padding: 0px 19% 0;
 }
 
-.logoOwl
-{
-    margin-top: 323px;
-}
+
 .statisticsFR
 {
     margin-top: 34px;
+    margin-bottom: 18px;
 }
 .picbox p
 {
@@ -174,11 +114,58 @@ body, html{
     padding-left: 0;
     color: gray;
     font-style: italic;
+    padding: 0;
 }
-.graph p
+.legendeGraph p
 {
     text-align: center;
-    padding-left: 0;
+    padding: 0;
     color: gray;
     font-style: italic;
+    
 }
+body img{
+    text-align: center;
+    max-width: 100%;
+}
+.imgframe2
+{
+    max-height: 844px;
+}
+@media only screen and (max-width:800px) {
+    .container p {
+        padding: 0;
+    }
+   }
+
+   @media only screen and (max-width:800px) {
+    .form-control  {
+        padding: 0;
+    }
+   }
+   .form-group
+   {
+       text-align: left;
+       padding: 0px 19% 0;
+       
+   }
+   .form-control
+   {
+       margin: 0px 1% 0;
+       width: 99%;
+   }
+   label
+   {
+    margin-left: 7px;
+   }
+   .pngViewFR p
+   {
+    text-align: center;
+   }
+   .choix, .fabrication, .infoAdit, .testeur, .roadmap, .crew, .fabrique
+   {
+    margin-top: 30px;
+   }
+   .txt{
+       margin-top: 30px;
+   }
