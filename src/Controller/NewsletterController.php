@@ -32,7 +32,7 @@ class NewsletterController extends AbstractController
 
         $news = $manager->getRepository(Newsletter::class)->findAll();
 
-        dump($news);
+
         $response->setCallback(function() use ($news){
             $handle = fopen('php://output', 'w+');
  
