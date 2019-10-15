@@ -50,6 +50,6 @@ class __TwigTemplate_07d19478418eb964381b923ef5b42d5247c8f43d6d469ab5f1282649faf
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/images/icon-plus-square-o.svg", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\images\\icon-plus-square-o.svg");
+        return new Source("", "@Twig/images/icon-plus-square-o.svg", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\images\\icon-plus-square-o.svg");
     }
 }

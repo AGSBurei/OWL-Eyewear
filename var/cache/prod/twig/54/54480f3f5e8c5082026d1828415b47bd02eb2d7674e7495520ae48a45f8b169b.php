@@ -125,7 +125,7 @@ class __TwigTemplate_35f7e276187bf6e5811c1bcf45e310857692e77871b3a1911ab04e93712
     
     <footer>
         
-<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149618743-1%22%3E\"</script>
+<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149618743-1%22%3E\"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -184,6 +184,6 @@ class __TwigTemplate_35f7e276187bf6e5811c1bcf45e310857692e77871b3a1911ab04e93712
 
     public function getSourceContext()
     {
-        return new Source("", "base.html.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\templates\\base.html.twig");
+        return new Source("", "base.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\templates\\base.html.twig");
     }
 }

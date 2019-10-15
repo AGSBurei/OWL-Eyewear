@@ -53,6 +53,6 @@ class __TwigTemplate_19a0a1d54b91154f89e5e18041d36f7c120783deb1b615128a5f5c1b872
 
     public function getSourceContext()
     {
-        return new Source("", "@Doctrine/Collector/icon.svg", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\icon.svg");
+        return new Source("", "@Doctrine/Collector/icon.svg", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\icon.svg");
     }
 }

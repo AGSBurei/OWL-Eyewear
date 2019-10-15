@@ -90,6 +90,6 @@ class __TwigTemplate_76e4ec709d805db66c7ba873d2b55cb01e9274db919539c5afe62184752
 
     public function getSourceContext()
     {
-        return new Source("", "newsletter/home.html.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\templates\\newsletter\\home.html.twig");
+        return new Source("", "newsletter/home.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\templates\\newsletter\\home.html.twig");
     }
 }
