@@ -50,6 +50,6 @@ class __TwigTemplate_ac2afbd49c242a720f320876340542d6d29d07d7d0a428bde18aa6e9db0
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/images/favicon.png.base64", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\images\\favicon.png.base64");
+        return new Source("", "@Twig/images/favicon.png.base64", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\images\\favicon.png.base64");
     }
 }

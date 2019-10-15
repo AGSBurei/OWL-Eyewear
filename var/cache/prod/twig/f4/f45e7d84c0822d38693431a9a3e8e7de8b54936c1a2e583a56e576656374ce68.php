@@ -56,6 +56,6 @@ class __TwigTemplate_79f42c9ec217e6f38c83f76f76f8d03cbd385a6b83788d26725d337d9bb
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/Exception/exception.json.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.json.twig");
+        return new Source("", "@Twig/Exception/exception.json.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.json.twig");
     }
 }

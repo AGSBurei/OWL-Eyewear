@@ -62,6 +62,6 @@ class __TwigTemplate_fc332ca413cb8e0980e62f7a57418473b9cc1a47b462f8b6bd7b6266aa7
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/choice_widget_options.html.php", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\choice_widget_options.html.php");
+        return new Source("", "@Framework/Form/choice_widget_options.html.php", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\choice_widget_options.html.php");
     }
 }

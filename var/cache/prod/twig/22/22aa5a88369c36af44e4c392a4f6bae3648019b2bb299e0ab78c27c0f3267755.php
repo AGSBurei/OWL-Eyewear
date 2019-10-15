@@ -66,6 +66,6 @@ We will fix it as soon as possible. Sorry for any inconvenience caused.
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/Exception/error.txt.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.txt.twig");
+        return new Source("", "@Twig/Exception/error.txt.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.txt.twig");
     }
 }

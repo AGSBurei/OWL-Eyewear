@@ -56,6 +56,6 @@ class __TwigTemplate_7cd666f4ac1c7421a7fdfb493622914298af01eae2f794099fc01fb4d33
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/Exception/exception.rdf.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.rdf.twig");
+        return new Source("", "@Twig/Exception/exception.rdf.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.rdf.twig");
     }
 }

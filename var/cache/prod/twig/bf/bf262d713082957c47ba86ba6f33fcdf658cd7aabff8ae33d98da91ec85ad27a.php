@@ -39,7 +39,7 @@ class __TwigTemplate_441bcac70c0b9807c736d7912398594fab6fd86e0df3e22742927311fdf
     {
         $macros = $this->macros;
         // line 1
-        $context["__internal_3a0254589719b18525a074eb8a180bf306c1baf297dd2245308384898d2424ef"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("translation_domain");
+        $context["__internal_cd77e2ebe6c5e0e5de7f7fe6861b123735c623054469be4a4c407059f3717eff"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("translation_domain");
         // line 2
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
     }
@@ -68,6 +68,6 @@ class __TwigTemplate_441bcac70c0b9807c736d7912398594fab6fd86e0df3e22742927311fdf
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/page/content.html.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
+        return new Source("", "@EasyAdmin/page/content.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
     }
 }

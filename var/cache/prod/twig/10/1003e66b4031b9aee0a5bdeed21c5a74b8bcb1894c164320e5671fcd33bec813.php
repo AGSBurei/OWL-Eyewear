@@ -101,6 +101,6 @@ class __TwigTemplate_c075c099694c2b543e5c2b4cfccca4bb3f7f50f60c6cc19a02056bc7ed0
 
     public function getSourceContext()
     {
-        return new Source("", "security/registration.html.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\templates\\security\\registration.html.twig");
+        return new Source("", "security/registration.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\templates\\security\\registration.html.twig");
     }
 }

@@ -86,6 +86,6 @@ class __TwigTemplate_603cc0a3e7acb7b927506f9df3acde58323d390662e8f8deec9318b5a0a
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/includes/_select2_widget.html.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\includes\\_select2_widget.html.twig");
+        return new Source("", "@EasyAdmin/default/includes/_select2_widget.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\includes\\_select2_widget.html.twig");
     }
 }

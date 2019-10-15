@@ -711,6 +711,6 @@ class __TwigTemplate_128778ea1b48935f3cd2becac8e319e9f27de0fcd2a70ae4fd3508449b1
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/layout.html.twig", "C:\\Users\\rmer1\\Desktop\\pull\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\layout.html.twig");
+        return new Source("", "@EasyAdmin/default/layout.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\layout.html.twig");
     }
 }
