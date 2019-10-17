@@ -104,14 +104,45 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           </div>
 
            <div class=\"timer\">
-           <div class=\"container\">
+           <div class=\"container2\">
               <div class=\"row\">
-              <div class =\"col-sm\">
-          <p>Début de la campagne de financement dans :</p>
-        <p id=\"timer1\"></p>
+                  <div class =\"col-sm justify-content-center\">
+                  <p class=\"text-center\"><strong>Début de la campagne de financement dans :</strong></p>
+                  </div>
+              </div>
+              <div class=\"row justify-content-center\">
+                  <div class=\"col-2 justify-content-center\">    
+                      <p class=\"text-center\" id=\"days\"></p>
+                      <p class=\"text-center\"><strong>Jour(s)</strong><p>
+                  </div>
+                  <div class=\"col-1 justify-content-center\">    
+                      <p class=\"text-center\"><strong>:</strong><p>
+                  </div>
+                  <div class=\"col-2 justify-content-center\">
+                      <p class=\"text-center\" id=\"hours\"></p>
+                      <p class=\"text-center\"><strong>Heure(s)</strong></p>
+                  </div>
+                  <div class=\"col-1 justify-content-center\">    
+                      <p class=\"text-center\"><strong>:</strong><p>
+                  </div>
+                  <div class=\"col-2 justify-content-center\">
+                      <p class=\"text-center\" id=\"minutes\"></p>
+                      <p class=\"text-center\"><strong>Minute(s)</strong></p>
+                  </div>
+                  <div class=\"col-1 justify-content-center\">    
+                      <p class=\"text-center\"><strong>:</strong><p>
+                  </div>
+                  <div class=\"col-2 justify-content-center\">
+                      <p class=\"text-center\" id=\"seconds\"></p>
+                      <p class=\"text-center\"><strong>Seconde(s)</strong></p>
+                  </div>
+                
+              </div>
         
         <script type=\"text/javascript\">
-            
+            function \$(id){
+                return document.getElementById(id)
+            }
             function hms(){
                 var dt1 = new Date(); 
                 var dt2 = new Date(2019,10,26,12,0,0);
@@ -122,8 +153,11 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
                 var minute = dt3.getMinutes();
                 var seconds = dt3.getSeconds();
                 
-                var str=(numdays +\" jours \" + numhours+ \" heures \" + +minute + \" minutes \" +seconds+ \"\") ;
-                \$(\"timer1\").innerHTML=str;
+                var str=(numdays) ;
+                \$(\"days\").innerHTML=numdays;
+                \$(\"hours\").innerHTML=numhours;
+                \$(\"minutes\").innerHTML=minute;
+                \$(\"seconds\").innerHTML=seconds;
                 setTimeout(hms,1000);
             }
             hms();
@@ -144,7 +178,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
 
     <div class=\"txt\">
     <img class=\"logoOwl\" src=\"";
-        // line 60
+        // line 94
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/OWL_logo.5da53e41.png"), "html", null, true);
         echo "\" alt=\"logoOwlEyeWear\">
   <p></p>
@@ -160,17 +194,17 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
         <p><strong>Si vous êtes intéressé par nos lunettes, renseignez votre adresse mail ci-dessous pour être averti lors de la mise en ligne de notre campagne de financement participative !</strong></p> 
           
           ";
-        // line 73
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 73, $this->source); })()), 'form_start');
+        // line 107
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 107, $this->source); })()), 'form_start');
         echo "
           ";
-        // line 74
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 74, $this->source); })()), "email", [], "any", false, false, false, 74), 'row');
+        // line 108
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 108, $this->source); })()), "email", [], "any", false, false, false, 108), 'row');
         echo " 
           <button type=\"submit\" class=\"btn btn-success\">Inscription</button>
           ";
-        // line 76
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 76, $this->source); })()), 'form_end');
+        // line 110
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 110, $this->source); })()), 'form_end');
         echo "
         </div>
    
@@ -181,21 +215,21 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
     <div class=\"glass\">
         <div class=\"labelFR\">
             <img class=\"lblFR\" src=\"";
-        // line 85
+        // line 119
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FR.456ebb3d.png"), "html", null, true);
         echo "\" alt=\"lblGlassFR\" id=\"SpecGlass\">
         </div>
             <br>
         <div class=\"labelSepcFR\">
               <img class=\"lblSpecFR\" src= \"";
-        // line 89
+        // line 123
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Carac monture.e5411406.png"), "html", null, true);
         echo "\" alt=\"lblSpecFR\">
         </div>
             <br>
         <div class=\"GlassDetailFR\">
             <img class=\"imgGlassDetailEN\" src= \"";
-        // line 93
+        // line 127
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Lunettes araignée.b9a13f1f.png"), "html", null, true);
         echo "\" alt=\"lblGlassDetailFR\">
         </div>
@@ -204,14 +238,14 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
     <div class=\"coat\">
         <div class=\"labelCoatType\">
           <img class =\"lblCoatType\" src= \"";
-        // line 99
+        // line 133
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Details traitements.7474e869.png"), "html", null, true);
         echo "\" alt=\"lblCoatTypeFR\"> 
         </div>
             <br>
         
         <img class=\"coatdetail\" src =\"";
-        // line 103
+        // line 137
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Détails des traitements.ee731cde.png"), "html", null, true);
         echo "\" alt=\"coatdetail\">
     </img>
@@ -222,14 +256,14 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
   <br>
       <div class=\"solution\">
         <img class=\"lblsolutFR\" src = \"";
-        // line 111
+        // line 145
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FR3.484e8eb8.png"), "html", null, true);
         echo "\" alt=\"lblSolv\" id=\"resolut\">
    
         <br>
         <p></p>
         <img class=\"lblWhenWear\" src = \"";
-        // line 115
+        // line 149
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/quand_les_porter.0935229d.png"), "html", null, true);
         echo "\" alt=\"label quand les porte\">
         <p></p>
@@ -242,30 +276,30 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
         <p></p>
         
         <img class=\"gifSolv\" src=\"";
-        // line 125
+        // line 159
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FIGFINAL.396b4767.gif"), "html", null, true);
         echo "\" alt=\"gifSolv\">
         <p></p>
         <p></p>
         <p></p>
         <img class =\"genbenef\" src=\"";
-        // line 129
+        // line 163
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/gene_et_benef.292fd87c.png"), "html", null, true);
         echo "\" alt=\"lblgenbenef\">
         <p></p>
         <img class =\"imgtableau\" src=\"";
-        // line 131
+        // line 165
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/recap.27b6e826.png"), "html", null, true);
         echo "\" alt=\"tableau\">
         <p></p>
         <img class=\"lblWhoisConcern\" src=\"";
-        // line 133
+        // line 167
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/personnes_concernees.b22c5392.png"), "html", null, true);
         echo "\" alt=\"label personne concerné\">
         <p></p>
         <p>Pour toutes les personnes ressentant des gênes ou voulant un meilleur confort visuel.</p>
         <img class=\"imgConcerner\" src=\"";
-        // line 136
+        // line 170
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Pour_Qui.465be7be.png"), "html", null, true);
         echo "\" alt=\"pour qui\">
         <p></p>
@@ -283,7 +317,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
       <p></p>
       <p></p>
         <img class=\"statisticsFR\" src=\"";
-        // line 151
+        // line 185
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR4.c5c9ac1b.png"), "html", null, true);
         echo "\" alt=\"statisticsFR\" id=\"statsup\">
         <p> Conduire dans des <strong>mauvaises conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> <br>et 
@@ -301,17 +335,17 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
     
       <div class=\"framelst\">
           <img class=\"frame\" src=\"";
-        // line 166
+        // line 200
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR5.7549b27e.png"), "html", null, true);
         echo "\" alt=\"lstMonture\" id=\"listMonture\">
           <p></p>
           <img class=\"pngspec\" src=\"";
-        // line 168
+        // line 202
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Carac monture.e5411406.png"), "html", null, true);
         echo "\" alt=\"pngspec\">
           <p></p>
           <img class=\"spec\" src=\"";
-        // line 170
+        // line 204
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/carac.f0aa1af4.png"), "html", null, true);
         echo "\" alt=\"spec\">
           <p></p>
@@ -323,7 +357,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
             <div class=\"gifMonture\">
           <img class=\"gifMonture\" src=\"";
-        // line 179
+        // line 213
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/gif.7cd42fe3.gif"), "html", null, true);
         echo "\" alt=\"gif- Lunettes portées par Alison et Damien\">
           </div>
@@ -332,7 +366,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p>Pour ceux ayant besoin de corrections nous proposons <strong>2 sur-lunettes</strong> dans <strong>deux tailles<br> différentes.</strong>>
              Elles sont conçues pour se placer <strong>par-dessus vos lunettes correctrices.</strong></p>
             <img class=\"gifsurglass\" src=\"";
-        // line 185
+        // line 219
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/06bc94e6b4afccb7cd9e29dc7192dba0_original.6910b146.gif"), "html", null, true);
         echo "\" alt=\"surlunette\">
           <p></p>
@@ -342,7 +376,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           (25000€, 50000€, 75000€). Une seule couleur est disponible par modèle.</p>
 
           <img class=\"pngLblframe\" src=\"";
-        // line 192
+        // line 226
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Nos modSles.c402ed27.png"), "html", null, true);
         echo "\" alt=\"lblFrame\">
     
@@ -353,7 +387,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <div class=\"picbox\">
           <div class=\"img1\">
           <img class=\"imgframe1\"  src=\"";
-        // line 200
+        // line 234
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Ronde_Ecaille.0414298f.png"), "html", null, true);
         echo "\" alt=\"imgFrame1\">
           <p></p>
@@ -362,7 +396,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
           <div class=\"img2\">
           <img class=\"imgframe2\"  src=\"";
-        // line 206
+        // line 240
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/27a16970da1f818ea2419f93a8a16be4_original.png"), "html", null, true);
         echo "\" alt=\"imgFrame2\">
           <p>Ronde noir mat</p>
@@ -370,7 +404,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
           <div class=\"img3\">
           <img class=\"imgframe3\"  src=\"";
-        // line 211
+        // line 245
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/f492acd4a9846eec532f31a21bff3179_original.a54153eb.png"), "html", null, true);
         echo "\" alt=\"imgFrame3\">
           <p>Rectangle brun brillant</p>
@@ -378,7 +412,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
           <div class=\"img4\">
           <img class=\"imgframe4\"  src=\"";
-        // line 216
+        // line 250
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/6e8e070aaa473041df3628c024a81cab_original.f9466eea.png"), "html", null, true);
         echo "\" alt=\"imgFrame4\">
           <p>Rectangle noir mat</p>
@@ -386,7 +420,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
           <div class=\"img5\">
           <img class=\"imgframe5\" src=\"";
-        // line 221
+        // line 255
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/32feb0ca2b355438e4d5ea88a01b250e_original.6a6a1061.png"), "html", null, true);
         echo "\" alt=\"imgFrame5\">
           <p>sur-lunette</p>
@@ -394,7 +428,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
           <div class=\"img6\">
           <img class=\"imgFrame6\" src=\"";
-        // line 226
+        // line 260
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/5782e86838a62dd05d3348f28b44c4a2_original.png"), "html", null, true);
         echo "\" alt=\"imgFrame6\">
           <p>Combinée ecaille</p>
@@ -402,7 +436,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
           <div class=\"img7\">
           <img class=\"imgframe7\" src=\"";
-        // line 231
+        // line 265
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/b36c9cf3d44ba58db0e09363e4d69d05_original.png"), "html", null, true);
         echo "\" alt=\"imgFrame7\">
           <p>Ronde noir métal</p>
@@ -410,28 +444,28 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
           <div class=\"img8\">
           <img class=\"imgframe8\" src=\"";
-        // line 236
+        // line 270
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/8954eeef74be001decdac564f465a50a_original.75212a38.jpg"), "html", null, true);
         echo "\" alt=\"imgFrame8\">
           </div>
           <p></p>
           <div class=\"img9\">
           <img class=\"imgframe9\" src=\"";
-        // line 240
+        // line 274
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/a67a0f66538778ff1f44f2b65cd485ec_original.87db49bc.jpg"), "html", null, true);
         echo "\" alt=\"imgFrame9\">
           </div>
           <p></p>
           <div class=\"img10\">
           <img class=\"imgFrame10\" src=\"";
-        // line 244
+        // line 278
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/451c05a5dc8148affe85488dfa4ec839_original.0b8ab53b.jpg"), "html", null, true);
         echo "\" alt=\"imgFrame10\">
           </div>
           <p></p>
           <div class=\"img11\">
           <img class=\"imgFrame11\" src=\"";
-        // line 248
+        // line 282
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/6f774fecf7de574748fb0bb69072090f_original.9dc1edab.jpg"), "html", null, true);
         echo "\" alt=\"imgFrame11\">   
           </div>
@@ -442,17 +476,17 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           <p></p>
           <div class=\"choix\">
           <img class=\"banChoix\" src=\"";
-        // line 256
+        // line 290
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR6.bfb517ea.png"), "html", null, true);
         echo "\" alt=\"BannièreChoix\" id=\"taille\">
           <p></p>
           <img class=\"imgChoix\" src=\"";
-        // line 258
+        // line 292
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/choix_taille.9bdf361c.png"), "html", null, true);
         echo "\" alt=\"imageChoix\">
           <p></p>
           <img class=\"imgPort1\" src=\"";
-        // line 260
+        // line 294
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Frais_de_port.5f5d9ab4.png"), "html", null, true);
         echo "\" alt=\"frais de port\"> 
 
@@ -464,7 +498,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
             <p></p>
             <p></p>
             <img class=\"banRecep\" src=\"";
-        // line 269
+        // line 303
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR7.64d4c2e0.png"), "html", null, true);
         echo "\" alt=\"banniere reception\">
             <p></p>
@@ -477,7 +511,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
             <p>Pour finir, nous vous offrons <strong>2 stickers</strong> Owl Eyewear pour les collez ou vous le souhaitez !</p>
             <p></p>
             <img class=\"imgPack\" src=\"";
-        // line 279
+        // line 313
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/PackFR.e1fd8347.png"), "html", null, true);
         echo "\" alt=\"image pack\">
             <p></p>
@@ -485,14 +519,14 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
 
             <div class=\"fabrication\">
             <img class=\"banHowMake\" src=\"";
-        // line 284
+        // line 318
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/process.5f63f1a7.png"), "html", null, true);
         echo "\" alt=\"image How Make\" id=\"fabrique\">
             <p></p>
             <p>Une fois que nous aurons reçu les questionnaires avec la monture que vous aurez choisie.<br>
                Nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
             <img class=\"gifMaker\" src=\"";
-        // line 288
+        // line 322
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/99de5feef4b02c9309cae676f50f8203_original.fdb3d0b6.gif"), "html", null, true);
         echo "\" alt=\"gif fabriquation\">
             <p></p>
@@ -507,22 +541,22 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
 
        
           <img class=\"lblInfoSupFR\" src = \"";
-        // line 300
+        // line 334
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FR2.1671e564.png"), "html", null, true);
         echo "\" alt=\"lblInfoSupFR\" id=\"infoSup\">
           <p></p>
           <img class=\"lblOrigine\" src=\"";
-        // line 302
+        // line 336
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Origines_verres.png"), "html", null, true);
         echo "\" alt =\"labelorigin\">
           <p></p>
           <img class=\"imgOrigine\" src=\"";
-        // line 304
+        // line 338
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/InfoFR.4a6c20e9.png"), "html", null, true);
         echo "\" alt=\"imageg Origine\">
           <p></p>
           <img class=\"lblYellowFR\" src = \"";
-        // line 306
+        // line 340
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/verres jaunes.cb45cc79.png"), "html", null, true);
         echo "\" alt=\"lblYellowFR\">
     
@@ -538,7 +572,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
              et <strong>améliorent la vision des contrastes</strong> et offre ainsi un <strong>meilleur confort.</strong></p>
         <div class=\"graph\">
       <img class=\"pngGraphGlsFR\" src =\"";
-        // line 319
+        // line 353
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FRcourbe.57889c14.png"), "html", null, true);
         echo "\" alt=\"pngGraphGlsFR\">
         <div class=\"legendeGraph\">
@@ -547,7 +581,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
       
 <div class =\"myopienuit\">
        <img class=\"lblNightMyopFR\" src=\"";
-        // line 325
+        // line 359
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Myopi noc.54895fea.png"), "html", null, true);
         echo "\" alt=\"lblNightMyopFR\">
       <p></p>
@@ -564,19 +598,19 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
          
           <div class= \"pngViewFR\" id=\"precision\">
                 <img class=\"pngSunViewFR\" src=\"";
-        // line 339
+        // line 373
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/net.c81b8bd3.png"), "html", null, true);
         echo "\" alt=\"pngSunViewFR\">
                 <p>Vision normal de jour</p>
 
                 <img class=\"pngNightViewFR\" src=\"";
-        // line 342
+        // line 376
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Flou.77ea1e45.png"), "html", null, true);
         echo "\" alt=\"pngNightViewFR\">
                 <p>Vision flou de nuit</p>
 
                 <img class=\"pngNihtViewCorFR\" src=\"";
-        // line 345
+        // line 379
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/corrige.c6f47421.png"), "html", null, true);
         echo "\" alt=\"pngNihtViewCorFR\">
                 <p>Vision corrigée de nuit avec les verres OWL EyeWear</p>
@@ -589,7 +623,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
         <div class=\"parainage\">
         <p></p>
             <img class=\"lblSpons\" src=\"";
-        // line 355
+        // line 389
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/parrainage.bf9e3fde.png"), "html", null, true);
         echo "\" alt=\"label Parainage\">
             <p> </p>
@@ -604,13 +638,13 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
                et le numéro de contributeur du parrain à la personne parrainée, et inversement. </p>
             <p></p>
             <img class=\"gifSpray\" src=\"";
-        // line 367
+        // line 401
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/VID_20191010_161057_1.f93f3aea.gif"), "html", null, true);
         echo "\" alt=\"gifSpray\">
             <!---->
             </p>Vous pouvez trouver votre numéro de participant en haut de la page :</p>
             <img class=\"imgkickstart\" src=\"";
-        // line 370
+        // line 404
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/0403e075ba013fa0d8a9ceac0a1206a4.eb0076ad.png"), "html", null, true);
         echo "\" alt=\"image kickstarter\">
             <p></p>
@@ -624,25 +658,25 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
         <p></p>
         <div class=\"testeur\">
         <img class=\"bantest\" src=\"";
-        // line 381
+        // line 415
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Avis_des_testeurs.2a67f876.png"), "html", null, true);
         echo "\" alt=\"bannière testeur\">
         <p></p>
         <p>Nous avons testé nos produit sur divers profils de conducteurs, voici quelques retours:</p>
         <img class=\"imgavis\" src=\"";
-        // line 384
+        // line 418
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/AvisFR.03ac66c6.png"), "html", null, true);
         echo "\" alt=\"avis\">
         </div>
         
         <div class=\"objectif\">
           <img class=\"banbanObjectnO\" src=\"";
-        // line 388
+        // line 422
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR9.02bfd0dc.png"), "html", null, true);
         echo "\" alt=\"objectif\" id=\"objectif\">
           <p></p>
           <img class=\"imgObject\" src=\"";
-        // line 390
+        // line 424
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Objectifs.1ecbce6e.png"), "html", null, true);
         echo "\" alt =\"image objectif\">
         </div>
@@ -651,12 +685,12 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
         <p></p>
         <div class=\"roadmap\">
           <img class=\"banRoadMap\" src=\"";
-        // line 396
+        // line 430
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR10.1cd7fac0.png"), "html", null, true);
         echo "\" alt=\"banRoadMap\">
           <p></p>
           <img class=\"imgRoadMap\" src=\"";
-        // line 398
+        // line 432
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Timeline FR.79bc3124.png"), "html", null, true);
         echo "\" alt=\"image roadmap\">
         </div>
@@ -664,45 +698,45 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
         <p></p>
         <div class=\"kickstarter\">
             <img class=\"banPledgeList\" src=\"";
-        // line 403
+        // line 437
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR11.d4b54aa5.png"), "html", null, true);
         echo "\" alt=\"Banniere Kick\" id=\"pack\">
             <p></p>
             <div class=\"pledgeListe\">
                 <img class=\"pledge1\" src=\"";
-        // line 406
+        // line 440
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/1.e5ff50a3.png"), "html", null, true);
         echo "\" alt=\"pledge 1\">
                 <p></p>
                 <img class=\"pledge2\" src=\"";
-        // line 408
+        // line 442
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/2.12448040.png"), "html", null, true);
         echo "\" alt=\"pledge 2\">
                 <p></p>
                 <img class=\"pledge3\" src=\"";
-        // line 410
+        // line 444
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/4.61d04de2.png"), "html", null, true);
         echo "\" alt=\"pledge 3\">
                 <p></p>
                 <img class=\"pledge4\" src=\"";
-        // line 412
+        // line 446
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/10.7b031ebc.png"), "html", null, true);
         echo "\" alt=\"pledge 4\">
                 <p></p>
                 <img class=\"pledge5\" src=\"";
-        // line 414
+        // line 448
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/20.33ee32de.png"), "html", null, true);
         echo "\" alt=\"pledge 5\">
             </div>
             <img class=\"imgPort2\" src=\"";
-        // line 416
+        // line 450
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Frais_de_port.5f5d9ab4.png"), "html", null, true);
         echo "\" alt=\"frais de port\"> 
         </div>
  
         <div class=\"howTo\" id=\"participer\">
             <img class=\"banhtPledge\" src=\"";
-        // line 420
+        // line 454
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR12.9f3e1ce8.png"), "html", null, true);
         echo "\" alt=\"ban how to pledge\">
             <p></p>
@@ -726,13 +760,13 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
      
         <div class=\"crew\">
           <img class=\"banWhoWheAre\" src=\"";
-        // line 441
+        // line 475
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR14.466d13c4.png"), "html", null, true);
         echo "\" alt=\"Qui somme nous\" id=\"equipe\">
           <!---->
           <p></p>
           <img class=\"imgEquipe\" src=\"";
-        // line 444
+        // line 478
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/ED.eea96dcb.png"), "html", null, true);
         echo "\" alt=\"Equipe\" >
           <p></p>
@@ -747,7 +781,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
            ayants des gênes. Et maintenant, <strong>nous sommes très fiers de vous présenter les <br>lunettes Owl Eyewear.</strong></p>
         
            <img class =\"lblneedyou\" src=\"";
-        // line 456
+        // line 490
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Besoin vous.b9df6fff.png"), "html", null, true);
         echo "\" alt=\"qui somme nous\">
            <!---->
@@ -802,7 +836,7 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
 
     public function getDebugInfo()
     {
-        return array (  751 => 456,  736 => 444,  730 => 441,  706 => 420,  699 => 416,  694 => 414,  689 => 412,  684 => 410,  679 => 408,  674 => 406,  668 => 403,  660 => 398,  655 => 396,  646 => 390,  641 => 388,  634 => 384,  628 => 381,  614 => 370,  608 => 367,  593 => 355,  580 => 345,  574 => 342,  568 => 339,  551 => 325,  542 => 319,  526 => 306,  521 => 304,  516 => 302,  511 => 300,  496 => 288,  489 => 284,  481 => 279,  468 => 269,  456 => 260,  451 => 258,  446 => 256,  435 => 248,  428 => 244,  421 => 240,  414 => 236,  406 => 231,  398 => 226,  390 => 221,  382 => 216,  374 => 211,  366 => 206,  357 => 200,  346 => 192,  336 => 185,  327 => 179,  315 => 170,  310 => 168,  305 => 166,  287 => 151,  269 => 136,  263 => 133,  258 => 131,  253 => 129,  246 => 125,  233 => 115,  226 => 111,  215 => 103,  208 => 99,  199 => 93,  192 => 89,  185 => 85,  173 => 76,  168 => 74,  164 => 73,  148 => 60,  92 => 6,  82 => 5,  69 => 3,  59 => 2,  36 => 1,);
+        return array (  785 => 490,  770 => 478,  764 => 475,  740 => 454,  733 => 450,  728 => 448,  723 => 446,  718 => 444,  713 => 442,  708 => 440,  702 => 437,  694 => 432,  689 => 430,  680 => 424,  675 => 422,  668 => 418,  662 => 415,  648 => 404,  642 => 401,  627 => 389,  614 => 379,  608 => 376,  602 => 373,  585 => 359,  576 => 353,  560 => 340,  555 => 338,  550 => 336,  545 => 334,  530 => 322,  523 => 318,  515 => 313,  502 => 303,  490 => 294,  485 => 292,  480 => 290,  469 => 282,  462 => 278,  455 => 274,  448 => 270,  440 => 265,  432 => 260,  424 => 255,  416 => 250,  408 => 245,  400 => 240,  391 => 234,  380 => 226,  370 => 219,  361 => 213,  349 => 204,  344 => 202,  339 => 200,  321 => 185,  303 => 170,  297 => 167,  292 => 165,  287 => 163,  280 => 159,  267 => 149,  260 => 145,  249 => 137,  242 => 133,  233 => 127,  226 => 123,  219 => 119,  207 => 110,  202 => 108,  198 => 107,  182 => 94,  92 => 6,  82 => 5,  69 => 3,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -827,14 +861,45 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
           </div>
 
            <div class=\"timer\">
-           <div class=\"container\">
+           <div class=\"container2\">
               <div class=\"row\">
-              <div class =\"col-sm\">
-          <p>Début de la campagne de financement dans :</p>
-        <p id=\"timer1\"></p>
+                  <div class =\"col-sm justify-content-center\">
+                  <p class=\"text-center\"><strong>Début de la campagne de financement dans :</strong></p>
+                  </div>
+              </div>
+              <div class=\"row justify-content-center\">
+                  <div class=\"col-2 justify-content-center\">    
+                      <p class=\"text-center\" id=\"days\"></p>
+                      <p class=\"text-center\"><strong>Jour(s)</strong><p>
+                  </div>
+                  <div class=\"col-1 justify-content-center\">    
+                      <p class=\"text-center\"><strong>:</strong><p>
+                  </div>
+                  <div class=\"col-2 justify-content-center\">
+                      <p class=\"text-center\" id=\"hours\"></p>
+                      <p class=\"text-center\"><strong>Heure(s)</strong></p>
+                  </div>
+                  <div class=\"col-1 justify-content-center\">    
+                      <p class=\"text-center\"><strong>:</strong><p>
+                  </div>
+                  <div class=\"col-2 justify-content-center\">
+                      <p class=\"text-center\" id=\"minutes\"></p>
+                      <p class=\"text-center\"><strong>Minute(s)</strong></p>
+                  </div>
+                  <div class=\"col-1 justify-content-center\">    
+                      <p class=\"text-center\"><strong>:</strong><p>
+                  </div>
+                  <div class=\"col-2 justify-content-center\">
+                      <p class=\"text-center\" id=\"seconds\"></p>
+                      <p class=\"text-center\"><strong>Seconde(s)</strong></p>
+                  </div>
+                
+              </div>
         
         <script type=\"text/javascript\">
-            
+            function \$(id){
+                return document.getElementById(id)
+            }
             function hms(){
                 var dt1 = new Date(); 
                 var dt2 = new Date(2019,10,26,12,0,0);
@@ -845,8 +910,11 @@ class __TwigTemplate_03426411477b4a9979046acf5bd38719d3c7ec187ca17dffdef30debfeb
                 var minute = dt3.getMinutes();
                 var seconds = dt3.getSeconds();
                 
-                var str=(numdays +\" jours \" + numhours+ \" heures \" + +minute + \" minutes \" +seconds+ \"\") ;
-                \$(\"timer1\").innerHTML=str;
+                var str=(numdays) ;
+                \$(\"days\").innerHTML=numdays;
+                \$(\"hours\").innerHTML=numhours;
+                \$(\"minutes\").innerHTML=minute;
+                \$(\"seconds\").innerHTML=seconds;
                 setTimeout(hms,1000);
             }
             hms();
