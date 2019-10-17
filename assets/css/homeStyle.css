@@ -48,7 +48,7 @@ body, html{
     margin-right: 20px;
     color: #ffffff;
     position: relative;
-    margin: 123px auto;
+    margin: 100px auto;
     text-align: center;
 
 }
@@ -173,3 +173,28 @@ body img{
    .txt{
        margin-top: 30px;
    }
+   .container2 p
+   {
+      background-color:  #575656;
+   }
+   .row .col-2
+   {
+  
+    background-color:  #575656;
+   }
+   .row {
+    background-color:  #575656;
+    margin-right: 210px;
+    margin-left: 210px;
+   }
+   .row-centered {
+    text-align:center;
+}
+
+@media only screen and (max-width:1200px) {
+    .row {
+      
+        margin-right: 0;
+        margin-left: 0;
+   }
+}
