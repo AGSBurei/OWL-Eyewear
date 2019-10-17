@@ -6,9 +6,7 @@
   <body>
         <div class="bg-image"> 
 
-            <div class="Countdown">
-  
-            </div>
+            
             <div class=" txt-presentation">
               <h1>Owl Eyewear - Améliorez votre vision la nuit.</h1>
               <p></p>
@@ -18,9 +16,43 @@
               <p>La vision est moins précise car les yeux ont <strong>besoin de temps </strong>pour s’adapter aux <strong>variations de luminosité</strong> et pour 
                 <strong>percevoir les reliefs</strong> et <strong>les distances.</strong></p>
           </div>
+
+           <div class="timer">
+           <div class="container">
+              <div class="row">
+              <div class ="col-sm">
+          <p>Début de la campagne de financement dans :</p>
+        <p id="timer1"></p>
+        
+        <script type="text/javascript">
+            function $(id){
+                return document.getElementById(id)
+            }
+            function hms(){
+                var dt1 = new Date(); 
+                var dt2 = new Date(2019,10,26,12,0,0);
+                var dt3 = new Date(dt2 -dt1);
+     
+                var numdays = dt3.getDate();
+                var numhours = dt3.getHours();
+                var minute = dt3.getMinutes();
+                var seconds = dt3.getSeconds();
+                
+                var str=(numdays +" jours " + numhours+ " heures " + +minute + " minutes " +seconds+ "") ;
+                $("timer1").innerHTML=str;
+                setTimeout(hms,1000);
+            }
+            hms();
+          
+          
+      </script>
+      
+      
+    </div>
         </div>
       <br>
       <br>
+      
       <br>
       <br>
       <br>
@@ -29,7 +61,7 @@
     <div class="txt">
     <img class="logoOwl" src="{{ asset ("/build/images/OWL_logo.5da53e41.png") }}" alt="logoOwlEyeWear">
   <p></p>
-        <h2>Qui sommes-nous ?</h2>
+
         
         <p></p>
         <p>Pour éliminer ces inconforts, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent d’<strong>d’améliorer grandement la vision.</strong> </p>
@@ -45,6 +77,7 @@
           <button type="submit" class="btn btn-success">Inscription</button>
           {{ form_end(form) }}
         </div>
+   
     </div>
         <br>
         <br>

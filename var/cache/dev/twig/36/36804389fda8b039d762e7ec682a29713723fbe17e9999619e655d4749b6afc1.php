@@ -145,6 +145,6 @@ class __TwigTemplate_1d38ee0fe609a1f8af087b44c526bbf3e7f8ad2dbb49662a72d76a6d7df
     {{form_end(form)}}
 
 {% endblock %}
-", "security/registration.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\templates\\security\\registration.html.twig");
+", "security/registration.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\security\\registration.html.twig");
     }
 }

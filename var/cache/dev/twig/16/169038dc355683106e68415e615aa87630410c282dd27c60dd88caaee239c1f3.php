@@ -131,6 +131,6 @@ class __TwigTemplate_b62053f248104ee1a8896095dfab6f126966c4ff7026b86450bf0f10f97
 
 
 {% endblock %}
-", "newsletter/home.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\templates\\newsletter\\home.html.twig");
+", "newsletter/home.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\newsletter\\home.html.twig");
     }
 }

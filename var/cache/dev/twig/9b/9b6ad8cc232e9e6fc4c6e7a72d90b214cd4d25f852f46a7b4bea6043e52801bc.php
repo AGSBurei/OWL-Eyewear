@@ -83,6 +83,6 @@ class __TwigTemplate_77bc2ba8e108b5d5f9fee856a3d813698a25edf8f1c810a39f3f83527f7
 {% else %}
     {{ value|number_format(2) }}
 {% endif %}
-", "@EasyAdmin/default/field_float.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_float.html.twig");
+", "@EasyAdmin/default/field_float.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_float.html.twig");
     }
 }

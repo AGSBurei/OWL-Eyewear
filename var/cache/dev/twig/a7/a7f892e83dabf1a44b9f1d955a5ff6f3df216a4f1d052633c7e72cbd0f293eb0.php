@@ -497,6 +497,6 @@ class __TwigTemplate_2759a3a4bd6a1908ad05468f19f33ad307d5520ea4c3ca1e6a829261c6f
 </ul>
 
 {% block main_menu_after %}{% endblock %}
-", "@EasyAdmin/default/menu.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\menu.html.twig");
+", "@EasyAdmin/default/menu.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\menu.html.twig");
     }
 }
