@@ -154,6 +154,6 @@ class __TwigTemplate_d067791a674e7132a035025b2ed10efbda5b554347ec50c1924f33debc5
     </ul>
 </div>
 {% endblock %}
-", "admin/index.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\templates\\admin\\index.html.twig");
+", "admin/index.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\admin\\index.html.twig");
     }
 }
