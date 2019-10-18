@@ -57,6 +57,6 @@ class __TwigTemplate_858ba50da3b2511899cc97914a1bfed7f2c1273336eabfb9b385fbed02a
 
     public function getSourceContext()
     {
-        return new Source("", "email/newsletter.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\templates\\email\\newsletter.html.twig");
+        return new Source("", "email/newsletter.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\email\\newsletter.html.twig");
     }
 }

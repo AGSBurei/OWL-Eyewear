@@ -64,6 +64,6 @@ class __TwigTemplate_5468d075d8617c1d0dfe5d2eca336e3e11fd5d229e23a362ef626e0fd2d
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/label_inaccessible.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\label_inaccessible.html.twig");
+        return new Source("", "@EasyAdmin/default/label_inaccessible.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\label_inaccessible.html.twig");
     }
 }

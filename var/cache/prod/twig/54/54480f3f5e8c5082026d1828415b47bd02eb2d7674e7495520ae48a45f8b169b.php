@@ -42,7 +42,7 @@ class __TwigTemplate_35f7e276187bf6e5811c1bcf45e310857692e77871b3a1911ab04e93712
 <html>
     <head>
         <meta charset=\"UTF-8\">
-        <meta name=\"description\" content=\"Site vitrine\">
+        <meta name=\"description\" content=\"vitrine Lunette OwlEyewear\">
         <meta name=\"keywords\" content=\"Lunette, nuit, correction, voiture, Owl Eyewear\">
         <meta name=\"author\" content=\"Zachari BLINN & Rommanirs Mer\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.1, shrink-to-fit=no\">
@@ -184,6 +184,6 @@ class __TwigTemplate_35f7e276187bf6e5811c1bcf45e310857692e77871b3a1911ab04e93712
 
     public function getSourceContext()
     {
-        return new Source("", "base.html.twig", "C:\\wamp64\\www\\OWL-Eyewear\\templates\\base.html.twig");
+        return new Source("", "base.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\base.html.twig");
     }
 }

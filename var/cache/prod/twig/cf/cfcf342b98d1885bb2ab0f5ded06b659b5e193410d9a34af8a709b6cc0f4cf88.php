@@ -75,6 +75,6 @@ class __TwigTemplate_d001a2c4f1a3451b98695ea86f19d94808f046153e897e436f70dd5f056
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/Exception/traces.xml.twig", "C:\\wamp64\\www\\OWL-Eyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.xml.twig");
+        return new Source("", "@Twig/Exception/traces.xml.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.xml.twig");
     }
 }
