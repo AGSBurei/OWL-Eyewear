@@ -9,7 +9,6 @@ return [
     false, // $matchHost
     [ // $staticRoutes
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\MainController::home'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],
-        '/admin/export' => [[['_route' => 'newsletter_export', '_controller' => 'App\\Controller\\NewsletterController::export'], null, ['GET' => 0], null, false, false, null]],
         '/inscription' => [[['_route' => 'security_registration', '_controller' => 'App\\Controller\\SecurityController::registration'], null, null, null, false, false, null]],
         '/connexion' => [[['_route' => 'security_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/deconnexion' => [[['_route' => 'security_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
