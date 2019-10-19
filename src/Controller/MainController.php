@@ -17,6 +17,7 @@ class MainController extends AbstractController
      */
     public function home(Request $request, EntityManagerInterface $manager/*, \Swift_Mailer $mailer*/)
     {
+
         $news = new Newsletter();
 
         $news->setDate(new \DateTime('now'));
@@ -48,7 +49,9 @@ class MainController extends AbstractController
 
         return $this->render('main/home.html.twig', [
             'form' => $form->createView(),
+            
         ]);
 
     }
+
 }
