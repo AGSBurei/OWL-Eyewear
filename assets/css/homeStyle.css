@@ -173,9 +173,10 @@ body img{
    .txt{
        margin-top: 30px;
    }
-   .container2 p
+   .countdownBox p
    {
       background-color:  #575656;
+      padding: 0;
    }
    .row .col-2
    {
