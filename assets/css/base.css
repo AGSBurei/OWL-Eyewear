@@ -15,10 +15,13 @@ footer
 }
 .navbar-custom
 {
+    position: fixed;
+    top: 0;
     color: inherit;
     background-color: #2F3136;
     text-decoration: none;
     color: #1d1d1b;
+    width: 100%;
 }
 li
 {
@@ -60,6 +63,7 @@ footer
     background-color: #2F3136;
     text-decoration: none;
     color: #1d1d1b;
+    z-index: 1;
 }
 li
 {
@@ -80,3 +84,6 @@ li
 {
     color: #ffffff;
 }
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
