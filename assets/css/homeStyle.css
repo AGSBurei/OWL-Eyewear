@@ -6,6 +6,10 @@ body, html{
 * {
     box-sizing: border-box;
   }
+  .bg-image::after
+  {
+    clear: both;
+  }
 .bg-image:before
 {   
   content: "";
@@ -50,7 +54,8 @@ body, html{
     position: relative;
     margin: 100px auto;
     text-align: center;
-
+    z-index: -1;
+    padding-top: 108px;
 }
 .timer p
 {
@@ -177,23 +182,37 @@ body img{
    {
     margin-top: 20px;
    }
+   .banbanObjectnO
+   {
+    margin-top: 20px;
+   }
    .countdownBox p
    {
       background-color:  #575656;
       padding: 0;
+      z-index: -1;
+      
+   }
+   .countdownBox 
+   {
+   
+      z-index: -1;
+      
    }
    .row .col-2
    {
-  
+    z-index: 0;
     background-color:  #575656;
    }
    .row {
     background-color:  #575656;
     margin-right: 210px;
     margin-left: 210px;
+    z-index: 0;
    }
    .row-centered {
     text-align:center;
+    z-index: 0;
 }
 
 @media only screen and (max-width:1200px) {
@@ -201,5 +220,12 @@ body img{
       
         margin-right: 0;
         margin-left: 0;
+        z-index: 0;
    }
+}
+.text p
+{
+    font-style: initial;
+    color: #000000;
+    text-align: left;
 }

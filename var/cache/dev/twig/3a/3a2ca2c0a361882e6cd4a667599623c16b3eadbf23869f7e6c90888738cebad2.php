@@ -50,7 +50,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
         <meta charset=\"UTF-8\">
         <meta name=\"description\" content=\"vitrine Lunette OwlEyewear\">
         <meta name=\"keywords\" content=\"Lunette, nuit, correction, voiture, Owl Eyewear\">
-        <meta name=\"author\" content=\"Zachari BLINN & Rommanirs Mer\">
+        <meta name=\"author\" content=\"Zachari BLINN et Rommanirs Mer\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.1, shrink-to-fit=no\">
         <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         // line 9
@@ -72,8 +72,9 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
     <body>
 
     <nav class=\"navbar navbar-expand-lg navbar-custom\">
+    <div class=\"container-fluid\">
         <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"";
-        // line 17
+        // line 18
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Fichier_4.8f8cdf3f.svg"), "html", null, true);
         echo "\"></a></a>
         <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -116,17 +117,20 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                 </class=\"nav-item\">
                 </ul>
             </div>
+            </div>
         </nav>
+
+
         <div class=\"container\">
         ";
-        // line 60
+        // line 64
         $this->displayBlock('body', $context, $blocks);
-        // line 61
+        // line 65
         echo "        </div>
         ";
-        // line 62
+        // line 66
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 63
+        // line 67
         echo "    </body>
     
     <footer>
@@ -190,7 +194,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     }
 
-    // line 60
+    // line 64
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -208,7 +212,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     }
 
-    // line 62
+    // line 66
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -239,7 +243,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     public function getDebugInfo()
     {
-        return array (  212 => 62,  194 => 60,  173 => 12,  154 => 11,  130 => 63,  128 => 62,  125 => 61,  123 => 60,  77 => 17,  71 => 13,  69 => 12,  65 => 11,  61 => 10,  57 => 9,  47 => 1,);
+        return array (  216 => 66,  198 => 64,  177 => 12,  158 => 11,  134 => 67,  132 => 66,  129 => 65,  127 => 64,  78 => 18,  71 => 13,  69 => 12,  65 => 11,  61 => 10,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -250,7 +254,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
         <meta charset=\"UTF-8\">
         <meta name=\"description\" content=\"vitrine Lunette OwlEyewear\">
         <meta name=\"keywords\" content=\"Lunette, nuit, correction, voiture, Owl Eyewear\">
-        <meta name=\"author\" content=\"Zachari BLINN & Rommanirs Mer\">
+        <meta name=\"author\" content=\"Zachari BLINN et Rommanirs Mer\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.1, shrink-to-fit=no\">
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
@@ -260,6 +264,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
     <body>
 
     <nav class=\"navbar navbar-expand-lg navbar-custom\">
+    <div class=\"container-fluid\">
         <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"{{ asset('/build/images/Fichier_4.8f8cdf3f.svg') }}\"></a></a>
         <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
@@ -301,7 +306,10 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                 </class=\"nav-item\">
                 </ul>
             </div>
+            </div>
         </nav>
+
+
         <div class=\"container\">
         {% block body %}{% endblock %}
         </div>
