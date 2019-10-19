@@ -166,12 +166,16 @@ body img{
    {
     text-align: center;
    }
-   .choix, .fabrication, .infoAdit, .testeur, .roadmap, .crew, .fabrique
+   .choix, .fabrication, .infoAdit, .testeur, .roadmap, .crew, .fabrique .lblwhyowleyewear
    {
     margin-top: 30px;
    }
    .txt{
        margin-top: 30px;
+   }
+   .lblwhyowleyewear
+   {
+    margin-top: 20px;
    }
    .countdownBox p
    {
