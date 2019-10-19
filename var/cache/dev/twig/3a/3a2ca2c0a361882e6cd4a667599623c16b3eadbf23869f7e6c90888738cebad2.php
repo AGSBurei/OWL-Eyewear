@@ -85,7 +85,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                     <a class=\"nav-link\" href=\"#SpecGlass\">CARACTERISTIQUES<span class=\"sr-only\">(current)</span></a>
                 </li>
                  <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#precision\">PRECISION TECHNIQUES</a>
+                    <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
@@ -270,7 +270,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                     <a class=\"nav-link\" href=\"#SpecGlass\">CARACTERISTIQUES<span class=\"sr-only\">(current)</span></a>
                 </li>
                  <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#precision\">PRECISION TECHNIQUES</a>
+                    <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
