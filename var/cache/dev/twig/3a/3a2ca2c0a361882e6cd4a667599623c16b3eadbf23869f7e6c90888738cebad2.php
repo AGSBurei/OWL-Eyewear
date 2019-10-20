@@ -85,10 +85,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                         <li class=\"nav-item active\">
                             <a class=\"nav-link\" href=\"#SpecGlass\">CARACTERISTIQUES<span class=\"sr-only\">(current)</span></a>
                         </li>
-
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
-                        </li>
+     
 
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
@@ -115,6 +112,10 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                         </li>
 
                         <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"#objectif\">OBJECTIFS</a>
                         </li>
 
@@ -133,14 +134,14 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
         <div class=\"container\">
         ";
-        // line 74
-        $this->displayBlock('body', $context, $blocks);
         // line 75
+        $this->displayBlock('body', $context, $blocks);
+        // line 76
         echo "        </div>
         ";
-        // line 76
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 77
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 78
         echo "    </body>
     
     <footer>
@@ -204,7 +205,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     }
 
-    // line 74
+    // line 75
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -222,7 +223,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     }
 
-    // line 76
+    // line 77
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -253,7 +254,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     public function getDebugInfo()
     {
-        return array (  226 => 76,  208 => 74,  187 => 12,  168 => 11,  144 => 77,  142 => 76,  139 => 75,  137 => 74,  77 => 17,  71 => 13,  69 => 12,  65 => 11,  61 => 10,  57 => 9,  47 => 1,);
+        return array (  227 => 77,  209 => 75,  188 => 12,  169 => 11,  145 => 78,  143 => 77,  140 => 76,  138 => 75,  77 => 17,  71 => 13,  69 => 12,  65 => 11,  61 => 10,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -284,10 +285,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                         <li class=\"nav-item active\">
                             <a class=\"nav-link\" href=\"#SpecGlass\">CARACTERISTIQUES<span class=\"sr-only\">(current)</span></a>
                         </li>
-
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
-                        </li>
+     
 
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
@@ -311,6 +309,10 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"#fabrique\">ASSEMBLAGE</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
                         </li>
 
                         <li class=\"nav-item\">

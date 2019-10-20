@@ -11,10 +11,9 @@
               <h1>Owl Eyewear - Améliorez votre vision la nuit.</h1>
               <p></p>
               <p><strong>LES LUNETTES OWL EYEWEAR SONT CONÇU AVEC DES VERRES HAUTS DE GAMME PERFORMANTS QUI AMELIORENT LA VISION LA NUIT. ELLE PERMET DE CONDUIRE PLUS SEREINEMENT ET AISEMENT.</strong></p>
-              <p> La nuit, le trafic routier ne représente que <strong>10% du trafic journalier </strong> mais <strong>génère 40% des accidents graves ou mortels</strong>. Plusieurs 
-              raisons sont en cause : la <strong>fatigue, la faible luminosité, une vision trouble, l’éblouissement dû aux phares</strong>, etc…</p>
-              <p>La vision est moins précise car les yeux ont <strong>besoin de temps </strong>pour s’adapter aux <strong>variations de luminosité</strong> et pour 
-                <strong>percevoir les reliefs</strong> et <strong>les distances.</strong></p>
+              <p> Vous voici sur la version française de notre campagne de lunettes pour la conduite nocturne. La vente du produit s’effectue UNIQUEMENT sur KICKSTARTER, un site de financement
+               participatif international permettant aux jeunes entrepreneurs de développer plus facilement leur projet. La façon de participer est assez simple et expliquée dans l’onglet « PARTICIPER ».
+                Nous vous laissons prendre connaissance des caractéristiques et bénéfices du produit que nous avons développé. Nous sommes très fiers de pouvoir aujourd’hui vous proposer ce produit.</p>
           </div>
 
            <div class="timer">
@@ -54,26 +53,16 @@
               </div>
               </div>
         <script type="text/javascript">
-            function $(id){
-                return document.getElementById(id)
-            }
-            function hms(){
-                var dt1 = new Date(); 
-                var dt2 = new Date('2019-10-25T12:00:00'); 
-                var dt3 = new Date(dt2 -dt1);
-                var dt4 = new Date();     
-                var numdays = dt3.getDate();
-                var numhours = dt3.getHours();
-                var minute = dt3.getMinutes();
-                var seconds = dt3.getSeconds();            
-                var str=(numdays) ;
-                $("days").innerHTML=numdays;
-                $("hours").innerHTML=numhours;
-                $("minutes").innerHTML=minute;
-                $("seconds").innerHTML=seconds;           
-                setTimeout(hms,1000);
-            }
-            hms();
+            var finalDate = new Date('2019-10-25T12:00:00'); 
+        finalDate = new Date(finalDate.getFullYear() + 1, 1 - 1, 1); 
+        $('#defaultCountdown').countdown({until: finalDate}); 
+        
+        $('#removeCountdown').click(function() { 
+            var destroy = $(this).text() === 'Remove'; 
+            $(this).text(destroy ? 'Re-attach' : 'Remove'); 
+            $('#defaultCountdown').countdown(destroy ? 'destroy' : {until: finalDate}); 
+        });
+          
           
           
       </script>
@@ -96,8 +85,7 @@
         <p></p>
         <p></p> 
         <p>Pour éliminer ces inconforts, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent d’<strong>d’améliorer grandement la vision.</strong> </p>
-        <p>Grâce à <strong>Owl Eyewear !</strong> Vous aurez un <strong>meilleur confort visuel</strong> lors de vos déplacements dans <br>
-        des <strong>conditions de faible luminosité</strong> et rendrez les routes plus sures !</p>
+        <p>Grâce à <strong>Owl Eyewear</strong>, vous aurez un <strong>meilleur confort visuel</strong> la nuit ou lors de vos déplacements dans des conditions de faible luminosité. <strong>Vous rendrez également les routes plus sures !</strong></p>
         <div class="newsletter">
         <p></p>
         <p></p>
@@ -148,12 +136,11 @@
         <p></p>
         <img class="lblWhenWear" src = "{{ asset ('/build/images/quand_les_porter.0935229d.png') }}" alt="label quand les porte">
         <p></p>
-          <p>Les lunettes Owl Eyewear peuvent être portées dans <strong>différentes situations</strong>. Vous pouvez les<br> utiliser 
-            sur ’importe quelle <strong>route sombre</strong> (en ville ou à la campagne). Elles peuvent être portées <br> au <strong>crépuscule</strong>,
-            la <strong>nuit</strong>, dans le <strong>brouillard</strong> et sous de <strong>fortes averses</strong>.</p>
+          <p>Les lunettes Owl Eyewear peuvent être portées <strong>dans toutes situations durant lesquelles la luminosité est faible </strong>
+          (en ville ou à la campagne). Elles peuvent être portées au crépuscule, la nuit, dans le brouillard et pendant de fortes averses.</p>
 
-            <p>Lorsque vous portez les lunettes, vous rendez la route plus sure, pour vous ainsi que pour <br> 
-            les autres. Vous serez ravis des <strong> améliorations </strong> que vous apportera cet équipement !</p>
+            <p>Lorsque vous portez les lunettes, vous rendez les routes plus sûres, pour vous ainsi que pour les autres. Vous serez ravis des
+             <strong>améliorations</strong> que vous apportera Owl Eyewear !</p>
         <p></p>
         
         <img class="gifSolv" src="{{ asset ("/build/images/FIGFINAL.396b4767.gif") }}" alt="gifSolv">
@@ -210,21 +197,19 @@
           <p>Vous pouvez choisir entre <strong>6 modèles de montures classiques</strong> si vous ne portez pas de lunettes<br> 
           ou si vous portez des lentilles de contact.</p>
           <p></p>
-            <div class="gifMonture">
-          <img class="gifMonture" src="{{ asset ('build/images/gif.7cd42fe3.gif') }}" alt="gif- Lunettes portées par Alison et Damien">
-          </div>
-          <p></p>
-
-          <p>Pour ceux ayant besoin de corrections nous proposons <strong>2 sur-lunettes</strong> dans <strong>deux tailles<br> différentes.</strong>>
-             Elles sont conçues pour se placer <strong>par-dessus vos lunettes correctrices.</strong></p>
-            <img class="gifsurglass" src="{{ asset('build/images/06bc94e6b4afccb7cd9e29dc7192dba0_original.6910b146.gif') }}" alt="surlunette">
+         
           <p></p>
           <div><p>Il existe <strong>différentes couleurs</strong> pour les modèles plastiques ainsi que <strong>différentes formes.</strong><br> 
              Vous permettant de choisir le modèle qui <strong>vous convient le mieux.</strong><br>
+            
+          <img class="pngLblframe" src="{{ asset('build/images/finfr.6b7f7df8.gif') }}" alt="giflunetteportee">
+          <p><strong>Nous ne souhaitons pas proposer des lunettes adaptables à la vue</strong>, nous avons opté pour des <strong>surlunettes</strong>. <strong>Le confort visuel est identique</strong>, 
+             le prix est plus intéressant et vous pouvez <strong>continuer à les utiliser si votre vue évolue.</strong></p>
+
           <p><strong>D’autres modèles</strong> seront disponibles <strong>si les objectifs de campagne sont atteints</strong><br> 
           (25000€, 50000€, 75000€). Une seule couleur est disponible par modèle.</p>
 
-          <img class="pngLblframe" src="{{ asset('build/images/Nos modSles.c402ed27.png') }}" alt="lblFrame">
+          
     
           </div>
 
@@ -336,7 +321,7 @@
           <p></p>
           <img class="lblOrigine" src="{{ asset('build/images/Origines_verres.png') }}" alt ="labelorigin">
           <p></p>
-          <img class="imgOrigine" src="{{ asset('build/images/InfoFR.4a6c20e9.png') }}" alt="imageg Origine">
+          <img class="imgOrigine" src="{{ asset('build/images/FRFR.10367c6c.jpg') }}" alt="imageg Origine">
           <p></p>
           <img class="lblYellowFR" src = "{{ asset ("/build/images/verres jaunes.cb45cc79.png") }}" alt="lblYellowFR">
     
