@@ -101,6 +101,10 @@ body, html{
     color: gray;
     font-style: italic;
 }
+.pngLblframe
+{
+    margin-top: 34px;
+}
 .container
 {
     text-align: center;
@@ -228,4 +232,8 @@ body img{
     font-style: initial;
     color: #000000;
     text-align: left;
+}
+.imgOrigine
+{
+    height:363px;
 }
