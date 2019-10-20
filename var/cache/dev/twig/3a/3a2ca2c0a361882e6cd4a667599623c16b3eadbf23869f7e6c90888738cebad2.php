@@ -70,67 +70,77 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
         // line 13
         echo "    </head>
     <body>
-
-    <nav class=\"navbar navbar-expand-lg navbar-custom\">
-    <div class=\"container-fluid\">
-        <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"";
-        // line 18
+        <nav class=\"navbar navbar-expand-lg navbar-custom\">
+        <div class=\"container-fluid\">
+            <a class=\"navbar-brand\" href=\"/\"><img class=\"logo\"src=\"";
+        // line 17
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Fichier_4.8f8cdf3f.svg"), "html", null, true);
         echo "\"></a></a>
-        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-            <span class=\"navbar-toggler-icon\"></span>
-        </button>
-            <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
-                <ul class=\"navbar-nav ml-auto\">
-                <li class=\"nav-item active\">
-                    <a class=\"nav-link\" href=\"#SpecGlass\">CARACTERISTIQUES<span class=\"sr-only\">(current)</span></a>
-                </li>
-                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#statsup\">STATISTIQUES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#listMonture\">MODELES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#taille\">TAILLES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#pack\">CONTENU</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#fabrique\">ASSEMBLAGE</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#objectif\">OBJECTIFS</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#participer\">PARTICIPER</a>
-                </li>
-                <class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#equipe\">EQUIPE</a>
-                </class=\"nav-item\">
-                </ul>
-            </div>
-            </div>
-        </nav>
+            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" > 
+                <span class=\"navbar-toggler-icon\"></span>
+            </button>
+
+                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+                    <ul class=\"navbar-nav ml-auto\">
+                        <li class=\"nav-item active\">
+                            <a class=\"nav-link\" href=\"#SpecGlass\">CARACTERISTIQUES<span class=\"sr-only\">(current)</span></a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#statsup\">STATISTIQUES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#listMonture\">MODELES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#taille\">TAILLES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#pack\">CONTENU</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#fabrique\">ASSEMBLAGE</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#objectif\">OBJECTIFS</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#participer\">PARTICIPER</a>
+                        </li>
+
+                        <class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#equipe\">EQUIPE</a>
+                        </class=\"nav-item\">
+                    </ul>
+                </div>
+        </div>
+    </nav>
 
 
         <div class=\"container\">
         ";
-        // line 64
+        // line 74
         $this->displayBlock('body', $context, $blocks);
-        // line 65
+        // line 75
         echo "        </div>
         ";
-        // line 66
+        // line 76
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 67
+        // line 77
         echo "    </body>
     
     <footer>
@@ -164,7 +174,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "OWL EyeWear";
+        echo "OWL Eyewear";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -194,7 +204,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     }
 
-    // line 64
+    // line 74
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -212,7 +222,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     }
 
-    // line 66
+    // line 76
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -243,7 +253,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     public function getDebugInfo()
     {
-        return array (  216 => 66,  198 => 64,  177 => 12,  158 => 11,  134 => 67,  132 => 66,  129 => 65,  127 => 64,  78 => 18,  71 => 13,  69 => 12,  65 => 11,  61 => 10,  57 => 9,  47 => 1,);
+        return array (  226 => 76,  208 => 74,  187 => 12,  168 => 11,  144 => 77,  142 => 76,  139 => 75,  137 => 74,  77 => 17,  71 => 13,  69 => 12,  65 => 11,  61 => 10,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -258,56 +268,66 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.1, shrink-to-fit=no\">
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
-        <title>{% block title %}OWL EyeWear{% endblock %}</title>
+        <title>{% block title %}OWL Eyewear{% endblock %}</title>
         {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
     </head>
     <body>
+        <nav class=\"navbar navbar-expand-lg navbar-custom\">
+        <div class=\"container-fluid\">
+            <a class=\"navbar-brand\" href=\"/\"><img class=\"logo\"src=\"{{ asset('/build/images/Fichier_4.8f8cdf3f.svg') }}\"></a></a>
+            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" > 
+                <span class=\"navbar-toggler-icon\"></span>
+            </button>
 
-    <nav class=\"navbar navbar-expand-lg navbar-custom\">
-    <div class=\"container-fluid\">
-        <a class=\"navbar-brand\" href=\"#\"><a href=\"/\"><img class=\"logo\"src=\"{{ asset('/build/images/Fichier_4.8f8cdf3f.svg') }}\"></a></a>
-        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-            <span class=\"navbar-toggler-icon\"></span>
-        </button>
-            <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
-                <ul class=\"navbar-nav ml-auto\">
-                <li class=\"nav-item active\">
-                    <a class=\"nav-link\" href=\"#SpecGlass\">CARACTERISTIQUES<span class=\"sr-only\">(current)</span></a>
-                </li>
-                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#statsup\">STATISTIQUES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#listMonture\">MODELES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#taille\">TAILLES</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#pack\">CONTENU</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#fabrique\">ASSEMBLAGE</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#objectif\">OBJECTIFS</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#participer\">PARTICIPER</a>
-                </li>
-                <class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#equipe\">EQUIPE</a>
-                </class=\"nav-item\">
-                </ul>
-            </div>
-            </div>
-        </nav>
+                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+                    <ul class=\"navbar-nav ml-auto\">
+                        <li class=\"nav-item active\">
+                            <a class=\"nav-link\" href=\"#SpecGlass\">CARACTERISTIQUES<span class=\"sr-only\">(current)</span></a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#statsup\">STATISTIQUES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#listMonture\">MODELES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#taille\">TAILLES</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#pack\">CONTENU</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#fabrique\">ASSEMBLAGE</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#objectif\">OBJECTIFS</a>
+                        </li>
+
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#participer\">PARTICIPER</a>
+                        </li>
+
+                        <class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"#equipe\">EQUIPE</a>
+                        </class=\"nav-item\">
+                    </ul>
+                </div>
+        </div>
+    </nav>
 
 
         <div class=\"container\">

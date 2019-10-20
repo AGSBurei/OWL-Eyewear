@@ -30,7 +30,7 @@ li
 }
 .logo
 {
-    height: 60px;
+    height: 84px;
 }
 .band
 {
@@ -86,4 +86,19 @@ li
 }
 .main {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+  a:hover{
+    color: #f7a400;
+  }
+  .imgcollaps
+  {
+      width:20px;
+  }
+  .navbar-custom .navbar-toggler-icon
+  {
+    background-image: url("../images/collaps.png");
+  }
+  .container
+  {
+    margin-top: -14px;
   }
