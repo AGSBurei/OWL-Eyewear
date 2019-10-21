@@ -53,15 +53,30 @@
               </div>
               </div>
         <script type="text/javascript">
-            var finalDate = new Date('2019-10-25T12:00:00'); 
-        finalDate = new Date(finalDate.getFullYear() + 1, 1 - 1, 1); 
-        $('#defaultCountdown').countdown({until: finalDate}); 
-        
-        $('#removeCountdown').click(function() { 
-            var destroy = $(this).text() === 'Remove'; 
-            $(this).text(destroy ? 'Re-attach' : 'Remove'); 
-            $('#defaultCountdown').countdown(destroy ? 'destroy' : {until: finalDate}); 
-        });
+          
+            function $(id){
+                return document.getElementById(id)
+            }
+            function hms(){
+                var dt1 = new Date(); 
+                var dt2 = new Date('2019-10-25T12:00:00'); 
+                var dt3 = new Date(dt2 -dt1);
+                var dt4 = new Date();     
+                var numdays = dt3.getDate();
+                var numhours = dt3.getHours();
+                var minute = dt3.getMinutes();
+                var seconds = dt3.getSeconds();            
+                var str=(numdays) ;
+                $("days").innerHTML=numdays;
+                $("hours").innerHTML=numhours;
+                $("minutes").innerHTML=minute;
+                $("seconds").innerHTML=seconds;           
+                setTimeout(hms,1000);
+            }
+            hms();
+          
+          
+      
           
           
           

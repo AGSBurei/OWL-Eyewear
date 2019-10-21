@@ -509,6 +509,6 @@ class __TwigTemplate_e26d3d6e6fa2f5d9f450a22ff41e58fce0f6a404ce4f7b5defd17e13e9d
     </ul>
 
 {% endblock %}
-", "@EasyAdmin/data_collector/easyadmin.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\data_collector\\easyadmin.html.twig");
+", "@EasyAdmin/data_collector/easyadmin.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\data_collector\\easyadmin.html.twig");
     }
 }

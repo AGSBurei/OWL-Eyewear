@@ -131,6 +131,6 @@ class __TwigTemplate_e02299dd9be63ae8e8acfbc012333910eae59f90960699b022f017adacf
 
 
 {% endblock %}
-", "newsletter/home.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\newsletter\\home.html.twig");
+", "newsletter/home.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\templates\\newsletter\\home.html.twig");
     }
 }
