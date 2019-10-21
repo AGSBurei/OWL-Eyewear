@@ -9,7 +9,8 @@
 require('../css/app.scss');
 require('../css/base.css');
 require('../css/homeStyle.css');
-require('./jquery.countdown.js');
+require('../css/login.css');
+//require('./jquery.countdown.js');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 const $ = require('jquery');

@@ -66,9 +66,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "head"));
 
         // line 3
-        echo "<link rel=\"stylesheet\" href=\"";
-        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("homeStyle");
-        echo "\">
+        echo "
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -96,10 +94,10 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             <div class=\" txt-presentation\">
               <h1>Owl Eyewear - Améliorez votre vision la nuit.</h1>
               <p></p>
-              <p><strong>LES LUNETTES OWL EYEWEAR SONT CONÇU AVEC DES VERRES HAUTS DE GAMME PERFORMANTS QUI AMELIORENT LA VISION LA NUIT. ELLE PERMET DE CONDUIRE PLUS SEREINEMENT ET AISEMENT.</strong></p>
-              <p> Vous voici sur la version française de notre campagne de lunettes pour la conduite nocturne. La vente du produit s’effectue UNIQUEMENT sur KICKSTARTER, un site de financement
+              <p><mark><strong>LES LUNETTES OWL EYEWEAR SONT CONÇU AVEC DES VERRES HAUTS DE GAMME PERFORMANTS QUI AMELIORENT LA VISION LA NUIT. ELLE PERMET DE CONDUIRE PLUS SEREINEMENT ET AISEMENT.</strong></mark></p>
+              <p><mark>Vous voici sur la version française de notre campagne de lunettes pour la conduite nocturne. La vente du produit s’effectue UNIQUEMENT sur KICKSTARTER, un site de financement
                participatif international permettant aux jeunes entrepreneurs de développer plus facilement leur projet. La façon de participer est assez simple et expliquée dans l’onglet « PARTICIPER ».
-                Nous vous laissons prendre connaissance des caractéristiques et bénéfices du produit que nous avons développé. Nous sommes très fiers de pouvoir aujourd’hui vous proposer ce produit.</p>
+                Nous vous laissons prendre connaissance des caractéristiques et bénéfices du produit que nous avons développé. Nous sommes très fiers de pouvoir aujourd’hui vous proposer ce produit.</mark></p>
           </div>
 
            <div class=\"timer\">
@@ -143,24 +141,25 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             function \$(id){
                 return document.getElementById(id)
             }
-            function hms(){
-                var dt1 = new Date(); 
-                var dt2 = new Date('2019-10-25T12:00:00'); 
-                var dt3 = new Date(dt2 -dt1);
-                var dt4 = new Date();     
+
+            var currentDate = new Date();
+              var finalDate = new Date('2019-10-25T12:00:00');
+
+            setInterval(function(){
+                currentDate = new Date();
+                var dt3 = new Date(finalDate - currentDate);
                 var numdays = dt3.getDate();
                 var numhours = dt3.getHours();
                 var minute = dt3.getMinutes();
-                var seconds = dt3.getSeconds();            
-                var str=(numdays) ;
-                \$(\"days\").innerHTML=numdays;
-                \$(\"hours\").innerHTML=numhours;
-                \$(\"minutes\").innerHTML=minute;
-                \$(\"seconds\").innerHTML=seconds;           
-                setTimeout(hms,1000);
-            }
-            hms();
-          
+                var seconds = dt3.getSeconds();
+
+                \$('#days').html(numdays);
+                \$('#hours').html(numhours);
+                \$('#minutes').html(minute);
+                \$('#seconds').html(seconds);
+
+            }, 1000);
+                      
           
       
           
@@ -173,72 +172,72 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         </div>
       <br>
       <br>
-      
       <br>
       <br>
       <br>
-  
-
     <div class=\"txt\">
     <img class=\"logoOwl\" src=\"";
-        // line 97
+        // line 95
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/OWL_logo.5da53e41.png"), "html", null, true);
         echo "\" alt=\"logoOwlEyeWear\">
   <p></p>
         <img class=\"lblwhyowleyewear\" src=\"";
-        // line 99
+        // line 97
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Pourquoi_Owl_eyewear.46a32322.png"), "html", null, true);
         echo "\" alt=\"lblWhyOwlEyeWear\">
         <p></p>
         <p></p> 
-        <p>Pour éliminer ces inconforts, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent d’<strong>d’améliorer grandement la vision.</strong> </p>
+        <div class=\"txtintro\">
+        <p>Pour éliminer ces inconforts, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent <strong>d’améliorer grandement la vision.</strong></p>
         <p>Grâce à <strong>Owl Eyewear</strong>, vous aurez un <strong>meilleur confort visuel</strong> la nuit ou lors de vos déplacements dans des conditions de faible luminosité. <strong>Vous rendrez également les routes plus sures !</strong></p>
+        <p><strong>Si vous êtes intéressé par nos lunettes, renseignez votre adresse mail ci-dessous pour être averti lors de la mise en ligne de notre campagne de financement participative !</strong></p> 
+        </div>
         <div class=\"newsletter\">
         <p></p>
         <p></p>
-        <p><strong>Si vous êtes intéressé par nos lunettes, renseignez votre adresse mail ci-dessous pour être averti lors de la mise en ligne de notre campagne de financement participative !</strong></p> 
+        
           
           ";
-        // line 109
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 109, $this->source); })()), 'form_start');
+        // line 110
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 110, $this->source); })()), 'form_start');
         echo "
           ";
-        // line 110
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 110, $this->source); })()), "email", [], "any", false, false, false, 110), 'row');
+        // line 111
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 111, $this->source); })()), "email", [], "any", false, false, false, 111), 'row');
         echo " 
           <button type=\"submit\" class=\"btn btn-success\">Inscription</button>
           ";
-        // line 112
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 112, $this->source); })()), 'form_end');
+        // line 113
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 113, $this->source); })()), 'form_end');
         echo "
         </div>
         
     </div>
         <br>
         <img class=\"objectifbanner\" src=\"";
-        // line 117
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Objectifs_banner.8bc8850e.png"), "html", null, true);
+        // line 118
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/objectif_banner.bc8435ed.png"), "html", null, true);
         echo "\" alt=\"imgObjectifBanner\">   
         <br>
       <p></p>
     <div class=\"glass\">
         <div class=\"labelFR\">
             <img class=\"lblFR\" src=\"";
-        // line 122
+        // line 123
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FR.456ebb3d.png"), "html", null, true);
         echo "\" alt=\"lblGlassFR\" id=\"SpecGlass\">
         </div>
             <br>
         <div class=\"labelSepcFR\">
               <img class=\"lblSpecFR\" src= \"";
-        // line 126
+        // line 127
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Carac monture.e5411406.png"), "html", null, true);
         echo "\" alt=\"lblSpecFR\">
         </div>
             <br>
         <div class=\"GlassDetailFR\">
             <img class=\"imgGlassDetailEN\" src= \"";
-        // line 130
+        // line 131
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Lunettes araignée.632bfb25.png"), "html", null, true);
         echo "\" alt=\"imgGlassDetailFR\">
         </div>
@@ -247,14 +246,14 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
     <div class=\"coat\">
         <div class=\"labelCoatType\">
           <img class =\"lblCoatType\" src= \"";
-        // line 136
+        // line 137
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Details traitements.7474e869.png"), "html", null, true);
         echo "\" alt=\"lblCoatTypeFR\"> 
         </div>
             <br>
         
         <img class=\"coatdetail\" src =\"";
-        // line 140
+        // line 141
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Détails des traitements.ee731cde.png"), "html", null, true);
         echo "\" alt=\"coatdetail\">
     </img>
@@ -265,14 +264,14 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
   <br>
       <div class=\"solution\">
         <img class=\"lblsolutFR\" src = \"";
-        // line 148
+        // line 149
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FR3.484e8eb8.png"), "html", null, true);
         echo "\" alt=\"lblSolv\" id=\"resolut\">
    
         <br>
         <p></p>
         <img class=\"lblWhenWear\" src = \"";
-        // line 152
+        // line 153
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/quand_les_porter.0935229d.png"), "html", null, true);
         echo "\" alt=\"label quand les porte\">
         <p></p>
@@ -284,30 +283,30 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         <p></p>
         
         <img class=\"gifSolv\" src=\"";
-        // line 161
+        // line 162
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FIGFINAL.396b4767.gif"), "html", null, true);
         echo "\" alt=\"gifSolv\">
         <p></p>
         <p></p>
         <p></p>
         <img class =\"genbenef\" src=\"";
-        // line 165
+        // line 166
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/gene_et_benef.09e95592.png"), "html", null, true);
         echo "\" alt=\"lblgenbenef\">
         <p></p>
         <img class =\"imgtableau\" src=\"";
-        // line 167
+        // line 168
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/recap.61746e12.png"), "html", null, true);
         echo "\" alt=\"tableau\">
         <p></p>
         <img class=\"lblWhoisConcern\" src=\"";
-        // line 169
+        // line 170
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/personnes_concernees.b22c5392.png"), "html", null, true);
         echo "\" alt=\"label personne concerné\">
         <p></p>
         <p>Pour toutes les personnes ressentant des gênes ou voulant un <strong>meilleurmeilleur confort visuel.</strong></p>
         <img class=\"imgConcerner\" src=\"";
-        // line 172
+        // line 173
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/Pour_Qui.465be7be.png"), "html", null, true);
         echo "\" alt=\"pour qui\">
         <p></p>
@@ -326,10 +325,10 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
       <p></p>
       <p></p>
         <img class=\"statisticsFR\" src=\"";
-        // line 188
+        // line 189
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR4.c5c9ac1b.png"), "html", null, true);
         echo "\" alt=\"statisticsFR\" id=\"statsup\">
-        <p> Conduire dans des <strong>mauvaises conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> <br>et 
+        <p> Conduire dans des <strong>faibles conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> <br>et 
             c’est pour cela que nous espérons que ces lunettes deviendront un accessoire indispensable à<br> tous !</p> 
         <p>D’après une étude réalisée en France, <strong>42% des automobilistes conduisent la nuit</strong> au moins une <br> 
            fois par semaine et <strong>89.3% des conducteurs ressentent des gênes durant ces trajets nocturnes.</strong><br>
@@ -344,17 +343,17 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
     
       <div class=\"framelst\">
           <img class=\"frame\" src=\"";
-        // line 203
+        // line 204
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR5.7549b27e.png"), "html", null, true);
         echo "\" alt=\"lstMonture\" id=\"listMonture\">
           <p></p>
           <img class=\"pngspec\" src=\"";
-        // line 205
+        // line 206
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Carac monture.e5411406.png"), "html", null, true);
         echo "\" alt=\"pngspec\">
           <p></p>
           <img class=\"spec\" src=\"";
-        // line 207
+        // line 208
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/carac.0257e035.png"), "html", null, true);
         echo "\" alt=\"spec\">
           <p></p>
@@ -370,7 +369,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
              Vous permettant de choisir le modèle qui <strong>vous convient le mieux.</strong><br>
             
           <img class=\"pngLblframe\" src=\"";
-        // line 220
+        // line 221
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/finfr.6b7f7df8.gif"), "html", null, true);
         echo "\" alt=\"giflunetteportee\">
           <p><strong>Nous ne souhaitons pas proposer des lunettes adaptables à la vue</strong>, nous avons opté pour des <strong>surlunettes</strong>. <strong>Le confort visuel est identique</strong>, 
@@ -388,7 +387,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <div class=\"picbox\">
           <div class=\"img1\">
           <img class=\"imgframe1\"  src=\"";
-        // line 235
+        // line 236
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Ronde_Ecaille.0414298f.png"), "html", null, true);
         echo "\" alt=\"imgFrame1\">
           <p></p>
@@ -397,7 +396,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <p></p>
           <div class=\"img2\">
           <img class=\"imgframe2\"  src=\"";
-        // line 241
+        // line 242
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/27a16970da1f818ea2419f93a8a16be4_original.png"), "html", null, true);
         echo "\" alt=\"imgFrame2\">
           <p>Ronde noir mat</p>
@@ -405,7 +404,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <p></p>
           <div class=\"img3\">
           <img class=\"imgframe3\"  src=\"";
-        // line 246
+        // line 247
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/f492acd4a9846eec532f31a21bff3179_original.a54153eb.png"), "html", null, true);
         echo "\" alt=\"imgFrame3\">
           <p>Rectangle brun brillant</p>
@@ -413,7 +412,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <p></p>
           <div class=\"img4\">
           <img class=\"imgframe4\"  src=\"";
-        // line 251
+        // line 252
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/6e8e070aaa473041df3628c024a81cab_original.f9466eea.png"), "html", null, true);
         echo "\" alt=\"imgFrame4\">
           <p>Rectangle noir mat</p>
@@ -421,7 +420,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <p></p>
           <div class=\"img5\">
           <img class=\"imgframe5\" src=\"";
-        // line 256
+        // line 257
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/32feb0ca2b355438e4d5ea88a01b250e_original.6a6a1061.png"), "html", null, true);
         echo "\" alt=\"imgFrame5\">
           <p>sur-lunette</p>
@@ -429,7 +428,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <p></p>
           <div class=\"img6\">
           <img class=\"imgFrame6\" src=\"";
-        // line 261
+        // line 262
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/5782e86838a62dd05d3348f28b44c4a2_original.png"), "html", null, true);
         echo "\" alt=\"imgFrame6\">
           <p>Combinée ecaille</p>
@@ -437,7 +436,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <p></p>
           <div class=\"img7\">
           <img class=\"imgframe7\" src=\"";
-        // line 266
+        // line 267
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/b36c9cf3d44ba58db0e09363e4d69d05_original.png"), "html", null, true);
         echo "\" alt=\"imgFrame7\">
           <p>Ronde noir métal</p>
@@ -445,28 +444,28 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <p></p>
           <div class=\"img8\">
           <img class=\"imgframe8\" src=\"";
-        // line 271
+        // line 272
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/8954eeef74be001decdac564f465a50a_original.75212a38.jpg"), "html", null, true);
         echo "\" alt=\"imgFrame8\">
           </div>
           <p></p>
           <div class=\"img9\">
           <img class=\"imgframe9\" src=\"";
-        // line 275
+        // line 276
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/a67a0f66538778ff1f44f2b65cd485ec_original.87db49bc.jpg"), "html", null, true);
         echo "\" alt=\"imgFrame9\">
           </div>
           <p></p>
           <div class=\"img10\">
           <img class=\"imgFrame10\" src=\"";
-        // line 279
+        // line 280
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/451c05a5dc8148affe85488dfa4ec839_original.0b8ab53b.jpg"), "html", null, true);
         echo "\" alt=\"imgFrame10\">
           </div>
           <p></p>
           <div class=\"img11\">
           <img class=\"imgFrame11\" src=\"";
-        // line 283
+        // line 284
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/6f774fecf7de574748fb0bb69072090f_original.9dc1edab.jpg"), "html", null, true);
         echo "\" alt=\"imgFrame11\">   
           </div>
@@ -477,17 +476,17 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <p></p>
           <div class=\"choix\">
           <img class=\"banChoix\" src=\"";
-        // line 291
+        // line 292
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR6.bfb517ea.png"), "html", null, true);
         echo "\" alt=\"BannièreChoix\" id=\"taille\">
           <p></p>
           <img class=\"imgChoix\" src=\"";
-        // line 293
+        // line 294
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/choix_taille.c505f783.png"), "html", null, true);
         echo "\" alt=\"imageChoix\">
           <p></p>
           <img class=\"imgPort1\" src=\"";
-        // line 295
+        // line 296
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Frais_de_port.5f5d9ab4.png"), "html", null, true);
         echo "\" alt=\"frais de port\"> 
 
@@ -499,25 +498,25 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             <p></p>
             <p></p>
             <img class=\"banRecep\" src=\"";
-        // line 304
+        // line 305
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR7.64d4c2e0.png"), "html", null, true);
         echo "\" alt=\"banniere reception\">
             <p></p>
-            <p>La lunette choisie ne sera pas la seule chose que vous recevrez. Nous avons décidé de mettre<br> 
-               le produit en valeur avec un <strong>packaging</strong> dans le thème de notre produit: <strong>l’obscurité.</strong></p>
+            <p>La paire de lunette choisie ne sera pas la seule chose que vous recevrez. Nous avons décidé de mettre en valeur notre produit 
+            avec un packaging dans le thème de notre produit : l’obscurité. Mots en gras : <strong>\"Packaging\" et \"l'obscurité.</strong></p>
             <p>Dans le but de <strong>les protéger</strong>, vous disposerez également d’un <strong>étui souple</strong>. Grâce à celui-ci,<br>
                vos verres seront <strong>protégés</strong> et vous conserverez un <strong>bon confort visuel.</strong> Vous pouvez aussi les<br>
                <strong>ranger facilement</strong> dans la portière de votre voiture ou dans votre boite à gant <strong>sans risques.</strong><br> 
                Il sera également fourni une microfibre pour nettoyer vos lunettes.</p>
                <img class=\"gifcar\" src=\"";
-        // line 312
+        // line 313
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/gifcar.a7470e31.gif"), "html", null, true);
         echo "\" alt=\"gifcar\">
                <p></p>
-            <p>Pour finir, nous vous offrons <strong>2 stickers</strong> Owl Eyewear pour les collez ou vous le souhaitez !</p>
+            <p>Pour finir, nous vous offrons <strong>2 stickers</strong> Owl Eyewear à coller ou vous souhaitez !</p>
             <p></p>
             <img class=\"imgPack\" src=\"";
-        // line 316
+        // line 317
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/PackFR.e1fd8347.png"), "html", null, true);
         echo "\" alt=\"image pack\">
             <p></p>
@@ -525,12 +524,12 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
 
             <div class=\"fabrication\">
             <img class=\"banHowMake\" src=\"";
-        // line 321
+        // line 322
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/process.5f63f1a7.png"), "html", null, true);
         echo "\" alt=\"image How Make\" id=\"fabrique\">
             <p></p>
-            <p>Une fois que nous aurons reçu les questionnaires avec la monture que vous aurez choisie.<br>
-               Nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
+            <p>Une fois que nous aurons reçu la liste des montures que vous aurez choisies,
+              nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
             <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/veLOW5-W6Mk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
             <p></p>
             <p>Nous assemblerons l’ensemble des équipements dans <strong>notre atelier en France.</strong> Les verres,<br>
@@ -542,22 +541,22 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             </div>
        <div class=\"infoAdit\">    
           <img class=\"lblInfoSupFR\" src = \"";
-        // line 335
+        // line 336
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/FR2.1671e564.png"), "html", null, true);
         echo "\" alt=\"lblInfoSupFR\" id=\"precision\">
           <p></p>
           <img class=\"lblOrigine\" src=\"";
-        // line 337
+        // line 338
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Origines_verres.png"), "html", null, true);
         echo "\" alt =\"labelorigin\">
           <p></p>
           <img class=\"imgOrigine\" src=\"";
-        // line 339
+        // line 340
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FRFR.10367c6c.jpg"), "html", null, true);
         echo "\" alt=\"imageg Origine\">
           <p></p>
           <img class=\"lblYellowFR\" src = \"";
-        // line 341
+        // line 342
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/images/verres jaunes.cb45cc79.png"), "html", null, true);
         echo "\" alt=\"lblYellowFR\">
     
@@ -573,7 +572,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
              et <strong>améliorent la vision des contrastes</strong> et offre ainsi un <strong>meilleur confort.</strong></p>
         <div class=\"graph\">
       <img class=\"pngGraphGlsFR\" src =\"";
-        // line 354
+        // line 355
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FRcourbe.57889c14.png"), "html", null, true);
         echo "\" alt=\"pngGraphGlsFR\">
         <div class=\"legendeGraph\">
@@ -582,7 +581,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
       
 <div class =\"myopienuit\">
        <img class=\"lblNightMyopFR\" src=\"";
-        // line 360
+        // line 361
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Myopi noc.54895fea.png"), "html", null, true);
         echo "\" alt=\"lblNightMyopFR\">
       <p></p>
@@ -599,25 +598,25 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
          
           <div class= \"pngViewFR\">
                 <img class=\"pngSunViewFR\" src=\"";
-        // line 374
+        // line 375
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/net.c81b8bd3.png"), "html", null, true);
         echo "\" alt=\"pngSunViewFR\">
                 <p>Vision normal de jour</p>
 
                 <img class=\"pngNightViewFR\" src=\"";
-        // line 377
+        // line 378
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Flou.77ea1e45.png"), "html", null, true);
         echo "\" alt=\"pngNightViewFR\">
                 <p>Vision flou de nuit</p>
 
                 <img class=\"pngNihtViewCorFR\" src=\"";
-        // line 380
+        // line 381
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/corrige.c6f47421.png"), "html", null, true);
         echo "\" alt=\"pngNihtViewCorFR\">
-                <p>Vision corrigée de nuit avec les verres OWL EyeWear</p>
+                <p>Vision corrigée de nuit avec les verres OWL Eyewear</p>
                 <p></p>
                 <img class=\"pngAdaptationFR\" src=\"";
-        // line 383
+        // line 384
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Adapatation.448958e1.png"), "html", null, true);
         echo "\" alt=\"imageAdaptation\">
                 <p></p>
@@ -634,13 +633,13 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         <p></p>
         <div class=\"testeur\">
         <img class=\"bantest\" src=\"";
-        // line 397
+        // line 398
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Avis_des_testeurs.2a67f876.png"), "html", null, true);
         echo "\" alt=\"bannière testeur\">
         <p></p>
         <p>Nous avons testé nos produit sur divers profils de conducteurs, voici quelques retours:</p>
         <img class=\"imgavis\" src=\"";
-        // line 400
+        // line 401
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/AvisFR.e1251bb2.png"), "html", null, true);
         echo "\" alt=\"avis\">
         <p></p>
@@ -649,12 +648,12 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         
         <div class=\"objectif\">
           <img class=\"banbanObjectnO\" src=\"";
-        // line 406
+        // line 407
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR9.02bfd0dc.png"), "html", null, true);
         echo "\" alt=\"objectif\" id=\"objectif\">
           <p></p>
           <img class=\"imgObject\" src=\"";
-        // line 408
+        // line 409
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Objectifs.1ecbce6e.png"), "html", null, true);
         echo "\" alt =\"image objectif\">
         </div>
@@ -663,12 +662,12 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         <p></p>
         <div class=\"roadmap\">
           <img class=\"banRoadMap\" src=\"";
-        // line 414
+        // line 415
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR10.1cd7fac0.png"), "html", null, true);
         echo "\" alt=\"banRoadMap\">
           <p></p>
           <img class=\"imgRoadMap\" src=\"";
-        // line 416
+        // line 417
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Timeline FR.8cad95d2.png"), "html", null, true);
         echo "\" alt=\"image roadmap\">
         </div>
@@ -676,69 +675,66 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         <p></p>
         <div class=\"kickstarter\">
             <img class=\"banPledgeList\" src=\"";
-        // line 421
+        // line 422
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR11.d4b54aa5.png"), "html", null, true);
         echo "\" alt=\"Banniere Kick\" id=\"pack\">
             <p></p>
             <div class=\"pledgeListe\">
                 <img class=\"pledge1\" src=\"";
-        // line 424
+        // line 425
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/1.e5ff50a3.png"), "html", null, true);
         echo "\" alt=\"pledge 1\">
                 <p></p>
                 <img class=\"pledge2\" src=\"";
-        // line 426
+        // line 427
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/2.12448040.png"), "html", null, true);
         echo "\" alt=\"pledge 2\">
                 <p></p>
                 <img class=\"pledge3\" src=\"";
-        // line 428
+        // line 429
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/4.61d04de2.png"), "html", null, true);
         echo "\" alt=\"pledge 3\">
                 <p></p>
                 <img class=\"pledge4\" src=\"";
-        // line 430
+        // line 431
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/10.7b031ebc.png"), "html", null, true);
         echo "\" alt=\"pledge 4\">
                 <p></p>
                 <img class=\"pledge5\" src=\"";
-        // line 432
+        // line 433
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/20.33ee32de.png"), "html", null, true);
         echo "\" alt=\"pledge 5\">
             </div>
             <img class=\"imgPort2\" src=\"";
-        // line 434
+        // line 435
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Frais_de_port.5f5d9ab4.png"), "html", null, true);
         echo "\" alt=\"frais de port\"> 
         </div>
  
         <div class=\"howTo\" id=\"participer\">
             <img class=\"banhtPledge\" src=\"";
-        // line 438
+        // line 439
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR12.9f3e1ce8.png"), "html", null, true);
         echo "\" alt=\"ban how to pledge\">
             <p></p>
             <!---->
-            <p><strong>1. Cliquez sur «Back this Project»:</strong> sélectionnez le niveau de récompense disponible que vous<br> 
-               souhaitez engager sur le côté droit de la page. Chaque contributeur ne peut s'engager qu'une <br>seule fois.</p>
+            <p>1. <strong>Cliquez sur «Je soutien ce projet»</strong> puis sélectionnez le pack que vous souhaitez recevoir. 
+              Ou sélectionnez directement le pack que vous souhaitez sur le coté droit de la page. Chaque contributeur ne peut s'engager qu'une seule fois.</p>
                <!---->
-            <p><strong>2. Paiement :</strong> Entrez vos informations de paiement. Vous ne payerez ni ne choisirez aucun <br>
-               modèle à ce stade, vous autoriserez uniquement Kickstarter à vous facturer le coût de la <br>promesse 
-               à la fin de la campagne si nous atteignons l'objectif initial.</p>
+            <p>2. Paiement : Entrez vos informations de <strong>paiement.</strong> Vous ne payerez ni ne choisirez aucun modèle à ce stade, vous autoriserez uniquement
+             Kickstarter à vous facturer le pack choisi à la fin de la campagne si nous atteignons notre objectif de financement.</p>
                <!---->
-            <p><strong>3. Informations sur le modèle, la couleur et la livraison :</strong> Ne vous inquiétez pas pour le<br>  
-                moment
-               ! Une fois la campagne terminée, vous recevrez un sondage indiquant vos informations <br>de modèle 
-               choisi, la couleur et le lieu d’expédition.</p>
+            <p>3. <strong>Choix du modèle, de la couleur et la livraison :</strong> Ne vous inquiétez pas pour le
+            moment ! Une fois la campagne terminée, vous recevrez un questionnaire vous permettant d'indiquer le modèle choisi, la couleur et l'adresse d’expédition.</p>
                <!---->
-            <p>À tous les donateurs : Nous expédierons Owl Eyewear dans le monde entier. Merci à tous !</p>
+            <p>À tous les participants : Nous expédierons Owl Eyewear dans le monde entier. Merci à vous !\"</p>
 
         </div>
         <p></p>
      <div class=\"parainage\">
         <p></p>
             <img class=\"lblSpons\" src=\"";
-        // line 459
+        // line 457
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/parrainage.bf9e3fde.png"), "html", null, true);
         echo "\" alt=\"label Parainage\">
             <p> </p>
@@ -753,13 +749,13 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
                et le numéro de contributeur du parrain à la personne parrainée, et inversement. </p>
             <p></p>
             <img class=\"gifSpray\" src=\"";
-        // line 471
+        // line 469
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/VID_20191010_161057_1.f93f3aea.gif"), "html", null, true);
         echo "\" alt=\"gifSpray\">
             <!---->
             </div>Vous pouvez trouver votre numéro de participant en haut de la page :</p>
             <img class=\"imgkickstart\" src=\"";
-        // line 474
+        // line 472
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/0403e075ba013fa0d8a9ceac0a1206a4.eb0076ad.png"), "html", null, true);
         echo "\" alt=\"image kickstarter\">
             <p></p>
@@ -771,42 +767,39 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         </div>
         <div class=\"crew\">
           <img class=\"banWhoWheAre\" src=\"";
-        // line 483
+        // line 481
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/FR14.466d13c4.png"), "html", null, true);
         echo "\" alt=\"Qui somme nous\" id=\"equipe\">
           <!---->
           <p></p>
           <img class=\"imgEquipe\" src=\"";
-        // line 486
+        // line 484
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/ED.eea96dcb.png"), "html", null, true);
         echo "\" alt=\"Equipe\" >
           <p></p>
           <!---->
-          <p>Deux opticiens français souhaitant <strong>sécuriser votre vie quotidienne !</strong></p>
+          <p>Deux opticiens français souhaitant <strong>sécuriser votre vie quotidienne !</strong></p>
           <!---->
-          <p>Le désir de développer ce projet est né de nos <strong>expériences professionnelles.</strong> Nous travaillions<br>
-           tous les deux dans magasins d’optique différents ; et nous avons <strong>eu beaucoup de demandes<br> de personnes
-            souhaitant améliorer leur vision la nuit.</strong></p>
+          <p>Le désir de développer ce projet est né de nos<strong> expériences professionnelles</strong>. Nous avons tous les deux travaillé dans des magasins d’optique 
+          différents et avons eu <strong>beaucoup de demandes de personnes souhaitant améliorer leur vision la nuit.</strong> </p>
           <!---->
-          <p>Nous avons donc développé un projet visant à offrir une solution qualitative à toutes les<br> personnes
-           ayants des gênes. Et maintenant, <strong>nous sommes très fiers de vous présenter les <br>lunettes Owl Eyewear.</strong></p>
+          <p><strong>Nous avons donc développé un projet visant à offrir une solution qualitative et abordable à toutes les personnes ayants des gênes. Nous sommes 
+            maintenant très fiers de vous présenter les lunettes Owl Eyewear.</strong></p>
         
            <img class =\"lblneedyou\" src=\"";
-        // line 498
+        // line 495
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/Besoin vous.b9df6fff.png"), "html", null, true);
         echo "\" alt=\"qui somme nous\">
            <!---->
         
            <p></p>
-           <p><strong>Nous avons besoin de vous !</strong> Notre objectif est de lancer notre entreprise et de <strong>démocratiser</strong><br> notre
-              produit pour qu’il y ait <strong>moins d’accidents sur les routes.</strong> Nous voulons que ce produit <strong>de <br>qualité soit
-              accessible et connu de tous.</strong></p>
+           <p><strong>Nous avons besoin de vous !</strong> Notre objectif est de lancer notre entreprise et de démocratiser notre produit pour <strong>diminuer le nombre d'accidents sur les routes</strong>
+               Nous voulons que celui-ci soit <strong>de qualité, accessible et connu de tous.</strong></p>
             <!---->
-           <p>C’est pourquoi nous nous lançons sur Kickstarter en proposant des <strong>lunettes de haute qualité <br>à petit prix.</strong>
-               Actuellement sur Kickstarter vous bénéficiez d’un <strong>tarif exclusif</strong>, cependant lorsque <br>cette campagne sera 
-               clause, nos produits seront uniquement disponibles au prix de 95€.  En vue <br>de la technicité et des
-              caractéristiques des verres, nous vous proposons un<strong> prix Kickstarter très<br> intéressant.</strong></p>
-           <p><strong>Nous espérons de tout cœur que notre produit vous convienne.</strong></p>
+           <p>C’est pourquoi nous nous lançons sur Kickstarter en proposant des lunettes de haute qualité à petit prix. Actuellement, vous bénéficiez d’un tarif exclusif, 
+            cependant lorsque cette campagne sera clause, nos produits seront uniquement disponibles au prix de 95€. En vue de la technicité et des caractéristiques des verres,
+             nous vous proposons un prix Kickstarter très intéressant.</p>
+           <p>Nous espérons de tout cœur que notre produit vous convienne.\"</p>
             <p><p>
             <!---->
            <p>Risques et défis :</p>
@@ -821,9 +814,9 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
            <p>Nous travaillons sur ce projet depuis un moment et nous sommes très fiers de ce que nous<br> avons accompli
               pour notre première expérience en tant que créateurs sur Kickstarter. Nous<br> soutenons des 
               campagnes depuis plusieurs années et nous souhaitions depuis longtemps<br> en créer une !</p>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
        
     </div>
 ";
@@ -847,14 +840,14 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
 
     public function getDebugInfo()
     {
-        return array (  796 => 498,  781 => 486,  775 => 483,  763 => 474,  757 => 471,  742 => 459,  718 => 438,  711 => 434,  706 => 432,  701 => 430,  696 => 428,  691 => 426,  686 => 424,  680 => 421,  672 => 416,  667 => 414,  658 => 408,  653 => 406,  644 => 400,  638 => 397,  621 => 383,  615 => 380,  609 => 377,  603 => 374,  586 => 360,  577 => 354,  561 => 341,  556 => 339,  551 => 337,  546 => 335,  529 => 321,  521 => 316,  514 => 312,  503 => 304,  491 => 295,  486 => 293,  481 => 291,  470 => 283,  463 => 279,  456 => 275,  449 => 271,  441 => 266,  433 => 261,  425 => 256,  417 => 251,  409 => 246,  401 => 241,  392 => 235,  374 => 220,  358 => 207,  353 => 205,  348 => 203,  330 => 188,  311 => 172,  305 => 169,  300 => 167,  295 => 165,  288 => 161,  276 => 152,  269 => 148,  258 => 140,  251 => 136,  242 => 130,  235 => 126,  228 => 122,  220 => 117,  212 => 112,  207 => 110,  203 => 109,  190 => 99,  185 => 97,  92 => 6,  82 => 5,  69 => 3,  59 => 2,  36 => 1,);
+        return array (  791 => 495,  777 => 484,  771 => 481,  759 => 472,  753 => 469,  738 => 457,  717 => 439,  710 => 435,  705 => 433,  700 => 431,  695 => 429,  690 => 427,  685 => 425,  679 => 422,  671 => 417,  666 => 415,  657 => 409,  652 => 407,  643 => 401,  637 => 398,  620 => 384,  614 => 381,  608 => 378,  602 => 375,  585 => 361,  576 => 355,  560 => 342,  555 => 340,  550 => 338,  545 => 336,  528 => 322,  520 => 317,  513 => 313,  502 => 305,  490 => 296,  485 => 294,  480 => 292,  469 => 284,  462 => 280,  455 => 276,  448 => 272,  440 => 267,  432 => 262,  424 => 257,  416 => 252,  408 => 247,  400 => 242,  391 => 236,  373 => 221,  357 => 208,  352 => 206,  347 => 204,  329 => 189,  310 => 173,  304 => 170,  299 => 168,  294 => 166,  287 => 162,  275 => 153,  268 => 149,  257 => 141,  250 => 137,  241 => 131,  234 => 127,  227 => 123,  219 => 118,  211 => 113,  206 => 111,  202 => 110,  186 => 97,  181 => 95,  90 => 6,  80 => 5,  69 => 3,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 {% block head %}
-<link rel=\"stylesheet\" href=\"{{ encore_entry_link_tags('homeStyle') }}\">
+
 {% endblock %}
 {% block body %}
   <body>
@@ -864,10 +857,10 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             <div class=\" txt-presentation\">
               <h1>Owl Eyewear - Améliorez votre vision la nuit.</h1>
               <p></p>
-              <p><strong>LES LUNETTES OWL EYEWEAR SONT CONÇU AVEC DES VERRES HAUTS DE GAMME PERFORMANTS QUI AMELIORENT LA VISION LA NUIT. ELLE PERMET DE CONDUIRE PLUS SEREINEMENT ET AISEMENT.</strong></p>
-              <p> Vous voici sur la version française de notre campagne de lunettes pour la conduite nocturne. La vente du produit s’effectue UNIQUEMENT sur KICKSTARTER, un site de financement
+              <p><mark><strong>LES LUNETTES OWL EYEWEAR SONT CONÇU AVEC DES VERRES HAUTS DE GAMME PERFORMANTS QUI AMELIORENT LA VISION LA NUIT. ELLE PERMET DE CONDUIRE PLUS SEREINEMENT ET AISEMENT.</strong></mark></p>
+              <p><mark>Vous voici sur la version française de notre campagne de lunettes pour la conduite nocturne. La vente du produit s’effectue UNIQUEMENT sur KICKSTARTER, un site de financement
                participatif international permettant aux jeunes entrepreneurs de développer plus facilement leur projet. La façon de participer est assez simple et expliquée dans l’onglet « PARTICIPER ».
-                Nous vous laissons prendre connaissance des caractéristiques et bénéfices du produit que nous avons développé. Nous sommes très fiers de pouvoir aujourd’hui vous proposer ce produit.</p>
+                Nous vous laissons prendre connaissance des caractéristiques et bénéfices du produit que nous avons développé. Nous sommes très fiers de pouvoir aujourd’hui vous proposer ce produit.</mark></p>
           </div>
 
            <div class=\"timer\">
@@ -911,24 +904,25 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             function \$(id){
                 return document.getElementById(id)
             }
-            function hms(){
-                var dt1 = new Date(); 
-                var dt2 = new Date('2019-10-25T12:00:00'); 
-                var dt3 = new Date(dt2 -dt1);
-                var dt4 = new Date();     
+
+            var currentDate = new Date();
+              var finalDate = new Date('2019-10-25T12:00:00');
+
+            setInterval(function(){
+                currentDate = new Date();
+                var dt3 = new Date(finalDate - currentDate);
                 var numdays = dt3.getDate();
                 var numhours = dt3.getHours();
                 var minute = dt3.getMinutes();
-                var seconds = dt3.getSeconds();            
-                var str=(numdays) ;
-                \$(\"days\").innerHTML=numdays;
-                \$(\"hours\").innerHTML=numhours;
-                \$(\"minutes\").innerHTML=minute;
-                \$(\"seconds\").innerHTML=seconds;           
-                setTimeout(hms,1000);
-            }
-            hms();
-          
+                var seconds = dt3.getSeconds();
+
+                \$('#days').html(numdays);
+                \$('#hours').html(numhours);
+                \$('#minutes').html(minute);
+                \$('#seconds').html(seconds);
+
+            }, 1000);
+                      
           
       
           
@@ -941,24 +935,24 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         </div>
       <br>
       <br>
-      
       <br>
       <br>
       <br>
-  
-
     <div class=\"txt\">
     <img class=\"logoOwl\" src=\"{{ asset (\"/build/images/OWL_logo.5da53e41.png\") }}\" alt=\"logoOwlEyeWear\">
   <p></p>
         <img class=\"lblwhyowleyewear\" src=\"{{ asset (\"/build/images/Pourquoi_Owl_eyewear.46a32322.png\") }}\" alt=\"lblWhyOwlEyeWear\">
         <p></p>
         <p></p> 
-        <p>Pour éliminer ces inconforts, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent d’<strong>d’améliorer grandement la vision.</strong> </p>
+        <div class=\"txtintro\">
+        <p>Pour éliminer ces inconforts, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent <strong>d’améliorer grandement la vision.</strong></p>
         <p>Grâce à <strong>Owl Eyewear</strong>, vous aurez un <strong>meilleur confort visuel</strong> la nuit ou lors de vos déplacements dans des conditions de faible luminosité. <strong>Vous rendrez également les routes plus sures !</strong></p>
+        <p><strong>Si vous êtes intéressé par nos lunettes, renseignez votre adresse mail ci-dessous pour être averti lors de la mise en ligne de notre campagne de financement participative !</strong></p> 
+        </div>
         <div class=\"newsletter\">
         <p></p>
         <p></p>
-        <p><strong>Si vous êtes intéressé par nos lunettes, renseignez votre adresse mail ci-dessous pour être averti lors de la mise en ligne de notre campagne de financement participative !</strong></p> 
+        
           
           {{ form_start(form) }}
           {{ form_row(form.email) }} 
@@ -968,7 +962,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         
     </div>
         <br>
-        <img class=\"objectifbanner\" src=\"{{ asset (\"build/images/Objectifs_banner.8bc8850e.png\") }}\" alt=\"imgObjectifBanner\">   
+        <img class=\"objectifbanner\" src=\"{{ asset (\"build/images/objectif_banner.bc8435ed.png\") }}\" alt=\"imgObjectifBanner\">   
         <br>
       <p></p>
     <div class=\"glass\">
@@ -1040,7 +1034,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
       <p></p>
       <p></p>
         <img class=\"statisticsFR\" src=\"{{ asset('build/images/FR4.c5c9ac1b.png') }}\" alt=\"statisticsFR\" id=\"statsup\">
-        <p> Conduire dans des <strong>mauvaises conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> <br>et 
+        <p> Conduire dans des <strong>faibles conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> <br>et 
             c’est pour cela que nous espérons que ces lunettes deviendront un accessoire indispensable à<br> tous !</p> 
         <p>D’après une étude réalisée en France, <strong>42% des automobilistes conduisent la nuit</strong> au moins une <br> 
            fois par semaine et <strong>89.3% des conducteurs ressentent des gênes durant ces trajets nocturnes.</strong><br>
@@ -1157,15 +1151,15 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             <p></p>
             <img class=\"banRecep\" src=\"{{ asset('build/images/FR7.64d4c2e0.png') }}\" alt=\"banniere reception\">
             <p></p>
-            <p>La lunette choisie ne sera pas la seule chose que vous recevrez. Nous avons décidé de mettre<br> 
-               le produit en valeur avec un <strong>packaging</strong> dans le thème de notre produit: <strong>l’obscurité.</strong></p>
+            <p>La paire de lunette choisie ne sera pas la seule chose que vous recevrez. Nous avons décidé de mettre en valeur notre produit 
+            avec un packaging dans le thème de notre produit : l’obscurité. Mots en gras : <strong>\"Packaging\" et \"l'obscurité.</strong></p>
             <p>Dans le but de <strong>les protéger</strong>, vous disposerez également d’un <strong>étui souple</strong>. Grâce à celui-ci,<br>
                vos verres seront <strong>protégés</strong> et vous conserverez un <strong>bon confort visuel.</strong> Vous pouvez aussi les<br>
                <strong>ranger facilement</strong> dans la portière de votre voiture ou dans votre boite à gant <strong>sans risques.</strong><br> 
                Il sera également fourni une microfibre pour nettoyer vos lunettes.</p>
                <img class=\"gifcar\" src=\"{{ asset('build/images/gifcar.a7470e31.gif') }}\" alt=\"gifcar\">
                <p></p>
-            <p>Pour finir, nous vous offrons <strong>2 stickers</strong> Owl Eyewear pour les collez ou vous le souhaitez !</p>
+            <p>Pour finir, nous vous offrons <strong>2 stickers</strong> Owl Eyewear à coller ou vous souhaitez !</p>
             <p></p>
             <img class=\"imgPack\" src=\"{{ asset('build/images/PackFR.e1fd8347.png') }}\" alt=\"image pack\">
             <p></p>
@@ -1174,8 +1168,8 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             <div class=\"fabrication\">
             <img class=\"banHowMake\" src=\"{{ asset('build/images/process.5f63f1a7.png') }}\" alt=\"image How Make\" id=\"fabrique\">
             <p></p>
-            <p>Une fois que nous aurons reçu les questionnaires avec la monture que vous aurez choisie.<br>
-               Nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
+            <p>Une fois que nous aurons reçu la liste des montures que vous aurez choisies,
+              nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
             <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/veLOW5-W6Mk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
             <p></p>
             <p>Nous assemblerons l’ensemble des équipements dans <strong>notre atelier en France.</strong> Les verres,<br>
@@ -1232,7 +1226,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
                 <p>Vision flou de nuit</p>
 
                 <img class=\"pngNihtViewCorFR\" src=\"{{ asset(\"build/images/corrige.c6f47421.png\") }}\" alt=\"pngNihtViewCorFR\">
-                <p>Vision corrigée de nuit avec les verres OWL EyeWear</p>
+                <p>Vision corrigée de nuit avec les verres OWL Eyewear</p>
                 <p></p>
                 <img class=\"pngAdaptationFR\" src=\"{{ asset(\"build/images/Adapatation.448958e1.png\") }}\" alt=\"imageAdaptation\">
                 <p></p>
@@ -1292,19 +1286,16 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
             <img class=\"banhtPledge\" src=\"{{ asset('build/images/FR12.9f3e1ce8.png') }}\" alt=\"ban how to pledge\">
             <p></p>
             <!---->
-            <p><strong>1. Cliquez sur «Back this Project»:</strong> sélectionnez le niveau de récompense disponible que vous<br> 
-               souhaitez engager sur le côté droit de la page. Chaque contributeur ne peut s'engager qu'une <br>seule fois.</p>
+            <p>1. <strong>Cliquez sur «Je soutien ce projet»</strong> puis sélectionnez le pack que vous souhaitez recevoir. 
+              Ou sélectionnez directement le pack que vous souhaitez sur le coté droit de la page. Chaque contributeur ne peut s'engager qu'une seule fois.</p>
                <!---->
-            <p><strong>2. Paiement :</strong> Entrez vos informations de paiement. Vous ne payerez ni ne choisirez aucun <br>
-               modèle à ce stade, vous autoriserez uniquement Kickstarter à vous facturer le coût de la <br>promesse 
-               à la fin de la campagne si nous atteignons l'objectif initial.</p>
+            <p>2. Paiement : Entrez vos informations de <strong>paiement.</strong> Vous ne payerez ni ne choisirez aucun modèle à ce stade, vous autoriserez uniquement
+             Kickstarter à vous facturer le pack choisi à la fin de la campagne si nous atteignons notre objectif de financement.</p>
                <!---->
-            <p><strong>3. Informations sur le modèle, la couleur et la livraison :</strong> Ne vous inquiétez pas pour le<br>  
-                moment
-               ! Une fois la campagne terminée, vous recevrez un sondage indiquant vos informations <br>de modèle 
-               choisi, la couleur et le lieu d’expédition.</p>
+            <p>3. <strong>Choix du modèle, de la couleur et la livraison :</strong> Ne vous inquiétez pas pour le
+            moment ! Une fois la campagne terminée, vous recevrez un questionnaire vous permettant d'indiquer le modèle choisi, la couleur et l'adresse d’expédition.</p>
                <!---->
-            <p>À tous les donateurs : Nous expédierons Owl Eyewear dans le monde entier. Merci à tous !</p>
+            <p>À tous les participants : Nous expédierons Owl Eyewear dans le monde entier. Merci à vous !\"</p>
 
         </div>
         <p></p>
@@ -1340,28 +1331,25 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
           <img class=\"imgEquipe\" src=\"{{ asset('build/images/ED.eea96dcb.png') }}\" alt=\"Equipe\" >
           <p></p>
           <!---->
-          <p>Deux opticiens français souhaitant <strong>sécuriser votre vie quotidienne !</strong></p>
+          <p>Deux opticiens français souhaitant <strong>sécuriser votre vie quotidienne !</strong></p>
           <!---->
-          <p>Le désir de développer ce projet est né de nos <strong>expériences professionnelles.</strong> Nous travaillions<br>
-           tous les deux dans magasins d’optique différents ; et nous avons <strong>eu beaucoup de demandes<br> de personnes
-            souhaitant améliorer leur vision la nuit.</strong></p>
+          <p>Le désir de développer ce projet est né de nos<strong> expériences professionnelles</strong>. Nous avons tous les deux travaillé dans des magasins d’optique 
+          différents et avons eu <strong>beaucoup de demandes de personnes souhaitant améliorer leur vision la nuit.</strong> </p>
           <!---->
-          <p>Nous avons donc développé un projet visant à offrir une solution qualitative à toutes les<br> personnes
-           ayants des gênes. Et maintenant, <strong>nous sommes très fiers de vous présenter les <br>lunettes Owl Eyewear.</strong></p>
+          <p><strong>Nous avons donc développé un projet visant à offrir une solution qualitative et abordable à toutes les personnes ayants des gênes. Nous sommes 
+            maintenant très fiers de vous présenter les lunettes Owl Eyewear.</strong></p>
         
            <img class =\"lblneedyou\" src=\"{{ asset('build/images/Besoin vous.b9df6fff.png') }}\" alt=\"qui somme nous\">
            <!---->
         
            <p></p>
-           <p><strong>Nous avons besoin de vous !</strong> Notre objectif est de lancer notre entreprise et de <strong>démocratiser</strong><br> notre
-              produit pour qu’il y ait <strong>moins d’accidents sur les routes.</strong> Nous voulons que ce produit <strong>de <br>qualité soit
-              accessible et connu de tous.</strong></p>
+           <p><strong>Nous avons besoin de vous !</strong> Notre objectif est de lancer notre entreprise et de démocratiser notre produit pour <strong>diminuer le nombre d'accidents sur les routes</strong>
+               Nous voulons que celui-ci soit <strong>de qualité, accessible et connu de tous.</strong></p>
             <!---->
-           <p>C’est pourquoi nous nous lançons sur Kickstarter en proposant des <strong>lunettes de haute qualité <br>à petit prix.</strong>
-               Actuellement sur Kickstarter vous bénéficiez d’un <strong>tarif exclusif</strong>, cependant lorsque <br>cette campagne sera 
-               clause, nos produits seront uniquement disponibles au prix de 95€.  En vue <br>de la technicité et des
-              caractéristiques des verres, nous vous proposons un<strong> prix Kickstarter très<br> intéressant.</strong></p>
-           <p><strong>Nous espérons de tout cœur que notre produit vous convienne.</strong></p>
+           <p>C’est pourquoi nous nous lançons sur Kickstarter en proposant des lunettes de haute qualité à petit prix. Actuellement, vous bénéficiez d’un tarif exclusif, 
+            cependant lorsque cette campagne sera clause, nos produits seront uniquement disponibles au prix de 95€. En vue de la technicité et des caractéristiques des verres,
+             nous vous proposons un prix Kickstarter très intéressant.</p>
+           <p>Nous espérons de tout cœur que notre produit vous convienne.\"</p>
             <p><p>
             <!---->
            <p>Risques et défis :</p>
@@ -1376,9 +1364,9 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
            <p>Nous travaillons sur ce projet depuis un moment et nous sommes très fiers de ce que nous<br> avons accompli
               pour notre première expérience en tant que créateurs sur Kickstarter. Nous<br> soutenons des 
               campagnes depuis plusieurs années et nous souhaitions depuis longtemps<br> en créer une !</p>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
        
     </div>
 {% endblock %}

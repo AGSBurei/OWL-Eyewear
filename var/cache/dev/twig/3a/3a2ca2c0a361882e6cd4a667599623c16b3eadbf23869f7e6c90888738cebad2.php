@@ -70,7 +70,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
         // line 13
         echo "    </head>
     <body>
-        <nav class=\"navbar navbar-expand-lg navbar-custom\">
+        <nav class=\"navbar navbar-expand-xl navbar-custom\">
         <div class=\"container-fluid\">
             <a class=\"navbar-brand\" href=\"/\"><img class=\"logo\"src=\"";
         // line 17
@@ -197,9 +197,6 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("app");
         echo " ";
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("basesStyle");
-        echo " ";
-        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("CountDown");
-        echo " ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -257,7 +254,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 
     public function getDebugInfo()
     {
-        return array (  230 => 77,  212 => 75,  188 => 12,  169 => 11,  145 => 78,  143 => 77,  140 => 76,  138 => 75,  77 => 17,  71 => 13,  69 => 12,  65 => 11,  61 => 10,  57 => 9,  47 => 1,);
+        return array (  227 => 77,  209 => 75,  188 => 12,  169 => 11,  145 => 78,  143 => 77,  140 => 76,  138 => 75,  77 => 17,  71 => 13,  69 => 12,  65 => 11,  61 => 10,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -273,10 +270,10 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/build/images/favicon.5ee79b31.ico') }}\"/>
         <title>{% block title %}OWL Eyewear{% endblock %}</title>
-        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }} {{ encore_entry_link_tags('CountDown') }} {% endblock %}
+        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
     </head>
     <body>
-        <nav class=\"navbar navbar-expand-lg navbar-custom\">
+        <nav class=\"navbar navbar-expand-xl navbar-custom\">
         <div class=\"container-fluid\">
             <a class=\"navbar-brand\" href=\"/\"><img class=\"logo\"src=\"{{ asset('/build/images/Fichier_4.8f8cdf3f.svg') }}\"></a></a>
             <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" > 

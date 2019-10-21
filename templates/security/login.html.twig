@@ -1,6 +1,8 @@
 {% extends "base.html.twig" %}
 
+{% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }} {% endblock %}
 {% block body %}
+<div class="formulaire">
     <h1>Connexion</h1>
 
     <form action="{{ path('security_login') }}" method="post">
@@ -20,4 +22,5 @@
         <input type="checkbox" id="remember_me" name="_remember_me" checked/>
         <label for="remember_me">rester connecté</label>
     </form>
+</div>
 {% endblock %}
