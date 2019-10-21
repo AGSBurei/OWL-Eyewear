@@ -73,6 +73,6 @@ class __TwigTemplate_6d3268bd245569e1196d9ddcfc3839b65a6f47af61a4e836c121337f3e6
     <?php echo \$view['form']->label(\$child, null, ['translation_domain' => \$choice_translation_domain]) ?>
 <?php endforeach ?>
 </div>
-", "@Framework/Form/choice_widget_expanded.html.php", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\choice_widget_expanded.html.php");
+", "@Framework/Form/choice_widget_expanded.html.php", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\choice_widget_expanded.html.php");
     }
 }

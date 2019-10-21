@@ -81,6 +81,6 @@ class __TwigTemplate_c76ede5134684a4348117839ba34273c710b06bb6080afdd3767ab73833
 <span class=\"badge badge-danger\" title=\"{{ 'label.inaccessible.explanation'|trans }}\">
     {{ 'label.inaccessible'|trans }}
 </span>
-", "@EasyAdmin/default/label_inaccessible.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\label_inaccessible.html.twig");
+", "@EasyAdmin/default/label_inaccessible.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\label_inaccessible.html.twig");
     }
 }

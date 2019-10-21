@@ -87,6 +87,6 @@ class __TwigTemplate_9f5974e5b39b36a2ca5d692be9f0000b90ef84d2405d901143b0599f427
         {{ include('@EasyAdmin/default/includes/_actions.html.twig', { is_dropdown: true }) }}
     </div>
 </div>
-", "@EasyAdmin/default/includes/_actions_dropdown.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\includes\\_actions_dropdown.html.twig");
+", "@EasyAdmin/default/includes/_actions_dropdown.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\includes\\_actions_dropdown.html.twig");
     }
 }

@@ -212,6 +212,6 @@ class __TwigTemplate_fd967084c64f4aa9b4a27133ab17a17f058cd5ba2b6f58387f1983403d2
     {% endfor %}
     </tbody>
 </table>
-", "@Twig/Exception/logs.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\logs.html.twig");
+", "@Twig/Exception/logs.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\logs.html.twig");
     }
 }

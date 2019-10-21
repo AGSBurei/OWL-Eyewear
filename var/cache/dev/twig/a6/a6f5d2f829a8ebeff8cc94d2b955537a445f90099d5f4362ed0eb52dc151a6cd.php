@@ -1828,6 +1828,6 @@ class __TwigTemplate_7328cfa283f4ba0ca7dc30e66ed73471e1649dc9b07d732a5703add5a4d
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
     }
 }

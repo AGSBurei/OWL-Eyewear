@@ -155,6 +155,6 @@ class __TwigTemplate_5d81165264a117d586b12e9c87f1450eb60bc0ff71aab72c62cb584cafb
         filterModal.querySelector('form').submit();
     });
 </script>
-", "@EasyAdmin/default/includes/_filters_modal.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\includes\\_filters_modal.html.twig");
+", "@EasyAdmin/default/includes/_filters_modal.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\includes\\_filters_modal.html.twig");
     }
 }

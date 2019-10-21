@@ -125,6 +125,6 @@ class __TwigTemplate_8800d2071ed3cffb49199fb8453cc3ce76ab15ebc90a7391232767663de
         </div>
     </body>
 </html>
-", "@Twig/Exception/error.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.html.twig");
+", "@Twig/Exception/error.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.html.twig");
     }
 }

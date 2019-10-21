@@ -87,6 +87,6 @@ class __TwigTemplate_0c3b368c30b1503063cd13e78c17c6349efd951cb835d0bc854be74b587
 {% else %}
     <a href=\"mailto:{{ value }}\">{{ value|easyadmin_truncate }}</a>
 {% endif %}
-", "@EasyAdmin/default/field_email.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_email.html.twig");
+", "@EasyAdmin/default/field_email.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_email.html.twig");
     }
 }

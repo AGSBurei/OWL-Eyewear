@@ -75,6 +75,6 @@ class __TwigTemplate_4bf2835835cdffb34e48a1e9afca180026e485635d3502744051375ae33
     <?php echo \$view['form']->widget(\$form, \$widgetAttr); ?>
     <?php echo \$view['form']->help(\$form); ?>
 </div>
-", "@Framework/Form/form_row.html.php", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_row.html.php");
+", "@Framework/Form/form_row.html.php", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_row.html.php");
     }
 }

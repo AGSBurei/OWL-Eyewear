@@ -105,6 +105,6 @@ class __TwigTemplate_7ddd8dd739d41975024a964ed5042fe335209adff9d780ab0e5425d1d04
         <img src=\"{{ asset(value) }}\">
     </div>
 {% endif %}
-", "@EasyAdmin/default/field_image.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_image.html.twig");
+", "@EasyAdmin/default/field_image.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_image.html.twig");
     }
 }

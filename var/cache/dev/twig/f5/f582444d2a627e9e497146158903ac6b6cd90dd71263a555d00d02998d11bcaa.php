@@ -108,6 +108,6 @@ class __TwigTemplate_522b90a473449b04e5ea6b8a42cf08292ccbdfc87772e6609769dfcc7b4
     </exception>
 {% endfor %}
 </error>
-", "@Twig/Exception/exception.xml.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.xml.twig");
+", "@Twig/Exception/exception.xml.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.xml.twig");
     }
 }

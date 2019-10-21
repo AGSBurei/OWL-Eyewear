@@ -145,6 +145,6 @@ class __TwigTemplate_ee56c7268279baea4a7b0bacb469a642d6e7a985af3e6de8a4e029fa955
     {{form_end(form)}}
 
 {% endblock %}
-", "security/registration.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\security\\registration.html.twig");
+", "security/registration.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\templates\\security\\registration.html.twig");
     }
 }

@@ -95,6 +95,6 @@ class __TwigTemplate_51879b7480aa7decec362c2fb2a7b3e5495b9b40bfb6344e077a311d3ce
             </trace>
 {% endfor %}
         </traces>
-", "@Twig/Exception/traces.xml.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.xml.twig");
+", "@Twig/Exception/traces.xml.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.xml.twig");
     }
 }
