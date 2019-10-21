@@ -237,3 +237,10 @@ body img{
 {
     height:363px;
 }
+mark
+{
+    background-color: #00000064;
+    color: white;
+   /* margin-right: 458px;
+    margin-left: 455px;*/
+}

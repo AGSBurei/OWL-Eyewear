@@ -2,7 +2,6 @@
   "entrypoints": {
     "app": {
       "js": [
-        "/build/vendors~CountDown~app.js",
         "/build/vendors~app.js",
         "/build/app.js"
       ],
@@ -26,10 +25,12 @@
         "/build/homeStyle.js"
       ]
     },
-    "CountDown": {
+    "login": {
+      "css": [
+        "/build/login.css"
+      ],
       "js": [
-        "/build/vendors~CountDown~app.js",
-        "/build/CountDown.js"
+        "/build/login.js"
       ]
     }
   }

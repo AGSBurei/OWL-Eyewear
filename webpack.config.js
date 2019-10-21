@@ -28,7 +28,8 @@ Encore
     .addEntry('app', './assets/js/app.js')
     .addEntry('basesStyle', './assets/css/base.css')
     .addEntry('homeStyle', './assets/css/homeStyle.css')
-    .addEntry('CountDown', './assets/js/jquery.countdown.js')
+    .addEntry('login', './assets/css/login.css')
+   // .addEntry('CountDown', './assets/js/jquery.countdown.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
@@ -70,7 +71,7 @@ Encore
     //.enableIntegrityHashes(Encore.isProduction())
 
     // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
+    .autoProvidejQuery()
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()

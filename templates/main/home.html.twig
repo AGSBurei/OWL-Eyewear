@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block head %}
-<link rel="stylesheet" href="{{ encore_entry_link_tags('homeStyle') }}">
+
 {% endblock %}
 {% block body %}
   <body>
@@ -10,10 +10,10 @@
             <div class=" txt-presentation">
               <h1>Owl Eyewear - Améliorez votre vision la nuit.</h1>
               <p></p>
-              <p><strong>LES LUNETTES OWL EYEWEAR SONT CONÇU AVEC DES VERRES HAUTS DE GAMME PERFORMANTS QUI AMELIORENT LA VISION LA NUIT. ELLE PERMET DE CONDUIRE PLUS SEREINEMENT ET AISEMENT.</strong></p>
-              <p> Vous voici sur la version française de notre campagne de lunettes pour la conduite nocturne. La vente du produit s’effectue UNIQUEMENT sur KICKSTARTER, un site de financement
+              <p><mark><strong>LES LUNETTES OWL EYEWEAR SONT CONÇU AVEC DES VERRES HAUTS DE GAMME PERFORMANTS QUI AMELIORENT LA VISION LA NUIT. ELLE PERMET DE CONDUIRE PLUS SEREINEMENT ET AISEMENT.</strong></mark></p>
+              <p><mark>Vous voici sur la version française de notre campagne de lunettes pour la conduite nocturne. La vente du produit s’effectue UNIQUEMENT sur KICKSTARTER, un site de financement
                participatif international permettant aux jeunes entrepreneurs de développer plus facilement leur projet. La façon de participer est assez simple et expliquée dans l’onglet « PARTICIPER ».
-                Nous vous laissons prendre connaissance des caractéristiques et bénéfices du produit que nous avons développé. Nous sommes très fiers de pouvoir aujourd’hui vous proposer ce produit.</p>
+                Nous vous laissons prendre connaissance des caractéristiques et bénéfices du produit que nous avons développé. Nous sommes très fiers de pouvoir aujourd’hui vous proposer ce produit.</mark></p>
           </div>
 
            <div class="timer">
@@ -57,24 +57,25 @@
             function $(id){
                 return document.getElementById(id)
             }
-            function hms(){
-                var dt1 = new Date(); 
-                var dt2 = new Date('2019-10-25T12:00:00'); 
-                var dt3 = new Date(dt2 -dt1);
-                var dt4 = new Date();     
+
+            var currentDate = new Date();
+              var finalDate = new Date('2019-10-25T12:00:00');
+
+            setInterval(function(){
+                currentDate = new Date();
+                var dt3 = new Date(finalDate - currentDate);
                 var numdays = dt3.getDate();
                 var numhours = dt3.getHours();
                 var minute = dt3.getMinutes();
-                var seconds = dt3.getSeconds();            
-                var str=(numdays) ;
-                $("days").innerHTML=numdays;
-                $("hours").innerHTML=numhours;
-                $("minutes").innerHTML=minute;
-                $("seconds").innerHTML=seconds;           
-                setTimeout(hms,1000);
-            }
-            hms();
-          
+                var seconds = dt3.getSeconds();
+
+                $('#days').html(numdays);
+                $('#hours').html(numhours);
+                $('#minutes').html(minute);
+                $('#seconds').html(seconds);
+
+            }, 1000);
+                      
           
       
           
@@ -87,24 +88,24 @@
         </div>
       <br>
       <br>
-      
       <br>
       <br>
       <br>
-  
-
     <div class="txt">
     <img class="logoOwl" src="{{ asset ("/build/images/OWL_logo.5da53e41.png") }}" alt="logoOwlEyeWear">
   <p></p>
         <img class="lblwhyowleyewear" src="{{ asset ("/build/images/Pourquoi_Owl_eyewear.46a32322.png") }}" alt="lblWhyOwlEyeWear">
         <p></p>
         <p></p> 
-        <p>Pour éliminer ces inconforts, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent d’<strong>d’améliorer grandement la vision.</strong> </p>
+        <div class="txtintro">
+        <p>Pour éliminer ces inconforts, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent <strong>d’améliorer grandement la vision.</strong></p>
         <p>Grâce à <strong>Owl Eyewear</strong>, vous aurez un <strong>meilleur confort visuel</strong> la nuit ou lors de vos déplacements dans des conditions de faible luminosité. <strong>Vous rendrez également les routes plus sures !</strong></p>
+        <p><strong>Si vous êtes intéressé par nos lunettes, renseignez votre adresse mail ci-dessous pour être averti lors de la mise en ligne de notre campagne de financement participative !</strong></p> 
+        </div>
         <div class="newsletter">
         <p></p>
         <p></p>
-        <p><strong>Si vous êtes intéressé par nos lunettes, renseignez votre adresse mail ci-dessous pour être averti lors de la mise en ligne de notre campagne de financement participative !</strong></p> 
+        
           
           {{ form_start(form) }}
           {{ form_row(form.email) }} 
@@ -114,7 +115,7 @@
         
     </div>
         <br>
-        <img class="objectifbanner" src="{{ asset ("build/images/Objectifs_banner.8bc8850e.png") }}" alt="imgObjectifBanner">   
+        <img class="objectifbanner" src="{{ asset ("build/images/objectif_banner.bc8435ed.png") }}" alt="imgObjectifBanner">   
         <br>
       <p></p>
     <div class="glass">
@@ -186,7 +187,7 @@
       <p></p>
       <p></p>
         <img class="statisticsFR" src="{{ asset('build/images/FR4.c5c9ac1b.png') }}" alt="statisticsFR" id="statsup">
-        <p> Conduire dans des <strong>mauvaises conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> <br>et 
+        <p> Conduire dans des <strong>faibles conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> <br>et 
             c’est pour cela que nous espérons que ces lunettes deviendront un accessoire indispensable à<br> tous !</p> 
         <p>D’après une étude réalisée en France, <strong>42% des automobilistes conduisent la nuit</strong> au moins une <br> 
            fois par semaine et <strong>89.3% des conducteurs ressentent des gênes durant ces trajets nocturnes.</strong><br>
@@ -303,15 +304,15 @@
             <p></p>
             <img class="banRecep" src="{{ asset('build/images/FR7.64d4c2e0.png') }}" alt="banniere reception">
             <p></p>
-            <p>La lunette choisie ne sera pas la seule chose que vous recevrez. Nous avons décidé de mettre<br> 
-               le produit en valeur avec un <strong>packaging</strong> dans le thème de notre produit: <strong>l’obscurité.</strong></p>
+            <p>La paire de lunette choisie ne sera pas la seule chose que vous recevrez. Nous avons décidé de mettre en valeur notre produit 
+            avec un packaging dans le thème de notre produit : l’obscurité. Mots en gras : <strong>"Packaging" et "l'obscurité.</strong></p>
             <p>Dans le but de <strong>les protéger</strong>, vous disposerez également d’un <strong>étui souple</strong>. Grâce à celui-ci,<br>
                vos verres seront <strong>protégés</strong> et vous conserverez un <strong>bon confort visuel.</strong> Vous pouvez aussi les<br>
                <strong>ranger facilement</strong> dans la portière de votre voiture ou dans votre boite à gant <strong>sans risques.</strong><br> 
                Il sera également fourni une microfibre pour nettoyer vos lunettes.</p>
                <img class="gifcar" src="{{ asset('build/images/gifcar.a7470e31.gif') }}" alt="gifcar">
                <p></p>
-            <p>Pour finir, nous vous offrons <strong>2 stickers</strong> Owl Eyewear pour les collez ou vous le souhaitez !</p>
+            <p>Pour finir, nous vous offrons <strong>2 stickers</strong> Owl Eyewear à coller ou vous souhaitez !</p>
             <p></p>
             <img class="imgPack" src="{{ asset('build/images/PackFR.e1fd8347.png') }}" alt="image pack">
             <p></p>
@@ -320,8 +321,8 @@
             <div class="fabrication">
             <img class="banHowMake" src="{{ asset('build/images/process.5f63f1a7.png') }}" alt="image How Make" id="fabrique">
             <p></p>
-            <p>Une fois que nous aurons reçu les questionnaires avec la monture que vous aurez choisie.<br>
-               Nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
+            <p>Une fois que nous aurons reçu la liste des montures que vous aurez choisies,
+              nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/veLOW5-W6Mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p></p>
             <p>Nous assemblerons l’ensemble des équipements dans <strong>notre atelier en France.</strong> Les verres,<br>
@@ -378,7 +379,7 @@
                 <p>Vision flou de nuit</p>
 
                 <img class="pngNihtViewCorFR" src="{{ asset("build/images/corrige.c6f47421.png") }}" alt="pngNihtViewCorFR">
-                <p>Vision corrigée de nuit avec les verres OWL EyeWear</p>
+                <p>Vision corrigée de nuit avec les verres OWL Eyewear</p>
                 <p></p>
                 <img class="pngAdaptationFR" src="{{ asset("build/images/Adapatation.448958e1.png") }}" alt="imageAdaptation">
                 <p></p>
@@ -438,19 +439,16 @@
             <img class="banhtPledge" src="{{ asset('build/images/FR12.9f3e1ce8.png') }}" alt="ban how to pledge">
             <p></p>
             <!---->
-            <p><strong>1. Cliquez sur «Back this Project»:</strong> sélectionnez le niveau de récompense disponible que vous<br> 
-               souhaitez engager sur le côté droit de la page. Chaque contributeur ne peut s'engager qu'une <br>seule fois.</p>
+            <p>1. <strong>Cliquez sur «Je soutien ce projet»</strong> puis sélectionnez le pack que vous souhaitez recevoir. 
+              Ou sélectionnez directement le pack que vous souhaitez sur le coté droit de la page. Chaque contributeur ne peut s'engager qu'une seule fois.</p>
                <!---->
-            <p><strong>2. Paiement :</strong> Entrez vos informations de paiement. Vous ne payerez ni ne choisirez aucun <br>
-               modèle à ce stade, vous autoriserez uniquement Kickstarter à vous facturer le coût de la <br>promesse 
-               à la fin de la campagne si nous atteignons l'objectif initial.</p>
+            <p>2. Paiement : Entrez vos informations de <strong>paiement.</strong> Vous ne payerez ni ne choisirez aucun modèle à ce stade, vous autoriserez uniquement
+             Kickstarter à vous facturer le pack choisi à la fin de la campagne si nous atteignons notre objectif de financement.</p>
                <!---->
-            <p><strong>3. Informations sur le modèle, la couleur et la livraison :</strong> Ne vous inquiétez pas pour le<br>  
-                moment
-               ! Une fois la campagne terminée, vous recevrez un sondage indiquant vos informations <br>de modèle 
-               choisi, la couleur et le lieu d’expédition.</p>
+            <p>3. <strong>Choix du modèle, de la couleur et la livraison :</strong> Ne vous inquiétez pas pour le
+            moment ! Une fois la campagne terminée, vous recevrez un questionnaire vous permettant d'indiquer le modèle choisi, la couleur et l'adresse d’expédition.</p>
                <!---->
-            <p>À tous les donateurs : Nous expédierons Owl Eyewear dans le monde entier. Merci à tous !</p>
+            <p>À tous les participants : Nous expédierons Owl Eyewear dans le monde entier. Merci à vous !"</p>
 
         </div>
         <p></p>
@@ -486,28 +484,25 @@
           <img class="imgEquipe" src="{{ asset('build/images/ED.eea96dcb.png') }}" alt="Equipe" >
           <p></p>
           <!---->
-          <p>Deux opticiens français souhaitant <strong>sécuriser votre vie quotidienne !</strong></p>
+          <p>Deux opticiens français souhaitant <strong>sécuriser votre vie quotidienne !</strong></p>
           <!---->
-          <p>Le désir de développer ce projet est né de nos <strong>expériences professionnelles.</strong> Nous travaillions<br>
-           tous les deux dans magasins d’optique différents ; et nous avons <strong>eu beaucoup de demandes<br> de personnes
-            souhaitant améliorer leur vision la nuit.</strong></p>
+          <p>Le désir de développer ce projet est né de nos<strong> expériences professionnelles</strong>. Nous avons tous les deux travaillé dans des magasins d’optique 
+          différents et avons eu <strong>beaucoup de demandes de personnes souhaitant améliorer leur vision la nuit.</strong> </p>
           <!---->
-          <p>Nous avons donc développé un projet visant à offrir une solution qualitative à toutes les<br> personnes
-           ayants des gênes. Et maintenant, <strong>nous sommes très fiers de vous présenter les <br>lunettes Owl Eyewear.</strong></p>
+          <p><strong>Nous avons donc développé un projet visant à offrir une solution qualitative et abordable à toutes les personnes ayants des gênes. Nous sommes 
+            maintenant très fiers de vous présenter les lunettes Owl Eyewear.</strong></p>
         
            <img class ="lblneedyou" src="{{ asset('build/images/Besoin vous.b9df6fff.png') }}" alt="qui somme nous">
            <!---->
         
            <p></p>
-           <p><strong>Nous avons besoin de vous !</strong> Notre objectif est de lancer notre entreprise et de <strong>démocratiser</strong><br> notre
-              produit pour qu’il y ait <strong>moins d’accidents sur les routes.</strong> Nous voulons que ce produit <strong>de <br>qualité soit
-              accessible et connu de tous.</strong></p>
+           <p><strong>Nous avons besoin de vous !</strong> Notre objectif est de lancer notre entreprise et de démocratiser notre produit pour <strong>diminuer le nombre d'accidents sur les routes</strong>
+               Nous voulons que celui-ci soit <strong>de qualité, accessible et connu de tous.</strong></p>
             <!---->
-           <p>C’est pourquoi nous nous lançons sur Kickstarter en proposant des <strong>lunettes de haute qualité <br>à petit prix.</strong>
-               Actuellement sur Kickstarter vous bénéficiez d’un <strong>tarif exclusif</strong>, cependant lorsque <br>cette campagne sera 
-               clause, nos produits seront uniquement disponibles au prix de 95€.  En vue <br>de la technicité et des
-              caractéristiques des verres, nous vous proposons un<strong> prix Kickstarter très<br> intéressant.</strong></p>
-           <p><strong>Nous espérons de tout cœur que notre produit vous convienne.</strong></p>
+           <p>C’est pourquoi nous nous lançons sur Kickstarter en proposant des lunettes de haute qualité à petit prix. Actuellement, vous bénéficiez d’un tarif exclusif, 
+            cependant lorsque cette campagne sera clause, nos produits seront uniquement disponibles au prix de 95€. En vue de la technicité et des caractéristiques des verres,
+             nous vous proposons un prix Kickstarter très intéressant.</p>
+           <p>Nous espérons de tout cœur que notre produit vous convienne."</p>
             <p><p>
             <!---->
            <p>Risques et défis :</p>
@@ -522,9 +517,9 @@
            <p>Nous travaillons sur ce projet depuis un moment et nous sommes très fiers de ce que nous<br> avons accompli
               pour notre première expérience en tant que créateurs sur Kickstarter. Nous<br> soutenons des 
               campagnes depuis plusieurs années et nous souhaitions depuis longtemps<br> en créer une !</p>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
        
     </div>
 {% endblock %}
