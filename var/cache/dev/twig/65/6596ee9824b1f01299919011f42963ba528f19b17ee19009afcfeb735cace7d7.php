@@ -83,6 +83,6 @@ class __TwigTemplate_9aebd4b12df6ebb44cda79098577efac5f8019e3d67eb0440685642f476
 {% else %}
     {{ value|striptags|easyadmin_truncate }}
 {% endif %}
-", "@EasyAdmin/default/field_text.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_text.html.twig");
+", "@EasyAdmin/default/field_text.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_text.html.twig");
     }
 }

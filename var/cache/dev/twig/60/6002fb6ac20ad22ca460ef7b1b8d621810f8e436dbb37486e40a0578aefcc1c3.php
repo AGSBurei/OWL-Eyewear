@@ -74,6 +74,6 @@ class __TwigTemplate_51a7ef987d7958e86f2fccf05c5dba03f6f1ef98b5ef950a459badac2dd
     public function getSourceContext()
     {
         return new Source("<time datetime=\"{{ value|date('c') }}\" title=\"{{ value|date('r') }}\">{{ value|date(field_options.format) }}</time>
-", "@EasyAdmin/default/field_date.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_date.html.twig");
+", "@EasyAdmin/default/field_date.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_date.html.twig");
     }
 }

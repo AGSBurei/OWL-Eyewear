@@ -482,6 +482,6 @@ class __TwigTemplate_ca8440a0582819c18987b9b16d2d8adf2aac4a2c16ea7aeb05cd52ef2c5
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }

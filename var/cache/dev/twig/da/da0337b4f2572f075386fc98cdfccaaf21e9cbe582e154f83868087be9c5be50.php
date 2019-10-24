@@ -798,6 +798,6 @@ class __TwigTemplate_ef85b6ca1379460410b43e00f334397d35c056595685a2b1b5b43d42915
     </table>
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/messenger.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\messenger.html.twig");
+", "@WebProfiler/Collector/messenger.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\messenger.html.twig");
     }
 }

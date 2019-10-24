@@ -479,6 +479,6 @@ class __TwigTemplate_5f871de879e19d0fa0dfbd1957d2cc442b648cc020017d1aa1d75d86c55
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\validator.html.twig");
     }
 }

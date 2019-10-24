@@ -70,6 +70,6 @@ class __TwigTemplate_2c077f70d8d7996031eadbcf169bb7e36596a668a96642fb2fb8587e331
     public function getSourceContext()
     {
         return new Source("<span class=\"badge badge-secondary\">{{ 'label.empty'|trans(domain = 'EasyAdminBundle') }}</span>
-", "@EasyAdmin/default/label_empty.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\label_empty.html.twig");
+", "@EasyAdmin/default/label_empty.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\label_empty.html.twig");
     }
 }

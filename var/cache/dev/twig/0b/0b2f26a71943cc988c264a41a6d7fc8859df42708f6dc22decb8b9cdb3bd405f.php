@@ -893,6 +893,6 @@ class SvgRenderer {
         return element;
     }
 }
-", "@WebProfiler/Collector/time.js", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.js");
+", "@WebProfiler/Collector/time.js", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.js");
     }
 }

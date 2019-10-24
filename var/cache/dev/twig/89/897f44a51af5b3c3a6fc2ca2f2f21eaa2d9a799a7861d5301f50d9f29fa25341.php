@@ -96,6 +96,6 @@ class __TwigTemplate_63eca5073162c29d7aafca7e6f45fc055251d64008df9d87bd76e351add
         {{ action.label|trans(arguments = trans_parameters|merge({ '%entity_id%': item_id }), domain = translation_domain) }}
     {%- endif -%}
 </a>
-", "@EasyAdmin/default/action.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\action.html.twig");
+", "@EasyAdmin/default/action.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\action.html.twig");
     }
 }

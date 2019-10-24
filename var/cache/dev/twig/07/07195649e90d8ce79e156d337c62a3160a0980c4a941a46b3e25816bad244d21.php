@@ -45,7 +45,7 @@ class __TwigTemplate_adccc306558a75a7e613617e5ec82d42e8d947f2f33c64deade108275d7
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/page/content.html.twig"));
 
         // line 1
-        $context["__internal_ea7e03f834ad68cd55416c5b6b9f7389d7db8bada93af1fa6044894bb777acd3"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("translation_domain");
+        $context["__internal_e10bd3ebc43c18fb115d6fc169e7e02be68ce2ffb1d96481a0c206bb9ec75f24"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("translation_domain");
         // line 2
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
         
@@ -96,6 +96,6 @@ class __TwigTemplate_adccc306558a75a7e613617e5ec82d42e8d947f2f33c64deade108275d7
 {% extends easyadmin_config('design.templates.layout') %}
 
 {% block body_class 'page-content page-content-with-padding' %}
-", "@EasyAdmin/page/content.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
+", "@EasyAdmin/page/content.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
     }
 }

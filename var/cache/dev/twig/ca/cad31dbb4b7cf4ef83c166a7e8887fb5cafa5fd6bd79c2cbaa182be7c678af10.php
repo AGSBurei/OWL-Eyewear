@@ -193,6 +193,6 @@ class __TwigTemplate_aaf2b1d69b672a3f0e99bc2ea72c2485512063dfca753e5935e402a54be
         {{ exception.publicMessage|trans(exception.translationParameters, 'EasyAdminBundle') }}
     </div>
 {% endblock %}
-", "@EasyAdmin/default/exception.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\exception.html.twig");
+", "@EasyAdmin/default/exception.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\exception.html.twig");
     }
 }

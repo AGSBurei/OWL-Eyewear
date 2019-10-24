@@ -33,7 +33,6 @@ class ComposerStaticInitfe07be95353c589558a1ba4359763307
         ),
         'T' => 
         array (
-            'Twig\\Extensions\\' => 16,
             'Twig\\' => 5,
         ),
         'S' => 
@@ -167,10 +166,6 @@ class ComposerStaticInitfe07be95353c589558a1ba4359763307
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
-        ),
-        'Twig\\Extensions\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/twig/extensions/src',
         ),
         'Twig\\' => 
         array (
@@ -544,10 +539,6 @@ class ComposerStaticInitfe07be95353c589558a1ba4359763307
     public static $prefixesPsr0 = array (
         'T' => 
         array (
-            'Twig_Extensions_' => 
-            array (
-                0 => __DIR__ . '/..' . '/twig/extensions/lib',
-            ),
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',

@@ -87,6 +87,6 @@ class __TwigTemplate_a269d686db28736ebb088f3813ad8afabc1a73328b312a1893ae51598e6
 {% else %}
     <a target=\"_blank\" href=\"{{ value }}\">{{ value|replace({ 'https://': '', 'http://': '' })|easyadmin_truncate }}</a>
 {% endif %}
-", "@EasyAdmin/default/field_url.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_url.html.twig");
+", "@EasyAdmin/default/field_url.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_url.html.twig");
     }
 }

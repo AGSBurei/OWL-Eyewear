@@ -227,6 +227,6 @@ class __TwigTemplate_b4b7f4fe10b22157f936afafe0bbd5f0f30ec1eac4565eab3a8c8f6cc24
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\twig-bundle\\Resources\\views\\layout.html.twig");
+", "@Twig/layout.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\layout.html.twig");
     }
 }

@@ -85,6 +85,6 @@ class __TwigTemplate_33a6f21686e68ebcf49f060498c12e0ffaa9f4f90c66d847659c30c7154
 {% else %}
     <img class=\"image-avatar\" height=\"{{ image_height }}\" src=\"{{ image_url }}\">
 {% endif %}
-", "@EasyAdmin/default/field_avatar.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_avatar.html.twig");
+", "@EasyAdmin/default/field_avatar.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_avatar.html.twig");
     }
 }
