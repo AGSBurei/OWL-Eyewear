@@ -53,5 +53,12 @@ class MainController extends AbstractController
         ]);
 
     }
+    /**
+     * @Route("/faq")
+     */
+    public function faq()
+    {
+        return $this->render('main/faq.html.twig');
+    }
 
 }
