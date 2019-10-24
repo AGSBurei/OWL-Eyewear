@@ -227,6 +227,6 @@ class __TwigTemplate_2488666df9ee33c13dbab336e9f616f581808c947890225fad7befef225
         </div>
     </form>
 </div>
-", "@WebProfiler/Profiler/search.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\search.html.twig");
+", "@WebProfiler/Profiler/search.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\search.html.twig");
     }
 }

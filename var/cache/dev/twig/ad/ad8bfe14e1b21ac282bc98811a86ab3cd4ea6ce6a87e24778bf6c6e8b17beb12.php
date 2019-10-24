@@ -75,6 +75,6 @@ class __TwigTemplate_d250e15eb668a3b12e69a27ccae5b027d63a1ed5dd686e879076b77591e
         return new Source("{% set type = field_options.type_options.type|default('fractional') %}
 {% set scale = field_options.type_options.scale|default(0) %}
 {{ (type == 'fractional' ? value * 100 : value)|number_format(scale) }}%
-", "@EasyAdmin/default/field_percent.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_percent.html.twig");
+", "@EasyAdmin/default/field_percent.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_percent.html.twig");
     }
 }

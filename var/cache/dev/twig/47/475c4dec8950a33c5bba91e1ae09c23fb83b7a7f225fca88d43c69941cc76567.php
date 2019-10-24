@@ -417,6 +417,6 @@ class __TwigTemplate_c2a9da414abedd3056545dd46e13b1ef73ebc33ce0040a277a83461907f
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\settings.html.twig");
     }
 }

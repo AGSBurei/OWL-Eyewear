@@ -161,6 +161,6 @@ class __TwigTemplate_05d744e2852ad35c8696aead3bf220b14632d8869b5fb3e9cbe25f12cfb
         </tr>
     </tbody>
 </table>
-", "@Twig/Exception/traces_text.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces_text.html.twig");
+", "@Twig/Exception/traces_text.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces_text.html.twig");
     }
 }

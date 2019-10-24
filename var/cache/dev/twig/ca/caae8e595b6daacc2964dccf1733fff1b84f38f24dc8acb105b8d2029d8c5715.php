@@ -640,7 +640,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         <p>Nous avons testé nos produit sur divers profils de conducteurs, voici quelques retours:</p>
         <img class=\"imgavis\" src=\"";
         // line 401
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/AvisFR.e1251bb2.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/AvisFR.ab4855c3.png"), "html", null, true);
         echo "\" alt=\"avis\">
         <p></p>
         <p></p>
@@ -797,7 +797,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
                Nous voulons que celui-ci soit <strong>de qualité, accessible et connu de tous.</strong></p>
             <!---->
            <p>C’est pourquoi nous nous lançons sur Kickstarter en proposant des lunettes de haute qualité à petit prix. Actuellement, vous bénéficiez d’un tarif exclusif, 
-            cependant lorsque cette campagne sera clause, nos produits seront uniquement disponibles au prix de 95€. En vue de la technicité et des caractéristiques des verres,
+            cependant lorsque cette campagne sera clause, nos produits seront uniquement disponibles au prix de 99€. En vue de la technicité et des caractéristiques des verres,
              nous vous proposons un prix Kickstarter très intéressant.</p>
            <p>Nous espérons de tout cœur que notre produit vous convienne.\"</p>
             <p><p>
@@ -1245,7 +1245,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
         <img class=\"bantest\" src=\"{{ asset('build/images/Avis_des_testeurs.2a67f876.png') }}\" alt=\"bannière testeur\">
         <p></p>
         <p>Nous avons testé nos produit sur divers profils de conducteurs, voici quelques retours:</p>
-        <img class=\"imgavis\" src=\"{{ asset('build/images/AvisFR.e1251bb2.png') }}\" alt=\"avis\">
+        <img class=\"imgavis\" src=\"{{ asset('build/images/AvisFR.ab4855c3.png') }}\" alt=\"avis\">
         <p></p>
         <p></p>
         </div>
@@ -1347,7 +1347,7 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
                Nous voulons que celui-ci soit <strong>de qualité, accessible et connu de tous.</strong></p>
             <!---->
            <p>C’est pourquoi nous nous lançons sur Kickstarter en proposant des lunettes de haute qualité à petit prix. Actuellement, vous bénéficiez d’un tarif exclusif, 
-            cependant lorsque cette campagne sera clause, nos produits seront uniquement disponibles au prix de 95€. En vue de la technicité et des caractéristiques des verres,
+            cependant lorsque cette campagne sera clause, nos produits seront uniquement disponibles au prix de 99€. En vue de la technicité et des caractéristiques des verres,
              nous vous proposons un prix Kickstarter très intéressant.</p>
            <p>Nous espérons de tout cœur que notre produit vous convienne.\"</p>
             <p><p>
@@ -1371,6 +1371,6 @@ class __TwigTemplate_97b8ba50ce257be235ca5ad7eb20e292484dd51b7cf6e0b960c74dd69ca
     </div>
 {% endblock %}
 
-", "main/home.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\templates\\main\\home.html.twig");
+", "main/home.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\main\\home.html.twig");
     }
 }

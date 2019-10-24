@@ -154,6 +154,6 @@ class __TwigTemplate_6525084ed6dddf9061a70da715df42eec2868f05b2580adf8fabddb128c
     </ul>
 </div>
 {% endblock %}
-", "admin/index.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\templates\\admin\\index.html.twig");
+", "admin/index.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\admin\\index.html.twig");
     }
 }

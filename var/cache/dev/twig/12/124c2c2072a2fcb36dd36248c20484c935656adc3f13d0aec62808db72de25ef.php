@@ -79,6 +79,6 @@ class __TwigTemplate_50b0a3f75d05dd702b8d941f3dcafd942ed6c9fb540333ce51a329ce712
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.css.twig");
+", "@Twig/Exception/error.css.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.css.twig");
     }
 }

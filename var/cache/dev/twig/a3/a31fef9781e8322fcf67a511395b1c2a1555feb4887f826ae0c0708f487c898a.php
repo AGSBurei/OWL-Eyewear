@@ -77,6 +77,6 @@ class __TwigTemplate_60b878ade5b2610b83115f45baf1d2381dfa54fa0bf22c4f26fcf4f6584
 
 <h2>Confirmer votre souscription</h2>
 
-<p>Pour confirmer votre souscription à la newsletter de OWL Eyeswear, rendez vous sur ce lien : <a href=\"#\">lien</a></p>", "email/newsletter.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\templates\\email\\newsletter.html.twig");
+<p>Pour confirmer votre souscription à la newsletter de OWL Eyeswear, rendez vous sur ce lien : <a href=\"#\">lien</a></p>", "email/newsletter.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\email\\newsletter.html.twig");
     }
 }

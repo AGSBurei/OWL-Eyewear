@@ -70,6 +70,6 @@ class __TwigTemplate_f84933b83d5174b7706441927bd06b1e15fd1bf78c2e51ee7ebde159222
     public function getSourceContext()
     {
         return new Source("<time>{{ value|date(field_options.format) }}</time>
-", "@EasyAdmin/default/field_time.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_time.html.twig");
+", "@EasyAdmin/default/field_time.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_time.html.twig");
     }
 }

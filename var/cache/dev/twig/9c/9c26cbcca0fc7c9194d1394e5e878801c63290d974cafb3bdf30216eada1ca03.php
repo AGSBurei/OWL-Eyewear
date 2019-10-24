@@ -97,6 +97,6 @@ class __TwigTemplate_05a8ab7ed09f4e55ed0723a8a34b4e0e15e520280ea1e26ebe4b1271ed3
         </div>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\header.html.twig");
     }
 }

@@ -204,6 +204,6 @@ class __TwigTemplate_8b9f2dbf71dc1f1e4a08e1bb16dcdded44cf020c34d39f01c0f94ff565c
         })|raw }}
     </div>
 {% endif %}
-", "@Twig/Exception/trace.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\trace.html.twig");
     }
 }

@@ -88,7 +88,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
      
 
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
+                            <a class=\"nav-link\" href=\"#resolut\">SOLUTIONS</a>
                         </li>
 
                         <li class=\"nav-item\">
@@ -112,7 +112,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                         </li>
 
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
+                            <a class=\"nav-link\" href=\"#precision\">PRECISIONS</a>
                         </li>
 
                         <li class=\"nav-item\">
@@ -288,7 +288,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
      
 
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"#resolut\">PROBLEMES RESOLUES</a>
+                            <a class=\"nav-link\" href=\"#resolut\">SOLUTIONS</a>
                         </li>
 
                         <li class=\"nav-item\">
@@ -312,7 +312,7 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
                         </li>
 
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"#precision\">INFORMATIONS COMPLEMENTAIRES</a>
+                            <a class=\"nav-link\" href=\"#precision\">PRECISIONS</a>
                         </li>
 
                         <li class=\"nav-item\">
@@ -350,6 +350,6 @@ class __TwigTemplate_7018a0a2c4f4f9791f2b151af8047ed648d785ecda6045b1a5baa231dd8
 </script>
     </footer>
 </html>
-", "base.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\templates\\base.html.twig");
+", "base.html.twig", "E:\\wamp64\\www\\owleyewear\\templates\\base.html.twig");
     }
 }

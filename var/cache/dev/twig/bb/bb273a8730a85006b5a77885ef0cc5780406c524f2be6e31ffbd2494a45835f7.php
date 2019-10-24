@@ -88,6 +88,6 @@ class __TwigTemplate_068016de33cd07adfd769a1409d350deee48b58bce2624eeb53191b3c93
 {% else %}
     <span class=\"badge badge-danger\">{{ 'label.false'|trans }}</span>
 {% endif %}
-", "@EasyAdmin/default/field_boolean.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_boolean.html.twig");
+", "@EasyAdmin/default/field_boolean.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_boolean.html.twig");
     }
 }

@@ -1269,6 +1269,6 @@ class __TwigTemplate_6c1e6b87fe04da1d54693b879a2ca79c6d807be3574d7d62e5c7b2080dc
     </body>
     {% endblock body %}
 </html>
-", "@EasyAdmin/default/layout.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\layout.html.twig");
+", "@EasyAdmin/default/layout.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\layout.html.twig");
     }
 }

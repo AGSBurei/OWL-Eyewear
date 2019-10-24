@@ -144,6 +144,6 @@ class __TwigTemplate_e5d1ca260a81e1e51cbaf6f9e2ec6da4a1d38a8aa60fb13e98abeb3ba67
         </ul>
     </nav>
 </div>
-", "@EasyAdmin/default/paginator.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\paginator.html.twig");
+", "@EasyAdmin/default/paginator.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\paginator.html.twig");
     }
 }

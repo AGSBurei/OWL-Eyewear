@@ -85,6 +85,6 @@ class __TwigTemplate_d9d93867c9d9ffcdf3c4b3ceaa24e65d76391bb78601b1da611912e6e33
 {% else %}
     <span title=\"{{ value }}\">{{ value|striptags|easyadmin_truncate }}</span>
 {% endif %}
-", "@EasyAdmin/default/field_string.html.twig", "E:\\wamp64\\www\\owleyewear need to fix\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_string.html.twig");
+", "@EasyAdmin/default/field_string.html.twig", "E:\\wamp64\\www\\owleyewear\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\default\\field_string.html.twig");
     }
 }
