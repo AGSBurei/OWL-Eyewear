@@ -4,103 +4,32 @@
 {% endblock %}
 {% block body %}
   <body>
-        <div class="bg-image"> 
-
-            
+        <div class="bg-image">      
             <div class=" txt-presentation">
               <h1>Owl Eyewear - Améliorez votre vision la nuit.</h1>
               <p></p>
-              <p><mark><strong>LES LUNETTES OWL EYEWEAR SONT CONÇU AVEC DES VERRES HAUTS DE GAMME PERFORMANTS PERMETTANT D’AMÉLIORER VOTRE VISION LA NUIT ET AINSI DE CONDUIRE PLUS SEREINEMENT ET AISÉMENT.</strong></mark></p>
+              <p><mark><strong>LES LUNETTES OWL EYEWEAR SONT CONÇUES AVEC DES VERRES HAUT DE GAMME PERFORMANTS PERMETTANT D’AMÉLIORER VOTRE VISION LA NUIT ET AINSI DE CONDUIRE PLUS SEREINEMENT ET AISÉMENT.</strong></mark></p>
               <p><mark>Vous voici sur la version française de notre campagne de lunettes pour la conduite nocturne. La vente du produit s’effectue UNIQUEMENT sur KICKSTARTER, un site de financement
                participatif international permettant aux jeunes entrepreneurs de développer plus facilement leur projet. La façon de participer est assez simple et expliquée dans l’onglet « PARTICIPER ».
                 Nous vous laissons prendre connaissance du produit que nous avons développé en espérant qu’il puisse vous satisfaire. Nous sommes très fiers de pouvoir aujourd’hui vous proposer ce produit.</mark></p>
           </div>
-
-           <div class="timer">
-           <div class="countdownBox">
-              <div class="row">
-                  <div class ="col-sm justify-content-center">
-                  <p class="text-center"><strong>Début de la campagne de financement dans :</strong></p>
-                  </div>
-              </div>
-              <div class="row justify-content-center">
-                  <div class="col-2 justify-content-center">    
-                      <p class="text-center" id="days"></p>
-                      <p class="text-center"><strong>Jour(s)</strong><p>
-                  </div>
-                  <div class="col-1 justify-content-center">    
-                      <p class="text-center"><strong>:</strong><p>
-                  </div>
-                  <div class="col-2 justify-content-center">
-                      <p class="text-center" id="hours"></p>
-                      <p class="text-center"><strong>Heure(s)</strong></p>
-                  </div>
-                  <div class="col-1 justify-content-center">    
-                      <p class="text-center"><strong>:</strong><p>
-                  </div>
-                  <div class="col-2 justify-content-center">
-                      <p class="text-center" id="minutes"></p>
-                      <p class="text-center"><strong>Minute(s)</strong></p>
-                  </div>
-                  <div class="col-1 justify-content-center">    
-                      <p class="text-center"><strong>:</strong><p>
-                  </div>
-                  <div class="col-2 justify-content-center">
-                      <p class="text-center" id="seconds"></p>
-                      <p class="text-center"><strong>Seconde(s)</strong></p>
-                  </div>
-                
-              </div>
-              </div>
-        <script type="text/javascript">
-          
-            function $(id){
-                return document.getElementById(id)
-            }
-
-            var currentDate = new Date();
-              var finalDate = new Date('2019-10-25T12:00:00');
-
-            setInterval(function(){
-                currentDate = new Date();
-                var dt3 = new Date(finalDate - currentDate);
-                var numdays = dt3.getDate();
-                var numhours = dt3.getHours();
-                var minute = dt3.getMinutes();
-                var seconds = dt3.getSeconds();
-
-                $('#days').html(numdays);
-                $('#hours').html(numhours);
-                $('#minutes').html(minute);
-                $('#seconds').html(seconds);
-
-            }, 1000);
-                      
-          
-      
-          
-          
-          
-      </script>
-      
-      
-    </div>
+            <a href="#participer"><img class="kickstarter" src="{{ asset('build/images/participer.72f3bd98.png') }}" alt="imgParticiper"></a>
         </div>
       <br>
       <br>
       <br>
-      <br>
-      <br>
     <div class="txt">
+
     <img class="logoOwl" src="{{ asset ("/build/images/OWL_logo.5da53e41.png") }}" alt="logoOwlEyeWear">
   <p></p>
+  
         <img class="lblwhyowleyewear" src="{{ asset ("/build/images/Pourquoi_Owl_eyewear.46a32322.png") }}" alt="lblWhyOwlEyeWear">
         <p></p>
         <p></p> 
         <div class="txtintro">
         <p>La nuit, le trafic routier ne représente que <strong>10% du trafic journalier</strong> mais <strong>génère 40% des accidents graves ou mortels.</strong> Plusieurs raisons sont en cause : <strong>la fatigue, la faible luminosité, une vision trouble, l’éblouissement dû aux phares</strong>, etc…</p>
         <p>La vision est moins précise car <strong>les yeux ont besoin de temps pour s’adapter aux variations de luminosité et pour percevoir les reliefs et les distances.</strong></p>
-        <p>Pour éliminer les inconforts visuels lors de la conduite de nuit, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui <br> permettent <strong>d’améliorer grandement la vision.</strong></p>
+        <p>Pour éliminer les inconforts visuels lors de la conduite de nuit, nous avons développé des lunettes ayant des <strong>verres évolués</strong> qui permettent <strong>d’améliorer grandement la vision.</strong></p>
         <p>Grâce à <strong>Owl Eyewear</strong>, vous aurez un <strong>meilleur confort visuel</strong> la nuit ou lors de vos déplacements dans des conditions de faible luminosité. <strong>Vous rendrez également les routes plus sûres !</strong></p>
         <p><strong>Si vous êtes intéressés par nos lunettes, renseignez votre adresse mail ci-dessous pour être averti lors de la mise en ligne de notre campagne de financement participative !</strong></p> 
         </div>
@@ -174,7 +103,7 @@
         <p>Owl Eyewear peut être utile pour toutes les personnes <strong>ressentant des gênes</strong> ou voulant <strong>un meilleur confort visuel la nuit.</strong></p>
         <img class="imgConcerner" src="{{ asset("/build/images/Pour_Qui.10560b30.png") }}" alt="pour qui">
         <p></p>
-        <p>Les lunettes Owl Eyewear peuvent être portées par <strong>les conducteur de voiture, de moto, de bus, de camions, à vélo et même en trottinette électrique</strong>.</p>
+        <p>Les lunettes Owl Eyewear peuvent être portées par <strong>les conducteur de voiture, de moto, de bus, de camion, à vélo et même en trottinette électrique</strong>.</p>
       </div>
       <br>    
     
@@ -182,11 +111,11 @@
       <p></p>
       <p></p>
         <img class="statisticsFR" src="{{ asset('build/images/FR4.c5c9ac1b.png') }}" alt="statisticsFR" id="statsup">
-        <p> Conduire dans des <strong>faibles conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> et c’est pour cela que nous espérons que ces lunettes deviendront un accessoire indispensable et disponibles à tous !</p> 
+        <p> Conduire dans de <strong>faibles conditions lumineuses</strong> fait partie de notre <strong>vie de tous les jours</strong> et c’est pour cela que nous espérons que ces lunettes deviendront un accessoire indispensable et disponibles à tous !</p> 
         <p>D’après une étude réalisée en France, <strong>42% des automobilistes conduisent la nuit</strong> au moins une <br> 
            fois par semaine et <strong>89.3% des conducteurs ressentent des gênes durant ces trajets nocturnes.</strong><br>
            De plus, <strong>la moitié des accidents mortels surviennent la nuit</strong> alors que le trafic ne représente<br>
-           que 10% du trafic journalier. C’est pourquoi nous avons investi beaucoup d’efforts pour développer <strong>des lunettes offrants confort, précision visuelle et sérénité aux conducteurs.</strong></p>
+           que 10% du trafic journalier. C’est pourquoi nous avons investi beaucoup d’efforts pour développer <strong>des lunettes offrant confort, précision visuelle et sérénité aux conducteurs.</strong></p>
       <p></p>
       <p></p>
       </div>
@@ -204,7 +133,6 @@
           <p></p>
           <p>Il existe <strong>8 modèles de lunettes</strong>, disponibles <strong>uniquement sur Kickstarter</strong>.</p> 
           <p></p>
-         
           <p></p>
           <div><p>Il existe <strong>différentes couleurs</strong> pour les modèles plastiques ainsi que <strong>différentes formes</strong>, vous permettant de choisir le modèle qui vous convient le mieux.<br>
             
@@ -310,12 +238,11 @@
             <div class="fabrication">
             <img class="banHowMake" src="{{ asset('build/images/process.5f63f1a7.png') }}" alt="image How Make" id="fabrique">
             <p></p>
-            <p>Une fois que nous aurons reçu la liste des montures que vous aurez choisies,
-              nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
+            <p>Une fois que nous aurons reçu vos commandes, nos fournisseurs nous feront parvenir les verres ainsi que les montures.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/veLOW5-W6Mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p></p>
-            <p>Nous assemblerons l’ensemble des lunettes dans <strong>notre atelier en France.</strong> Les verres,<br>
-               seront taillés, monté ; les montures seront <strong>ajustées, nettoyées</strong> et <strong>minutieusement emballées</strong><br>
+            <p>Nous assemblerons l’ensemble des lunettes dans <strong>notre atelier en France.</strong> Les verres<br>
+               seront taillés, montés; les montures seront <strong>ajustées, nettoyées</strong>, <strong>minutieusement emballées</strong><br>
                par des <strong>opticiens diplômés.</strong></p>
             <p></p>
             <p></p>
@@ -326,7 +253,7 @@
           <p></p>
           <img class="lblOrigine" src="{{ asset('build/images/Origines_verres.png') }}" alt ="labelorigin">
           <p></p>
-          <img class="imgOrigine" src="{{ asset('build/images/FRFR.10367c6c.jpg') }}" alt="imageg Origine">
+          <img class="imgOrigine" src="{{ asset('build/images/FRFR.839f1199.jpg') }}" alt="imageg Origine">
           <p></p>
           <img class="lblYellowFR" src = "{{ asset ("/build/images/verres jaunes.cb45cc79.png") }}" alt="lblYellowFR">
     
@@ -431,7 +358,7 @@
             <p>Dans un premier temps, <strong>rendez-vous sur notre page Kickstarter :</strong></p>
             <a href="https://www.kickstarter.com/projects/nvision/owl-eyewear-improve-your-night-vision" target="_blank"><img class="kickstarter" src="{{ asset('build/images/Groupe_1.fb8da3ee.png') }}" alt="imgKickstarter"></a>
             <!---->
-            <p>1. <strong>Cliquez sur «Je soutien ce projet»</strong> puis sélectionnez le pack que vous souhaitez recevoir. Ou sélectionnez directement le pack que vous souhaitez sur
+            <p>1. <strong>Cliquez sur «Je soutiens ce projet»</strong> puis sélectionnez le pack que vous souhaitez recevoir. Ou sélectionnez directement le pack que vous souhaitez sur
              le coté droit de la page. Chaque contributeur ne peut s'engager qu'une seule fois.</p>
                <!---->
             <p>2. <strong>Paiement</strong> : Entrez vos informations de paiement. Vous ne payerez ni ne choisirez aucun modèle à ce stade, vous autoriserez uniquement Kickstarter à vous
@@ -464,7 +391,7 @@
            <!---->
         
            <p></p>
-           <p><strong>Nous avons besoin de vous !</strong> Notre objectif est de lancer notre entreprise et de démocratiser notre produit pour <strong>diminuer le nombre d'accidents sur les routes</strong>
+           <p><strong>Nous avons besoin de vous !</strong> Notre objectif est de lancer notre entreprise et de démocratiser notre produit pour <strong>diminuer le nombre d'accidents sur les routes.</strong>
                Nous voulons que celui-ci soit <strong>de qualité, accessible et connu de tous.</strong></p>
             <!---->
            <p>C’est pourquoi nous nous lançons sur <strong>Kickstarter</strong> en proposant <strong>des lunettes de haute qualité à petit prix</strong>. Actuellement, vous bénéficiez d’un tarif exclusif, 
@@ -478,7 +405,7 @@
            <p>Les retards de livraison et de production sont des risques imprévisibles.<br>
               Pour les éviter, nous avons pris des précautions auprès de nos fournisseurs afin qu'ils puissent nous livrer dans les délais les plus courts.</p>
             <!---->
-           <p>Le plus gros défi aura été de développer un produit innovant, de qualité et abordable qui réponde <br>à vos
+           <p>Le plus gros défi aura été de développer un produit innovant, de qualité et abordable qui réponde à vos
              besoins ! C'est incroyable d'être ici en train d'écrire ces lignes ! </p>
             <!---->
            <p>Nous travaillons sur ce projet depuis un moment et nous sommes très fiers de ce que nous<br> avons accompli

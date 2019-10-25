@@ -1,14 +1,21 @@
-{% extends 'base.html.twig' %}
+
 {% block head %}
-{% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }} {{ encore_entry_link_tags('mailform') }}{% endblock %}
+<title>OWL Eyewear - mail</title>
+<link rel="icon" type="image/x-icon" href="{{ asset('/build/images/favicon.5ee79b31.ico') }}"/>
+{% block stylesheets %}{{ encore_entry_link_tags('app') }}{{ encore_entry_link_tags('mailform') }}{% endblock %}
 {% endblock %}
 {% block body %}
 
-<div class="mailform">
-{{ form_start(form) }}
-{{ form_row(form.title) }}
-{{ form_row(form.content) }}
-{{ form_row(form.save) }}
-{{ form_end(form) }}
-</div>
+
+    
+    <div class="mailform">
+        <div class="container">
+            {{ form_start(form) }}
+            {{ form_row(form.title) }}
+            {{ form_row(form.content) }}
+            {{ form_row(form.save) }}
+            <a href="{{ path('easyadmin') }}" class="btn btn-info btn-fill">retour</a>
+            {{ form_end(form) }}
+        </div>
+    </div>
 {% endblock %}

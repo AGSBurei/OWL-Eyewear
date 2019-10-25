@@ -12,54 +12,45 @@ use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 
 class AdminController extends AbstractController
 {
     /**
-     * @Route("admin/sendEmail", name="admin_sendEmail")
+     * @Route("/admin/sendEmail", name="admin_sendEmail", methods="GET|POST")
      */
     public function sendEmail(Request $request, \Swift_Mailer $mailer)
     {
-        //creation d'un email
         $email = new Email();
         $email->setCreatedAt(new \DateTime('now'));
         $em = $this->getDoctrine()->getManager();
 
-
-        //creation formulaire
         $form = $this->createFormBuilder($email)
-            ->add('title', textType::class)
-            ->add('content', TextType::class)
-            // ->add('createdAt', DateType::class)
-            ->add('save', SubmitType::class, ['label' => 'envoyer le mail'])
+            ->add('title', textType::class, ['label' => 'Sujet'])
+            ->add('content', CKEditorType::class, ['label' => 'Contenu'])
+            ->add('save', SubmitType::class, ['label' => "Envoyer l'email"])
             ->getForm();
 
         $form->handleRequest($request);
 
         $newsletter = $this->getDoctrine()->getManager()->getRepository(Newsletter::class)->findAll();
-
         $emailContent = $email->getContent();
 
-        //si le mail est valide
         if($form->isSubmitted() && $form->isValid())
         {
             $em->persist($email);
             $em->flush();
 
-                //envoyer à tous les mails
                 foreach($newsletter as $newsletter)
                 {
                     $message = (new \Swift_Message($email->getTitle()))
-
                         ->setFrom('owleyewearfr@gmail.com')
                         ->setTo($newsletter->getEmail())
-                      
                         ->setBody(
                             $this->renderView(
                                 'email/sendEmail.html.twig',
                                 [
-                                'content' => $emailContent,
-
+                                'content' => $emailContent
                                 ]
                             ),
                             'text/html'
@@ -67,7 +58,7 @@ class AdminController extends AbstractController
                     ;
                     $mailer->send($message);
                 }
-            return $this->redirectToRoute('sendEmail');
+            return $this->redirectToRoute('admin_sendEmail');
         }
 
         return $this->render('admin/sendEmail.html.twig', [

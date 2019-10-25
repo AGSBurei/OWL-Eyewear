@@ -26,7 +26,7 @@ body, html{
       ),url("../images/background.jpg");
 
     top: 0;
-    height: 730px;
+    height: 650px;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -52,7 +52,7 @@ body, html{
     margin-right: 20px;
     color: #ffffff;
     position: relative;
-    margin: 100px auto;
+    margin: 84px auto;
     text-align: center;
     z-index: -1;
     padding-top: 108px;

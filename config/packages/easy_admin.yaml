@@ -17,6 +17,11 @@ easy_admin:
 
   design:
     brand_color: '#FFA500'
+    menu:
+      - { entity: 'User', icon: 'user'}
+      - { entity: 'Newsletter' }
+      - { label: 'Envoyer Mail', route: 'admin_sendEmail', icon: 'envelope' }
+      - { label: 'Exporter newsletter', route: 'newsletter_export', icon: 'download'}
 
   entities:
     User:
@@ -45,7 +50,6 @@ easy_admin:
           - { property: 'email', label: 'Email'}
       list:
         actions:
-          - { name: 'newsletter_export', icon: 'download', type: 'route', label: false, title: 'Exporter en .csv' }
           - { name: 'edit', icon: 'wrench', label: false, title: 'Editer' }
           - { name: 'delete', icon: 'trash', label: false, title: 'Supprimer' }
         fields:
