@@ -11,6 +11,7 @@ require('../css/base.css');
 require('../css/homeStyle.css');
 require('../css/login.css');
 require('../css/faq.css');
+require('../css/mailform.css');
 //require('./jquery.countdown.js');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.

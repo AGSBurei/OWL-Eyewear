@@ -49,7 +49,7 @@ body, footer
     position: relative;
 }
 
-footer
+/*footer
 {
     bottom: 0;
     color: #ffffff;
@@ -58,7 +58,7 @@ footer
     right: 0;
     margin-top: 5%;
     height: 10%;
-}
+}*/
 .navbar-custom
 {
     color: inherit;

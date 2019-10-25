@@ -63,7 +63,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#participer">EQUIPE</a>
+                            <a class="nav-link" href="#equipe">EQUIPE</a>
                         </li>
 
                         <class="nav-item">
@@ -74,22 +74,19 @@
         </div>
     </nav>
 
-
         <div class="container">
         {% block body %}{% endblock %}
         </div>
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
     </body>
-    
     <footer>
-        
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149618743-1%22%3E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149618743-1%22%3E"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'UA-149618743-1');
-</script>
+            gtag('config', 'UA-149618743-1');
+        </script>
     </footer>
 </html>

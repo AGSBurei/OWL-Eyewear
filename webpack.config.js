@@ -30,6 +30,7 @@ Encore
     .addEntry('homeStyle', './assets/css/homeStyle.css')
     .addEntry('login', './assets/css/login.css')
     .addEntry('faq', './assets/css/faq.css')
+    .addEntry('mailform', './assets/css/mailform.css')
    // .addEntry('CountDown', './assets/js/jquery.countdown.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')

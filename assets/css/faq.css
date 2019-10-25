@@ -1,4 +1,8 @@
- #accordion
+ .container
 {
     margin-top: 115px;
+}
+.title
+{
+    text-align: center!important;
 }
