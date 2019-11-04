@@ -9,6 +9,15 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('/build/images/favicon.5ee79b31.ico') }}"/>
         <title>{% block title %}OWL Eyewear{% endblock %}</title>
         {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151174461-1%22%3E</script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151174461-1');
+        </script>
     </head>
     <body>
         <nav class="navbar navbar-expand-xl navbar-custom">
@@ -42,13 +51,6 @@
     </body>
 
         
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149618743-1%22%3E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-149618743-1');
-</script>
  
 </html>
