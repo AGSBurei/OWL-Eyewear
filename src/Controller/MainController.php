@@ -61,4 +61,12 @@ class MainController extends AbstractController
         return $this->render('main/faq.html.twig');
     }
 
+    /**
+     * @Route("/test")
+     */
+    public function tst()
+    {
+        return $this->render('main/test.html.twig');
+    }
+
 }

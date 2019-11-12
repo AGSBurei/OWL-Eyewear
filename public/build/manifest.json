@@ -1,4 +1,6 @@
 {
+  "build/adminbar.css": "/build/adminbar.css",
+  "build/adminbar.js": "/build/adminbar.js",
   "build/app.css": "/build/app.css",
   "build/app.js": "/build/app.js",
   "build/basesStyle.css": "/build/basesStyle.css",

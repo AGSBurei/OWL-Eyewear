@@ -18,6 +18,7 @@ return [
     'admin_sendEmail' => [[], ['_controller' => 'App\\Controller\\AdminController::sendEmail'], [], [['text', '/admin/sendEmail']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\MainController::home'], [], [['text', '/']], [], []],
     'app_main_faq' => [[], ['_controller' => 'App\\Controller\\MainController::faq'], [], [['text', '/faq']], [], []],
+    'app_main_tst' => [[], ['_controller' => 'App\\Controller\\MainController::tst'], [], [['text', '/test']], [], []],
     'newsletter_export' => [[], ['_controller' => 'App\\Controller\\NewsletterController::export'], [], [['text', '/admin/export']], [], []],
     'security_registration' => [[], ['_controller' => 'App\\Controller\\SecurityController::registration'], [], [['text', '/inscription']], [], []],
     'security_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/connexion']], [], []],
