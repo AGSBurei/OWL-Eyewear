@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="main-panel">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Gestion Template</h4>
+                </div>
+                <br>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a class="btn btn-info" href="{{ path('create_template') }}">Création d'un template</a>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Titre</td>
+                                    <td>Content</td>
+                                    <td>Auteur</td>
+                                    <td>Actif</td>
+                                    <td>Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% if template is defined and template is not null %}
+                                    {% for entity in template %}
+                                        <tr>
+                                            {% if entity.id == null %}
+                                                <td>aucune donnée</td>
+                                            {% else %}
+                                                <td>{{ entity.id }}</td>
+                                            {% endif %}
+                                            {% if entity.title == null %}
+                                                <td>aucune donnée</td>
+                                            {% else %}
+                                                <td>{{ entity.title|raw }}</td>
+                                            {% endif %}
+                                            {% if entity.content == null %}
+                                                <td>aucune donnée</td>
+                                            {% else %}
+                                                <td>{{ entity.content|striptags|truncate(12, true)|raw }}</td>
+                                            {% endif %}
+                                            {% if entity.author == null %}
+                                                <td>aucune donnée</td>
+                                            {% else %}
+                                                <td>{{ entity.author|raw }}</td>
+                                            {% endif %}
+                                            {% if entity.isActive == null %}
+                                                <td><span class="badge badge-danger">Non</span></td>
+                                            {% else %}
+                                                <td><span class="badge badge-pill badge-info">Oui</span></td>
+                                            {% endif %}
+                                            <td>
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <a class="btn btn-info" href="{{ path('show_template', {'id': entity.id }) }}">Voir</a>
+                                                    <a class="btn btn-warning" href="{{ path('create_template', {'id': entity.id }) }}">Modifier</a>
+                                                    <a class="btn btn-danger" href="{{ path('delete_template', {'id': entity.id }) }}">Supprimer</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

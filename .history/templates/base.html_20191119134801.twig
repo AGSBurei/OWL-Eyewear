@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="vitrine Lunette OwlEyewear">
+        <meta name="keywords" content="Lunette, nuit, correction, voiture, Owl Eyewear">
+        <meta name="author" content="Zachari BLINN et Rommanirs Mer">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1, shrink-to-fit=no">
+        <link rel="icon" type="image/x-icon" href="{{ asset('/build/images/favicon.5ee79b31.ico') }}"/>
+
+        <title>{% block title %}OWL Eyewear{% endblock %}</title>
+        {% block stylesheets %}{{ encore_entry_link_tags('app') }} {{ encore_entry_link_tags('basesStyle') }}{% endblock %}
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-xl navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img class="logo"src="{{ asset('/build/images/Fichier_4.8f8cdf3f.svg') }}"></a></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" > 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#SpecGlass">CARACTERISTIQUES<span class="sr-only">(current)</span></a>
+                        </li>
+     
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resolut">SOLUTIONS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#statsup">STATISTIQUES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#listMonture">MODELES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#taille">TAILLES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pack">CONTENU</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fabrique">ASSEMBLAGE</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#precision">PRECISIONS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#objectif">OBJECTIFS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#participer">PARTICIPER</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#equipe">EQUIPE</a>
+                        </li>
+
+                        <class="nav-item">
+                            <a class="nav-link" href="/faq">FAQ</a>
+                        </class="nav-item">
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+        <div class="container">
+        {% block body %}{% endblock %}
+        </div>
+        {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
+    </body>
+    <footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149618743-1%22%3E"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-149618743-1');
+        </script>
+    </footer>
+</html>

@@ -59,6 +59,14 @@ return [[
                 '/build/mailform.js',
             ],
         ],
+        'adminbar' => [
+            'css' => [
+                '/build/adminbar.css',
+            ],
+            'js' => [
+                '/build/adminbar.js',
+            ],
+        ],
     ],
 ],
 

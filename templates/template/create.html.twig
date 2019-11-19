@@ -1,0 +1,17 @@
+{% block head %}
+<title>OWL Eyewear - Création de page</title>
+<link rel="icon" type="image/x-icon" href="{{ asset('/build/images/favicon.5ee79b31.ico') }}"/>
+{% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
+{% endblock %}
+{% block body %}
+    <div class="mailform">
+        <div class="container">
+            {{ form_start(form) }}
+            {{ form_row(form.title) }}
+            {{ form_row(form.content) }}
+            {{ form_row(form.save) }}
+            {# <a href="{{ path('easyadmin') }}" class="btn btn-info btn-fill">retour</a> #}
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock %}
